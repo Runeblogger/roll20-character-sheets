@@ -22,7 +22,7 @@
 
 
 					</div>
-					<b>Version 14.12.2019</b>
+					<b>Version 14.12.2019 - Traducción por el Runeblogger 17.05.2020</b>
 					<input style="color:red;border:none;background:none;padding 0px;font-weight: bold;;width:400px;" type="text" readonly name="attr_versiony" value ="(https://tinyurl.com/yb9tgmlv)" />
 					
 					
@@ -82,7 +82,7 @@
 							<input type="text" style="display:inline-block;;" readonly value="0" name="attr_hd_cur_hp" />
 						</div>
 						<div>
-							<span>Wnds.</span>
+							<span>Heridas</span>
 							<input type="text" class="sheet-wnds"  value="0+0" name="attr_hd_damage" />
 						</div>										
 						
@@ -103,7 +103,7 @@
 							<input type="text" style="display:inline-block;;" value="0"  readonly name="attr_l_arm_cur_hp" />
 						</div>
 						<div>
-							<span>Wnds.</span>
+							<span>Heridas</span>
 							<input type="text" class="sheet-wnds"  value="0+0" name="attr_l_arm_damage" />
 						</div>										
 						
@@ -124,7 +124,7 @@
 							<input type="text" style="display:inline-block;;"  readonly  value="0" name="attr_r_arm_cur_hp" />
 						</div>
 						<div>
-							<span>Wnds.</span>
+							<span>Heridas</span>
 							<input type="text" class="sheet-wnds"  value="0+0" name="attr_r_arm_damage" />
 						</div>										
 						
@@ -144,7 +144,7 @@
 							<input type="text" style="display:inline-block;;" value="0"  readonly  name="attr_chst_cur_hp" />
 						</div>
 						<div>
-							<span>Wnds.</span>
+							<span>Heridas</span>
 							<input type="text" class="sheet-wnds"  value="0+0" name="attr_chst_damage" />
 						</div>										
 						
@@ -164,7 +164,7 @@
 							<input type="text" style="display:inline-block;;" value="0"  readonly name="attr_abd_cur_hp" />
 						</div>
 						<div>
-							<span>Wnds.</span>
+							<span>Heridas</span>
 							<input type="text" class="sheet-wnds"  value="0+0" name="attr_abd_damage" />
 						</div>										
 						
@@ -186,7 +186,7 @@
 							<input type="text" style="display:inline-block;;" value="0"  readonly  name="attr_l_leg_cur_hp" />
 						</div>
 						<div>
-							<span>Wnds.</span>
+							<span>Heridas</span>
 							<input type="text" class="sheet-wnds"  value="0+0" name="attr_l_leg_damage" />
 						</div>										
 						
@@ -207,7 +207,7 @@
 							<input type="text" style="display:inline-block;;" value="0"  readonly  name="attr_r_leg_cur_hp" />
 						</div>
 						<div>
-							<span>Wnds.</span>
+							<span>Heridas</span>
 							<input type="text" class="sheet-wnds"  value="0+0" name="attr_r_leg_damage" />
 						</div>										
 						
@@ -370,7 +370,7 @@
 							<div>
 								<label style="margin-left:56px;display:inline;font-size:0.6em">Orig.</label>
 								<label style="margin-left:5px;display:inline;font-size:0.6em">Mod.</label>
-								<label style="margin-left:5px;display:inline;font-size:0.6em">Cur.</label>							
+								<label style="margin-left:5px;display:inline;font-size:0.6em">Act.</label>							
 							</div>						
 						<div class='sheet-col' style="width:64%;margin-right:1px">
 							<div>
@@ -380,7 +380,7 @@
 								<input type="text" class="sheet-char_values" readonly name="attr_curstr" value="0"/>
 								<button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[((@{curstr}+@{strBuff})*5)]]}} {{fumble=[[{(101-(round((100-((@{curstr}+@{strBuff})*5))/20))),100}kl1]]}} {{crit=[[round(([[((@{curstr}+@{strBuff})*5)]])/20)+1]]}} {{special=[[round(([[((@{curstr}+@{strBuff})*5)]])/5)+1]]}}         {{success=[[((@{curstr}+@{strBuff})*5)]]}} {{roll=[[1d100]]}} {{skillname=STR}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[((@{curstr}+@{strBuff})*?{multiplier|5})]]}} {{fumble=[[{(101-(round((100-((@{curstr}+@{strBuff})*?{multiplier|5}))/20))),100}kl1]]}} {{crit=[[round(([[((@{curstr}+@{strBuff})*?{multiplier|5})]])/20)+1]]}} {{special=[[round(([[((@{curstr}+@{strBuff})*?{multiplier|5})]])/5)+1]]}}         {{success=[[((@{curstr}+@{strBuff})*?{multiplier|5})]]}} {{roll=[[1d100]]}} {{skillname=STR}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								<input name="attr_strBuff" value="0" style="display:none" />
-								<!--<input type="checkbox"  title="Strength Cast"  name="attr_strengthCast"  />-->
+								<!--<input type="checkbox"  title="Fuerza lanzado"  name="attr_strengthCast"  />-->
 								
 							</div>	
 							
@@ -394,7 +394,7 @@
 								</button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[((@{curcon}+@{conBuff})*?{multiplier|5})]]}} {{fumble=[[{(101-(round((100-((@{curcon}+@{conBuff})*?{multiplier|5}))/20))),100}kl1]]}} {{crit=[[round(([[((@{curcon}+@{conBuff})*?{multiplier|5})]])/20)+1]]}} {{special=[[round(([[((@{curcon}+@{conBuff})*?{multiplier|5})]])/5)+1]]}}         {{success=[[((@{curcon}+@{conBuff})*?{multiplier|5})]]}} {{roll=[[1d100]]}} {{skillname=CON}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
                                                   
 								<input name="attr_conBuff" value="0" style="display:none" />
-								<!--<input type="checkbox"  title="Vigor Cast"  name="attr_vigorCast"  />-->
+								<!--<input type="checkbox"  title="Vigor lanzado"  name="attr_vigorCast"  />-->
 								
 							</div>	
 
@@ -444,7 +444,7 @@
 								<input type="text" class="sheet-char_values" name="attr_modchr" value="0"/>									
 								<input type="text" class="sheet-char_values" readonly name="attr_curchr" value="0"/>
 								<button type="roll" class="sheet-d100_roll"  value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[((@{curchr}+@{chrBuff})*5)]]}} {{fumble=[[{(101-(round((100-((@{curchr}+@{chrBuff})*5))/20))),100}kl1]]}} {{crit=[[round(([[((@{curchr}+@{chrBuff})*5)]])/20)+1]]}} {{special=[[round(([[((@{curchr}+@{chrBuff})*5)]])/5)+1]]}}         {{success=[[((@{curchr}+@{chrBuff})*5)]]}} {{roll=[[1d100]]}} {{skillname=CHR}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[((@{curchr}+@{chrBuff})*?{multiplier|5})]]}} {{fumble=[[{(101-(round((100-((@{curchr}+@{chrBuff})*?{multiplier|5}))/20))),100}kl1]]}} {{crit=[[round(([[((@{curchr}+@{chrBuff})*?{multiplier|5})]])/20)+1]]}} {{special=[[round(([[((@{curchr}+@{chrBuff})*?{multiplier|5})]])/5)+1]]}}         {{success=[[((@{curchr}+@{chrBuff})*?{multiplier|5})]]}} {{roll=[[1d100]]}} {{skillname=CHR}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
-								<!--<input type="checkbox"  title="Glamour Cast"  name="attr_glamourCast"  />-->
+								<!--<input type="checkbox"  title="Glamour lanzado"  name="attr_glamourCast"  />-->
 								<input name="attr_chrBuff" value="0" style="display:none" />
 							</div>
 						</div>	
@@ -491,7 +491,7 @@
 						<br />
 						<div>
 							<fieldset class="repeating_passions">
-								<input type="text" class="sheet-text_input" style="width:293px"  name="attr_passion" placeholder="Passion(.............)" />
+								<input type="text" class="sheet-text_input" style="width:293px"  name="attr_passion" placeholder="Pasión(.............)" />
 								<input type="text" class="sheet-text_input sheet-percentiles" name="attr_value" value="0" />
 								<button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{type=P}} {{name=@{character_name}}} {{skillvalue=[[(@{value})]]}} {{fumble=[[ceil(95+([[(@{value})]])/20))]]}} {{crit=[[round(([[(@{value})]])/20)+1]]}}  {{special=[[round(([[(@{value})]])/5)+1]]}}    {{success=[[(@{value})]]}} {{roll=[[1d100]]}} {{skillname=@{Passion}}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{type=P}} {{name=@{character_name}}} {{skillvalue=[[@{value}]]}} {{fumble=[[ceil(95+(@{value}+?{Mods|0})/20)]]}} {{crit=[[round((@{value}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{value}+?{Mods|0})/5)+1]]}}    {{success=[[@{value}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=@{Passion}}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								<input type="checkbox" name="attr_passionExp" />
@@ -510,15 +510,15 @@
 										<input style="text-align:center;width:3.5em" type="text" readonly value="0" name="attr_hp_max" />-
 									 </div>
 									 <div style="display:inline-block">
-										<label style="font-size:0.5em;text-align:center">PVL<br />Loss</label>					
+										<label style="font-size:0.5em;text-align:center">PVL<br />perdidos</label>					
 										<input style="text-align:center;width:3em;" readonly value="0" type="text" name="attr_lhp_loss"  />-
 									 </div>
 									 <div style="display:inline-block">
-										<label style="font-size:0.5em;text-align:centee">PVT<br />Loss</label>
+										<label style="font-size:0.5em;text-align:centee">PVT<br />perdidos</label>
 										<input style="text-align:center;width:3.5em;" readonly value="0" type="text" name="attr_thp_loss"  />=
 									 </div>
 									 <div style="display:inline-block">
-										<label style="font-size:0.5em;text-align:center">Act.<br />HP</label>					
+										<label style="font-size:0.5em;text-align:center">Act.<br />PV</label>					
 										<input style="text-align:left;width:3em;" value="0" type="text" readonly name="attr_hp_cur"  />
 									 </div>
 									 <div style="display:inline-block">
@@ -635,7 +635,7 @@
 						<div>
 							<div class="sheet-header" >Conjuros lanzados:</div>
 							<div>
-								<span>Coordinación <input type="checkbox"  name="attr_coordCast"  /></span><span>&nbsp;Glamour <input type="checkbox"  name="attr_glamourCast"  /></span><span>&nbsp;Mobility <input type="checkbox"  name="attr_mobilCast"  /></span>	
+								<span>Coordinación <input type="checkbox"  name="attr_coordCast"  /></span><span>&nbsp;Glamour <input type="checkbox"  name="attr_glamourCast"  /></span><span>&nbsp;Movilidad <input type="checkbox"  name="attr_mobilCast"  /></span>	
 							</div>
 							<div>
 								<span>Fuerza <input type="checkbox"  name="attr_strengthCast"  /></span>
@@ -660,9 +660,9 @@
 						</div>
 						<div class="sheet-header" >Puntos mágicos y matrices</div>	
 						<div class="sheet-melee_wpns_labels">
-							   <div style="margin-left:3px;">Location</div>
-							   <div style="margin-left:250px;">Max.</div>
-							   <div style="margin-left:0px;">Cur.</div>
+							   <div style="margin-left:3px;">Ubicación</div>
+							   <div style="margin-left:250px;">Máx.</div>
+							   <div style="margin-left:0px;">Act.</div>
 						</div>						
 						<div>
 							<span>Personal</span>
@@ -742,7 +742,7 @@
 							  <textarea name="attr_add_sr" style="display:none">
 								/em --
 								
-								Add @{character_name} to turn order
+								Añadir @{character_name} al orden de turnos
 								@{weapon_type} SR [[@{total_wpn_sr} &{tracker}]]
 							  </textarea>
 							  
@@ -810,33 +810,33 @@
 						 <textarea name="attr_add_dsr" style="display:none">
 								/em --
 								
-								Add @{character_name} to turn order
-								Missle Wpn 1st shot SR [[@{dex_srm} &{tracker}]]
+								Añadir @{character_name} al orden de turnos
+								Arma Proy. MR primer tiro [[@{dex_srm} &{tracker}]]
 						 </textarea>
 
 						 <textarea name="attr_add_nextshot" style="display:none">
 								/em --
 								
-								Add @{character_name} to turn order
-								Missle Wpn next shot shot SR [[@{ready_wpn} &{tracker}]]
+								Añadir @{character_name} al orden de turnos
+								Arma Proy. MR siguiente tiro [[@{ready_wpn} &{tracker}]]
 						 </textarea>
 						 
 						
 						<br />
 							<div class="sheet-melee_wpns_labels">
-							   <div style="margin-left:3px;">Missile Weapon</div>
-							   <div style="margin-left:24px;">Skill Used</div>	
-							   <div style="margin-left:54px;">Default</div>							   
-							   <!--<div style="margin-left:47px;">STR/DEX</div> -->
+							   <div style="margin-left:3px;">Arma de proyectiles</div>
+							   <div style="margin-left:24px;">Habilidad</div>	
+							   <div style="margin-left:54px;">Por defecto</div>							   
+							   <!--<div style="margin-left:47px;">FUE/DES</div> -->
 							   <div style="margin-left:7px;">%</div>
 							   <div style="margin-left:13px;">Mods.</div>							   
-							   <div style="margin-left:38px;">Dmg.</div>
-							   <div style="margin-left:11px;">DB</div>
-							   <div style="margin-left:3px;">Special</div>						   
-							   <div style="margin-left:8px;">Rng</div>		
-							   <div style="margin-left:4px;">Rate</div>		
-							   <div style="margin-left:18px;" >HP</div>	
-							   <div style="margin-left:10px;" >Ammo</div>	
+							   <div style="margin-left:38px;">Daño</div>
+							   <div style="margin-left:11px;">Mod.</div>
+							   <div style="margin-left:3px;">Especial</div>						   
+							   <div style="margin-left:8px;">Alc</div>		
+							   <div style="margin-left:4px;">Tasa</div>		
+							   <div style="margin-left:18px;" >PV</div>	
+							   <div style="margin-left:10px;" >Munición</div>	
 							</div>						
 						
 						<fieldset class="repeating_missle2">
@@ -1121,7 +1121,7 @@
 					<div style="margin-left:13px;">
 		
 						<p style="font-weight:bold; display:inline-block">Cargado</p>
-						<p style="font-weight:bold; width:68%; display:inline-block;margin-left:13px">Item</p>
+						<p style="font-weight:bold; width:68%; display:inline-block;margin-left:13px">Objeto</p>
 						<p style="font-weight:bold;text-align:center;width: 2% ;display:inline-block">Wt.</p>
 						<p title="Move Quietly Modifier" style="font-weight:bold;text-align:center;width: 13% ;display:inline-block">-MQ</p>
 						
@@ -1132,16 +1132,16 @@
 							<input class="sheet-text_input sheet-char_inputs sheet-percentiles" title="Move Quietly Mod."  type="text" value="0" name="attr_mq_mod"/>
 						</fieldset>	
 						<br />
-						<span class="coins"><b>Wheels (W)</b></span><input class="text_input char_inputs coins" value="0" type="text" name="attr_wheels"/>
-						<span class="coins"><b>Lunars (L)</b></span><input class="text_input char_inputs coins" value="0" type="text" name="attr_lunars"/>						
-						<span class="coins"><b>Clacks (C)</b></span><input class="text_input char_inputs coins" value="0" type="text" name="attr_clacks"/>												
+						<span class="coins"><b>Ruedas (R)</b></span><input class="text_input char_inputs coins" value="0" type="text" name="attr_wheels"/>
+						<span class="coins"><b>Lunares (L)</b></span><input class="text_input char_inputs coins" value="0" type="text" name="attr_lunars"/>						
+						<span class="coins"><b>Contantes (C)</b></span><input class="text_input char_inputs coins" value="0" type="text" name="attr_clacks"/>												
 						<span class="coins"><b>Bolgs (B)</b></span><input class="text_input char_inputs coins" value="0" type="text" name="attr_bolgs"/>							
-						<span class="coins"><b>Goods (L)</b></span><input class="text_input char_inputs goods" value="0" type="text" name="attr_goods"/>							
+						<span class="coins"><b>Bienes (L)</b></span><input class="text_input char_inputs goods" value="0" type="text" name="attr_goods"/>							
 						<br />
 						<br />						
 						<span>Carga máx</span>
 						<input class="sheet-text_input sheet-char_inputs sheet-percentiles" value="0" type="text" name="attr_carry_max2"/>
-						<span style="margin-left:8px">Total Enc</span>								
+						<span style="margin-left:8px">Carga total</span>								
 						<input class="sheet-text_input sheet-char_inputs" style="width:45px"   value="0" type="text" name="attr_carry_total2"/>
 							
 							
@@ -1355,15 +1355,15 @@ THP 0/0
 								<input class="sheet-value_display" type="text" value="name and type " style="width:244px;" name="attr_animal2_name" />
 							</div>
 							<div>
-								<p class="sheet-spirit_stat">STR</p> <input class="sheet-value_display2" value="0" name="attr_animal2a_str" type="text"/> 
+								<p class="sheet-spirit_stat">FUE</p> <input class="sheet-value_display2" value="0" name="attr_animal2a_str" type="text"/> 
 								<p class="sheet-spirit_stat">CON</p><input class="sheet-value_display2" value="0" name="attr_animal2a_con" type="text" />
-								<p class="sheet-spirit_stat">SIZ</p><input class="sheet-value_display2" value="0" name="attr_animal2a_siz" type="text"/>
+								<p class="sheet-spirit_stat">TAM</p><input class="sheet-value_display2" value="0" name="attr_animal2a_siz" type="text"/>
 							</div>
 							<div>
 								<p class="sheet-spirit_stat">INT</p> <input class="sheet-value_display2" value="0" name="attr_animal2a_int" type="text"/> 
-								<p class="sheet-spirit_stat">POW</p><input class="sheet-value_display2" value="0" name="attr_animal2a_pow" type="text" />
-								<p class="sheet-spirit_stat">DEX</p><input class="sheet-value_display2" value="0" name="attr_animal2a_dex" type="text"/>
-								<p class="sheet-spirit_stat">CHA</p><input class="sheet-value_display2" value="0" name="attr_animal2a_cha" type="text"/>			
+								<p class="sheet-spirit_stat">POD</p><input class="sheet-value_display2" value="0" name="attr_animal2a_pow" type="text" />
+								<p class="sheet-spirit_stat">DES</p><input class="sheet-value_display2" value="0" name="attr_animal2a_dex" type="text"/>
+								<p class="sheet-spirit_stat">CAR</p><input class="sheet-value_display2" value="0" name="attr_animal2a_cha" type="text"/>			
 							</div>
 							<br />
 							<table>
@@ -1399,7 +1399,7 @@ THP 0/0
 									<tr>
 										<td>Mod. daño</td>
 										<td><input type="text"  class="sheet-value_display"  name="attr_animal2a_db" style="width:105px;" value="0" /></td>
-										<td>MSR</td>
+										<td>MMR</td>
 										<td><input type="text"  class="sheet-value_display2"  name="attr_animal2a_msr" value="0" />
 										</td>
 
@@ -1544,7 +1544,7 @@ THP 0/0
 			</fieldset>
 			
 			<br />
-			<div class="sheet-header">Seres de otros mundos</div>
+			<div class="sheet-header">Seres de otros planos</div>
 
 
 			<fieldset class="repeating_otherworld">
@@ -1554,13 +1554,13 @@ THP 0/0
 								<input class="sheet-value_display" type="text" value="name and type " style="width:244px;" name="attr_otherworld1_name" />
 							</div>
 							<div>
-								<p class="sheet-spirit_stat">STR</p> <input class="sheet-value_display2" value="0" name="attr_otherworld1a_str" type="text"/> 
-								<p class="sheet-spirit_stat">SIZ</p><input class="sheet-value_display2" value="0" name="attr_otherworld1a_siz" type="text"/>
+								<p class="sheet-spirit_stat">FUE</p> <input class="sheet-value_display2" value="0" name="attr_otherworld1a_str" type="text"/> 
+								<p class="sheet-spirit_stat">TAM</p><input class="sheet-value_display2" value="0" name="attr_otherworld1a_siz" type="text"/>
 								<p class="sheet-spirit_stat">INT</p> <input class="sheet-value_display2" value="0" name="attr_otherworld1a_int" type="text"/> 								
 							</div>
 							<div>
-								<p class="sheet-spirit_stat">CHR</p> <input class="sheet-value_display2" value="0" name="attr_otherworld1a_chr" type="text"/> 
-								<p class="sheet-spirit_stat">POW</p><input class="sheet-value_display2" value="0" name="attr_otherworld1a_pow" type="text" />
+								<p class="sheet-spirit_stat">CAR</p> <input class="sheet-value_display2" value="0" name="attr_otherworld1a_chr" type="text"/> 
+								<p class="sheet-spirit_stat">POD</p><input class="sheet-value_display2" value="0" name="attr_otherworld1a_pow" type="text" />
 								<button type="roll"  class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{otherworld1a_pow}*5)]]}} {{fumble=[[ceil(95+([[(@{otherworld1a_pow}*5)]])/20))]]}} {{crit=[[round(([[(@{otherworld1a_pow}*5)]])/20)+1]]}} {{special=[[round(([[(@{otherworld1a_pow}*5)]])/5)+1]]}}         {{success=[[(@{otherworld1a_pow}*5)]]}} {{roll=[[1d100]]}} {{skillname=POW Roll}}" ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{otherworld1a_pow}*?{multiplier|5})]]}} {{fumble=[[ceil(95+([[(@{otherworld1a_pow}*?{multiplier|5})]])/20))]]}} {{crit=[[round(([[(@{otherworld1a_pow}*?{multiplier|5})]])/20)+1]]}} {{special=[[round(([[(@{otherworld1a_pow}*?{multiplier|5})]])/5)+1]]}}         {{success=[[(@{otherworld1a_pow}*?{multiplier|5})]]}} {{roll=[[1d100]]}} {{skillname=POW Roll}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								<input type="checkbox"  name="attr_o1pow_check"/>									
 								
@@ -1716,7 +1716,7 @@ THP 0/0
 								
 							</div>
 							<br />
-							<p>Hit Locations</p>
+							<p>Localizaciones de golpe</p>
 							<textarea style="font-family:courier;margin:0px;" name="attr_otherworld2_hitloc" >
 D20	Result         AP/HP
 1-20	Body	0/0
@@ -1724,7 +1724,7 @@ THP 0/0
 							</textarea>
 							
 							<br />							
-							<p>Notes/Runes/Passions/Spells</p>
+							<p>Notas/Runas/Pasiones/Conjuros</p>
 							<textarea style="font-family:courier;margin:0px;" name="attr_otherworld2a_notes" ></textarea>	
 						</div><!-- otherworld 2 -->
 					</div>			
@@ -1739,14 +1739,14 @@ THP 0/0
 					
 		</div><!---- End of Tab  3-->
 		<div class="sheet-tab-contenta sheet-tab4a"><!--- Tab 4 start -->
-		<div style="text-align:center" class="sheet-header2">FAMILY</div>				
+		<div style="text-align:center" class="sheet-header2">FAMILIA</div>				
 		<div class='sheet-2colrow'>
 			<div class='sheet-col'>
-				<div class="sheet-skill_category">GRANDPARENTS</div>	
+				<div class="sheet-skill_category">ABUELOS</div>	
 				<div><span style="width:92px;display:inline-block;">Grandfather</span><input type="text" style="width:231px;" class="sheet-text_input" name="attr_grandfather" /> Dead? <input type="checkbox" name="attr_dead_gf" /></div>
 				<div><span style="width:92px;display:inline-block;">Grandmother</span><input type="text" style="width:231px;" class="sheet-text_input" name="attr_grandmother" /> Dead? <input type="checkbox" name="attr_dead_gm" /></div>
 				<br>
-				<div class="sheet-skill_category">AUNTS & UNCLES</div>
+				<div class="sheet-skill_category">TÍAS Y TÍOS</div>
 				<fieldset class="repeating_auntsUncles">
 					<div>
 						<input type="text" style="width:259px;" class="sheet-text_input" name="attr_auntuncle" />
@@ -1755,16 +1755,16 @@ THP 0/0
 					</div>
 				</fieldset>
 				<br>
-				<div class="sheet-skill_category">FAMOUS ANCESTORS</div>
+				<div class="sheet-skill_category">ANCESTROS FAMOSOS</div>
 				<textarea style="height:50px!important;" name="attr_ancestors"></textarea>
 				
 			</div>
 			<div class='sheet-col'>
-				<div class="sheet-skill_category">PARENTS</div>	
+				<div class="sheet-skill_category">PADRES</div>	
 				<div><span style="width:92px;display:inline-block;">Father</span><input type="text" style="width:231px;" class="sheet-text_input" name="attr_father" /> Dead? <input type="checkbox" name="attr_dead_f" /></div>
 				<div><span style="width:92px;display:inline-block;">Mother</span><input type="text" style="width:231px;" class="sheet-text_input" name="attr_mother" /> Dead? <input type="checkbox" name="attr_dead_m" /></div>
 				<br>
-				<div class="sheet-skill_category">SIBLINGS</div>
+				<div class="sheet-skill_category">HERMANOS</div>
 				<fieldset class="repeating_siblings">
 					<div>
 						<input type="text" style="width:259px;" class="sheet-text_input" name="attr_sibling" />
@@ -1773,7 +1773,7 @@ THP 0/0
 					</div>
 				</fieldset>
 				<br>
-				<div class="sheet-skill_category">CLAN & TRIBAL LEADERS</div>
+				<div class="sheet-skill_category">LÍDERES DEL CLAN Y TRIBU</div>
 				<textarea style="height:50px!important;" name="attr_leaders"></textarea>			
 			
 			
@@ -1781,10 +1781,10 @@ THP 0/0
 
 		</div>
 			<hr class="sheet-hr" />
-			<div style="text-align:center" class="sheet-header2">FAMILY EVENTS</div>				
+			<div style="text-align:center" class="sheet-header2">ACONTECIMIENTOS FAMILIARES</div>				
 			<div class='sheet-2colrow'>			
 				<div class='sheet-col'>							
-					<div class="sheet-skill_category">MARRIAGE</div>
+					<div class="sheet-skill_category">BODA</div>
 					<fieldset class="repeating_spouse">
 						<div>
 							<input type="text" style="width:259px;" class="sheet-text_input" name="attr_spouse" placeholder="Spouse (Marriage Type)" />
@@ -1793,12 +1793,12 @@ THP 0/0
 						</div>
 					</fieldset>					
 					<br>
-					<div class="sheet-skill_category">Events</div>
+					<div class="sheet-skill_category">Acontecimientos</div>
 					<textarea style="height:50px!important;" name="attr_marriageEvents"></textarea>			
 
 				</div>
 				<div class='sheet-col'>
-					<div class="sheet-skill_category">CHILDREN</div>
+					<div class="sheet-skill_category">HIJOS</div>
 					<fieldset class="repeating_children">
 						<div>
 							<input type="text" style="width:259px;" class="sheet-text_input" name="attr_spouse" placeholder="Child" />
@@ -1810,48 +1810,48 @@ THP 0/0
 				</div>			
 			</div>
 			<hr class="sheet-hr" />
-			<div style="text-align:center" class="sheet-header2">HOLDINGS</div>	
+			<div style="text-align:center" class="sheet-header2">POESIONES</div>	
 			<div class='sheet-2colrow'>			
 				<div class='sheet-col'>
-					<span class="sheet-skill_category">HARVEST</span><span style="margin-left:284px;" class="sheet-skill_category">Mod.</span>
+					<span class="sheet-skill_category">COSECHA</span><span style="margin-left:284px;" class="sheet-skill_category">Mod.</span>
 					<div>
-						<span style="width:115px;display:inline-block;">Last Year's Omen</span>
+						<span style="width:115px;display:inline-block;">Augurio del año pasado</span>
 						<input type="text" style="width:206px;" class="sheet-text_input" name="attr_LastOmen" /> 
 						<input class="sheet-text_input sheet-percentiles" name="attr_LastOmenMod" />						
 					</div>
 					<div>
-						<span style="width:92px;display:inline-block;">Raiding</span>
+						<span style="width:92px;display:inline-block;">Incursión</span>
 						<input type="text" style="width:231px;" class="sheet-text_input" name="attr_raiding" /> 
 						<input class="sheet-text_input sheet-percentiles" name="attr_raidingMod" />						
 					</div>					
 					<div>
-						<span style="width:92px;display:inline-block;">Heroquest</span>
+						<span style="width:92px;display:inline-block;">Búsqueda heroica</span>
 						<input type="text" style="width:231px;" class="sheet-text_input" name="attr_heroquest" /> 
 						<input class="sheet-text_input sheet-percentiles" name="attr_heroquestMod" />						
 					</div>	
 					<div>
-						<span style="width:156px;display:inline-block;">Previous Year's Harvest</span>
+						<span style="width:156px;display:inline-block;">Cosecha del año anterior</span>
 						<input type="text" style="width:168px;" class="sheet-text_input" name="attr_prevHarvest" /> 
 						<input class="sheet-text_input sheet-percentiles" name="attr_prevHarvestMod" />						
 					</div>						
 					<div>
-						<span style="width:119px;display:inline-block;">Next Year's Omen</span>
+						<span style="width:119px;display:inline-block;">Augurio del año próximo</span>
 						<input type="text" style="width:206px;" class="sheet-text_input" name="attr_nextOmen" /> 
 						<input class="sheet-text_input sheet-percentiles" name="attr_nextOmenMod" />						
 					</div>					
 					<br>
-					<div class="sheet-skill_category">CHARACTER INCOME</div>
+					<div class="sheet-skill_category">INGRESOS DEL PERSONAJE</div>
 					<div>
-						<span style="width:86px;display:inline-block;">Base Income</span>
+						<span style="width:86px;display:inline-block;">Ingresos básicos</span>
 						<input type="text" style="width:50px;" class="sheet-text_input" name="attr_income" /><span> Lunars</span> 						
 					</div>
 					<div>
-						<span>Special Notes</span>
+						<span>Notas especiales</span>
 						<textarea style="height:50px!important;" name="attr_spclNotes"></textarea>			
 					</div>
 				</div>
 				<div class='sheet-col'>	
-					<span class="sheet-skill_category">HOUSEHOLD</span ><span style="float:right"><span>Hides</span><input type="text" style="width:50px;" class="sheet-text_input" name="attr_hides" /></span>
+					<span class="sheet-skill_category">CASA</span ><span style="float:right"><span>Hides</span><input type="text" style="width:50px;" class="sheet-text_input" name="attr_hides" /></span>
 					<div>Description</div>
 					<textarea style="height:50px!important;" name="attr_household"></textarea>								
 					<div>
@@ -1867,20 +1867,20 @@ THP 0/0
 <!-- start QS sheet -->
 <input type="checkbox" class="sheet-toggleQSSheet" name="attr_toggleQSSheet"  checked="checked" style="display: none">
 <div class="sheet-QSSheet">
-	<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab1" value="1" title="Background" checked="checked" /><span title="Basic"></span>
-	<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab2" value="2" title="Skills" /><span title="Skills"></span>
-	<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab3" value="3" title="Combat" /><span title="Combat"></span>
-	<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab4" value="4" title="Equipment" /><span title="Equipment"></span>
-	<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab5" value="5" title="Magic" /><span title="Magic"></span>
+	<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab1" value="1" title="Trasfondo" checked="checked" /><span title="Básico"></span>
+	<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab2" value="2" title="Habilidades" /><span title="Habilidades"></span>
+	<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab3" value="3" title="Combate" /><span title="Combate"></span>
+	<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab4" value="4" title="Equipo" /><span title="Equipo"></span>
+	<input type="radio" name="attr_tab1" class="sheet-tab sheet-tab5" value="5" title="Magia" /><span title="Magia"></span>
 	<div style="background-color:#ac6e73" class="sheet-tab-content sheet-tab1">
 		<div class="sheet-cdiv">
 					<input class="sheet-HideConfig" type="checkbox" checked="checked" name="attr_is_config"><span class="sheet-is-config"><span style="font-family: &quot;pictos&quot;">y</span></span>
 					<div class="sheet-config" style="border-style: dotted ; border-color: gray ; padding: 5px ; background-color: white ; background-image: none">
 
 							<br />
-						<input type="checkbox" class="sheet-toggleQSSheet" name="attr_toggleQSSheet"  checked="checked">Display Quick Start Sheet
-						<input type="checkbox" class="sheet-toggleFullSheet" name="attr_toggleFullSheet">Display Full Sheet
-						<input type="checkbox" class="sheet-toggleNPC1Sheet" name="attr_toggleNPC1Sheet">Display NPC Sheet
+						<input type="checkbox" class="sheet-toggleQSSheet" name="attr_toggleQSSheet"  checked="checked">Mostrar hoja del Quick Start
+						<input type="checkbox" class="sheet-toggleFullSheet" name="attr_toggleFullSheet">Mostrar hoja completa
+						<input type="checkbox" class="sheet-toggleNPC1Sheet" name="attr_toggleNPC1Sheet">Mostrar hoja de PNJ
 
 
 					</div>
@@ -1890,17 +1890,17 @@ THP 0/0
 			<div class='sheet-col'>
 			  <div class='sheet-2colrow'>
 				<div style="width:47%;margin-right:5px;background-color:white;border-radius:6px;padding:1px;padding-bottom:8px;" class="sheet-col">
-					<label>Characteristics</label>
+					<label>Características</label>
 
 
 					<div>
 
 						<div>
 								<label style="margin-left:56px;display:inline;font-size:0.6em">Orig.</label>
-								<label style="margin-left:5px;display:inline;font-size:0.6em">Cur.</label>
+								<label style="margin-left:5px;display:inline;font-size:0.6em">Act.</label>
 						</div>
 						<div>
-							<div class="sheet-char_button">STR</div>
+							<div class="sheet-char_button">FUE</div>
 							<input type="text" class="sheet-skill_values" name="attr_origstr" value="0"/>
 							<input type="text" class="sheet-skill_values" name="attr_curstr" value="0"/>
 							
@@ -1916,7 +1916,7 @@ THP 0/0
 						</div>	
 
 						<div>
-							<div class="sheet-char_button">SIZ</div>
+							<div class="sheet-char_button">TAM</div>
 							<input type="text" class="sheet-skill_values" name="attr_origsiz" value="0" />
 							<input type="text" class="sheet-skill_values" name="attr_cursiz" value="0"/>
 							<button type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{cursiz}*5)@{enc_mod}]]}} {{fumble=[[ceil(95+([[(@{cursiz}*5)@{enc_mod}]])/20))]]}} {{crit=[[ceil(([[(@{cursiz}*5)@{enc_mod}]])/20)+1]]}} {{special=[[ceil(([[(@{cursiz}*5)@{enc_mod}]])/5)+1]]}}         {{success=[[(@{cursiz}*5)@{enc_mod}]]}} {{roll=[[1d100]]}} {{skillname=SIZ Roll}}"  ></button><button class="new_roll2" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{cursiz}*?{multiplier|5})@{enc_mod}]]}} {{fumble=[[ceil(95+([[(@{cursiz}*?{multiplier|5})@{enc_mod}]])/20))]]}} {{crit=[[ceil(([[(@{cursiz}*?{multiplier|5})@{enc_mod}]])/20)+1]]}} {{special=[[ceil(([[(@{cursiz}*?{multiplier|5})@{enc_mod}]])/5)+1]]}}         {{success=[[(@{cursiz}*?{multiplier|5})@{enc_mod}]]}} {{roll=[[1d100]]}} {{skillname=SIZ Roll}}"  ></button>	
@@ -1931,7 +1931,7 @@ THP 0/0
 						</div>
 						
 						<div>
-							<div class="sheet-char_button">POW</div>						
+							<div class="sheet-char_button">POD</div>						
 
 							<input type="text" class="sheet-skill_values" name="attr_origpow" value="0"/>
 							<input type="text" class="sheet-skill_values" name="attr_curpow" value="0"/>
@@ -1940,7 +1940,7 @@ THP 0/0
 						</div>
 
 						<div>
-							<div class="sheet-char_button">DEX</div>						
+							<div class="sheet-char_button">DES</div>						
 
 							<input type="text" class="sheet-skill_values" name="attr_origdex" value="0"/>	
 							<input type="text" class="sheet-skill_values" name="attr_curdex" value="0"/>
@@ -1948,7 +1948,7 @@ THP 0/0
 						</div>
 
 						<div>	
-						    <div class="sheet-char_button">CHR</div>
+						    <div class="sheet-char_button">CAR</div>
 							<input type="text" class="sheet-skill_values" name="attr_origchr" value="0"/>	
 							<input type="text" class="sheet-skill_values" name="attr_curchr" value="0"/>
 
@@ -1958,7 +1958,7 @@ THP 0/0
 					</div>
 				</div>
 				<div style="background-color:white;border-radius:6px;padding:1px;padding-bottom:8px" class="sheet-col">
-					<label>Attributes</label>
+					<label>Atributos</label>
 
 						<!--
 						<div>
@@ -1967,36 +1967,36 @@ THP 0/0
 						</div>
 						-->
 					<div>
-						<label class="sheet-attribute_label">Damage Modifier</label>
+						<label class="sheet-attribute_label">Modificador al daño</label>
 						<input style="width:50px;" type="text" readonly name="attr_damagebonus" />
 						<input style="display:none" type="text" readonly name="attr_mdamagebonus" />							
 					</div>
 					<div>
-						<label class="sheet-attribute_label">Move Rate</label>
+						<label class="sheet-attribute_label">Movimiento</label>
 						<input style="margin-left:-36px;width:25px;" type="text"  value="8" name="attr_move_rate" />
 						<input style="width:25px;" type="text" disabled value="round(@{enc_mod}/5)]" name="attr_move_mod" />					<input style="width:25px;" type="text" disabled value="[@{move_rate}+(round(@{enc_mod}/5))]" name="attr_move_mod" />														
 					</div>	
 					<div>
-						<label class="sheet-attribute_label">Dex SRM</label>
+						<label class="sheet-attribute_label">MR-DES</label>
 						<input style="width:50px;" value="0" type="text" readonly name="attr_dex_srm" />	
 					</div>	
 					<div>
-						<label class="sheet-attribute_label">Size SRM</label>
+						<label class="sheet-attribute_label">MR-TAM</label>
 						<input style="width:50px;" value="0" type="text" readonly name="attr_siz_srm" />	
 					</div>		
 					<div>
-						<label class="sheet-attribute_label">Melee SRM</label>
+						<label class="sheet-attribute_label">MR-CaC</label>
 						<input style="width:50px;" value="0" type="text" readonly name="attr_melee_srm" />	
 					</div>		
 					
 					<div>
-						<label class="sheet-attribute_label">Parry</label>
+						<label class="sheet-attribute_label">Detención</label>
 						<input style="width:50px;" value="0" type="text" readonly name="attr_parry_mod" />	
 					</div>					
 					
 					<div>
 					   
-						<label style="width:74px" class="sheet-attribute_label">Defense</label>(<span style="display:inline-block;width:21px" name="attr_enc_mod" ></span>)
+						<label style="width:74px" class="sheet-attribute_label">Defensa</label>(<span style="display:inline-block;width:21px" name="attr_enc_mod" ></span>)
 						<input style="width:50px;" value="0" type="text" readonly name="attr_defense" />	
 					</div>		
 
@@ -2025,36 +2025,36 @@ THP 0/0
 				</div>
 			</div>	
 				<div style="background-color:white;border-radius:6px;padding:2px;padding-bottom:8px"  class="sheet-col">
-					<label>Personal Information</label>
+					<label>Información personal</label>
 					<div>
-						<label class="sheet-personal_label">Name</label>
+						<label class="sheet-personal_label">Nombre</label>
 						<input class="sheet-personal_text" style="width:326px;" type="text"  name="attr_character_name" />	
 					</div>
 					<div>
-						<label class="sheet-personal_label">Species</label>
+						<label class="sheet-personal_label">Especie</label>
 						<input class="sheet-personal_text" style="width:312px;" type="text" name="attr_species" />	
 					</div>		
 					<div>
-						<label class="sheet-personal_label">Age</label>
+						<label class="sheet-personal_label">Edad</label>
 						<input class="sheet-personal_text" style="width:5em;" type="number" name="attr_age" />	
-						<label class="sheet-personal_label">Gender</label>
+						<label class="sheet-personal_label">Género</label>
 						<input class="sheet-personal_text" style="width:208px;" type="text" name="attr_gender" />	
 						
 					</div>
 					<div>
-						<label class="sheet-personal_label">Occupation</label>
+						<label class="sheet-personal_label">Ocupación</label>
 						<input class="sheet-personal_text" style="width:288px;" type="text" name="attr_occupation" />	
 					</div>
 					<div>
-						<label class="sheet-personal_label">Culture</label>
+						<label class="sheet-personal_label">Cultura</label>
 						<input class="sheet-personal_text" style="width:313px;" type="text" name="attr_culture" />	
 					</div>			
 					<div>
-						<label class="sheet-personal_label">Religion</label>
+						<label class="sheet-personal_label">Religión</label>
 						<input class="sheet-personal_text" style="width:308px;" type="text" name="attr_religion" />	
 					</div>
 					<div>
-						<label class="sheet-personal_label">Reputation</label>
+						<label class="sheet-personal_label">Reputación</label>
 						<input class="sheet-personal_text"  value="0" style="width:50px;" type="text" name="attr_reputation" />	
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=@{reputation}}} {{fumble=[[ceil(95+(@{reputation})/20))]]}} {{crit=[[ceil((@{reputation})/20)+1]]}} {{special=[[ceil((@{reputation})/5)+1]]}}         {{success=[[@{reputation}]]}} {{roll=[[1d100]]}} {{skillname=Reputation}}" ></button>										
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=@{reputation}}} {{fumble=[[ceil(95+(@{reputation}+?{Mods|0})/20))]]}} {{crit=[[ceil((@{reputation}+?{Mods|0})/20)+1]]}} {{special=[[ceil((@{reputation}+?{Mods|0})/5)+1]]}}         {{success=[[@{reputation}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Reputation}}"  ></button>								
@@ -2066,9 +2066,9 @@ THP 0/0
 		<div style="background:white;paddig:5px;border-radius:6px" >
 			<label>Cult Membership</label>
 			<div class="sheet-melee_wpns_labels">
-				<label style="width:216px">Cult</label>   
-				<label style="width:64px">Rank</label>
-				<label style="width:30px">Gifts\Geases\Notes</label>
+				<label style="width:216px">Culto</label>   
+				<label style="width:64px">Rango</label>
+				<label style="width:30px">Dones\Contrapartidas\Notas</label>
 			</div>
 			<fieldset class="repeating_cults2">
 				<input style="width:200px;" type ="text" name="attr_cult" />
