@@ -2079,7 +2079,7 @@ THP 0/0
 		
 		<br />
 		<div style="background:white;paddig:5px;border-radius:6px" >
-			<label>Notes etc</label>
+			<label>Notas etc.</label>
 			<textarea style="margin-left:4px;width:97%" name="attr_notes">
 			</textarea>
 		</div>
@@ -2101,14 +2101,14 @@ THP 0/0
 			<div style="margin-right:10px" class='sheet-col'>
 			 <div style="background-color:white;padding-bottom:13px;border-radius:6px">	
 				<div>
-					<label class="sheet-category_label">Agility</label>
+					<label class="sheet-category_label">Agilidad</label>
 					<input class="sheet-skill_values" type="text" value="0" disabled readonly name="attr_agility_mod" />
 				</div>
 				
 <!--				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_boat_check" />
-					<div class="sheet-skill_button">Boat</div>
+					<div class="sheet-skill_button">Remar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_aname}}} {{skillvalue=[@{boat_total}]}} {{fumble=[[ceil(95+([@{boat_total}])/20))]]}} {{crit=[[ceil(([@{boat_total}])/20)+1]]}} {{special=[[ceil(([@{boat_total}])/5)+1]]}}         {{success=[[[@{boat_total}]]]}} {{roll=[[1d100]]}} {{skillname=Boat}}" ></button>			
 					<button  class="sheet-new_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{boat_total}]}} {{fumble=[[ceil(95+([@{boat_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{boat_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{boat_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{boat_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Boat}}"   type="roll"></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_boat_value" />
@@ -2117,7 +2117,7 @@ THP 0/0
 -->				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_climb_check" />
-					<div class="sheet-skill_button">Climb</div>
+					<div class="sheet-skill_button">Trepar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{climb_total}]}} {{fumble=[[ceil(95+([@{climb_total}])/20))]]}} {{crit=[[ceil(([@{climb_total}])/20)+1]]}} {{special=[[ceil(([@{climb_total}])/5)+1]]}}         {{success=[[[@{climb_total}]]]}} {{roll=[[1d100]]}} {{skillname=Climb}}"   ></button>					
 					<button   class="sheet-new_roll"  value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{climb_total}]}} {{fumble=[[ceil(95+([@{climb_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{climb_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{climb_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{climb_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Climb}}"  type="roll"></button>		
 					<input class="sheet-skill_values" type="text" value="40" name="attr_climb_value" />
@@ -2127,7 +2127,7 @@ THP 0/0
 
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_dodge_check" />
-					<div class="sheet-skill_button">Dodge(Dx2)</div>
+					<div class="sheet-skill_button">Esquivar (DESx2)</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{dodge_total}]}} {{fumble=[[ceil(95+([@{dodge_total}])/20))]]}} {{crit=[[ceil(([@{dodge_total}])/20)+1]]}} {{special=[[ceil(([@{dodge_total}])/5)+1]]}}         {{success=[[[@{dodge_total}]]]}} {{roll=[[1d100]]}} {{skillname=Dodge}}" ></button>								
 					<button  class="sheet-new_roll"  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{dodge_total}]}} {{fumble=[[ceil(95+([@{dodge_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{dodge_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{dodge_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{dodge_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Dodge}}"   ></button>		
 					<input class="sheet-skill_values" type="text" value="0" name="attr_dodge_value" />
@@ -2136,7 +2136,7 @@ THP 0/0
 
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_jump_check" />
-					<div class="sheet-skill_button">Jump (Dx3)</div>
+					<div class="sheet-skill_button">Saltar (DESx3)</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{jump_total}]}} {{fumble=[[ceil(95+([@{jump_total}])/20))]]}} {{crit=[[ceil(([@{jump_total}])/20)+1]]}} {{special=[[ceil(([@{jump_total}])/5)+1]]}}         {{success=[[[@{jump_total}]]]}} {{roll=[[1d100]]}} {{skillname=Jump}}" ></button>								
 					<button   class="sheet-new_roll"  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{jump_total}]}} {{fumble=[[ceil(95+([@{jump_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{jump_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{jump_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{jump_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Jump}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="0" name="attr_jump_value" />
@@ -2145,7 +2145,7 @@ THP 0/0
 				
 				<div style="margin-bottom:2px" >	
 					<input  style="display:inline-block" type="checkbox" name="attr_ride_check" />
-					<div class="sheet-skill_button">Ride</div>
+					<div class="sheet-skill_button">Montar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{ride_total}]}} {{fumble=[[ceil(95+([@{ride_total}])/20))]]}} {{crit=[[ceil(([@{ride_total}])/20)+1]]}} {{special=[[ceil(([@{ride_total}])/5)+1]]}}         {{success=[[[@{ride_total}]]]}} {{roll=[[1d100]]}} {{skillname=Ride}}"  ></button>								
 					<button   class="sheet-new_roll" type="roll"  value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{ride_total}]}} {{fumble=[[ceil(95+([@{ride_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{ride_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{ride_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{ride_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Ride}}"   ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_ride_value" />
@@ -2154,7 +2154,7 @@ THP 0/0
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_swim_check" />
-					<div class="sheet-skill_button">Swim</div> 
+					<div class="sheet-skill_button">Nadar</div> 
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{swim_total}]}} {{fumble=[[ceil(95+([@{swim_total}])/20))]]}} {{crit=[[ceil(([@{swim_total}])/20)+1]]}} {{special=[[ceil(([@{swim_total}])/5)+1]]}}         {{success=[[[@{swim_total}]]]}} {{roll=[[1d100]]}} {{skillname=Swim}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{swim_total}]}} {{fumble=[[ceil(95+([@{swim_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{swim_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{swim_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{swim_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Swim}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="15" name="attr_swim_value" />
@@ -2163,7 +2163,7 @@ THP 0/0
 				<!--	
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_throw_check" />
-					<div class="sheet-skill_button">Throw</div>
+					<div class="sheet-skill_button">Arrojar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{throw_total}]}} {{fumble=[[ceil(95+([@{throw_total}])/20))]]}} {{crit=[[ceil(([@{throw_total}])/20)+1]]}} {{special=[[ceil(([@{throw_total}])/5)+1]]}}         {{success=[[[@{throw_total}]]]}} {{roll=[[1d100]]}} {{skillname=Throw}}"  ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{throw_total}]}} {{fumble=[[ceil(95+([@{throw_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{throw_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{throw_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{throw_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Throw}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="25" name="attr_throw_value" />
@@ -2193,7 +2193,7 @@ THP 0/0
 				<br>
 				<div style="background-color:white;padding-bottom:13px;border-radius:6px">
 				<div>
-					<label class="sheet-category_label">Communications</label>
+					<label class="sheet-category_label">Comunicación</label>
 					<input class="sheet-skill_values" type="text" value="0" disabled readonly  name="attr_Communications_mod" />
 				</div>		
 
@@ -2208,7 +2208,7 @@ THP 0/0
 
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_art_check" />
-					<div class="sheet-skill_button">Art</div>
+					<div class="sheet-skill_button">Arte</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{art_total}]}} {{fumble=[[ceil(95+([@{art_total}])/20))]]}} {{crit=[[ceil(([@{art_total}])/20)+1]]}} {{special=[[ceil(([@{art_total}])/5)+1]]}}         {{success=[[[@{art_total}]]]}} {{roll=[[1d100]]}} {{skillname=Art}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{art_total}]}} {{fumble=[[ceil(95+([@{art_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{art_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{art_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{art_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Art}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_art_value" />
@@ -2217,7 +2217,7 @@ THP 0/0
 
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_bargain_check" />
-					<div class="sheet-skill_button">Bargain</div>
+					<div class="sheet-skill_button">Regatear</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{bargain_total}]}} {{fumble=[[ceil(95+([@{bargain_total}])/20))]]}} {{crit=[[ceil(([@{bargain_total}])/20)+1]]}} {{special=[[ceil(([@{bargain_total}])/5)+1]]}}         {{success=[[[@{bargain_total}]]]}} {{roll=[[1d100]]}} {{skillname=Bargain}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{bargain_total}]}} {{fumble=[[ceil(95+([@{bargain_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{bargain_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{bargain_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{bargain_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Bargain}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_bargain_value" />
@@ -2226,7 +2226,7 @@ THP 0/0
 
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_charm_check" />
-					<div class="sheet-skill_button">Charm</div>
+					<div class="sheet-skill_button">Cautivar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{charm_total}]}} {{fumble=[[ceil(95+([@{charm_total}])/20))]]}} {{crit=[[ceil(([@{charm_total}])/20)+1]]}} {{special=[[ceil(([@{charm_total}])/5)+1]]}}         {{success=[[[@{charm_total}]]]}} {{roll=[[1d100]]}} {{skillname=Charm}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{charm_total}]}} {{fumble=[[ceil(95+([@{charm_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{charm_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{charm_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{charm_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Charm}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="15" name="attr_charm_value" />
@@ -2235,7 +2235,7 @@ THP 0/0
 
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_dance_check" />
-					<div class="sheet-skill_button">Dance</div>
+					<div class="sheet-skill_button">Bailar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{dance_total}]}} {{fumble=[[ceil(95+([@{dance_total}])/20))]]}} {{crit=[[ceil(([@{dance_total}])/20)+1]]}} {{special=[[ceil(([@{dance_total}])/5)+1]]}}         {{success=[[[@{dance_total}]]]}} {{roll=[[1d100]]}} {{skillname=Dance}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{dance_total}]}} {{fumble=[[ceil(95+([@{dance_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{dance_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{dance_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{dance_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Dance}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="10" name="attr_dance_value" />
@@ -2244,7 +2244,7 @@ THP 0/0
 
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_disguise_check" />
-					<div class="sheet-skill_button">Disguise</div>
+					<div class="sheet-skill_button">Disfrazarse</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{disguise_total}]}} {{fumble=[[ceil(95+([@{disguise_total}])/20))]]}} {{crit=[[ceil(([@{disguise_total}])/20)+1]]}} {{special=[[ceil(([@{disguise_total}])/5)+1]]}}         {{success=[[[@{disguise_total}]]]}} {{roll=[[1d100]]}} {{skillname=Disguise}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{disguise_total}]}} {{fumble=[[ceil(95+([@{disguise_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{disguise_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{disguise_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{disguise_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Disguise}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_disguise_value" />
@@ -2253,7 +2253,7 @@ THP 0/0
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_fast_talk__check" />
-					<div class="sheet-skill_button">Fast Talk</div>
+					<div class="sheet-skill_button">Habla Fluida</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{fast_talk_total}]}} {{fumble=[[ceil(95+([@{fast_talk_total}])/20))]]}} {{crit=[[ceil(([@{fast_talk_total}])/20)+1]]}} {{special=[[ceil(([@{fast_talk_total}])/5)+1]]}}         {{success=[[[@{fast_talk_total}]]]}} {{roll=[[1d100]]}} {{skillname=Fast Talk}}"  ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{fast_talk_total}]}} {{fumble=[[ceil(95+([@{fast_talk_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{fast_talk_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{fast_talk_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{fast_talk_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Fast_talk}}"></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_fast_talk_value" />
@@ -2262,7 +2262,7 @@ THP 0/0
 
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_intimidate_check" />
-					<div class="sheet-skill_button">Intimidate</div>
+					<div class="sheet-skill_button">Intimidar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{intimidate_total}]}} {{fumble=[[ceil(95+([@{intimidate_total}])/20))]]}} {{crit=[[ceil(([@{intimidate_total}])/20)+1]]}} {{special=[[ceil(([@{intimidate_total}])/5)+1]]}}         {{success=[[[@{intimidate_total}]]]}} {{roll=[[1d100]]}} {{skillname=Intimidate}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{intimidate_total}]}} {{fumble=[[ceil(95+([@{intimidate_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{intimidate_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{intimidate_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{intimidate_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Intimidate}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="15" name="attr_intimidate_value" />
@@ -2271,7 +2271,7 @@ THP 0/0
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_orate_check" />
-					<div class="sheet-skill_button">Orate</div>
+					<div class="sheet-skill_button">Oratoria</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{orate_total}]}} {{fumble=[[ceil(95+([@{orate_total}])/20))]]}} {{crit=[[ceil(([@{orate_total}])/20)+1]]}} {{special=[[ceil(([@{orate_total}])/5)+1]]}}         {{success=[[[@{orate_total}]]]}} {{roll=[[1d100]]}} {{skillname=Orate}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{orate_total}]}} {{fumble=[[ceil(95+([@{orate_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{orate_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{orate_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{orate_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Orate}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_orate_value" />
@@ -2280,16 +2280,16 @@ THP 0/0
 
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_sing_check" />
-					<div class="sheet-skill_button">Sing</div>
+					<div class="sheet-skill_button">Cantar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{sing_total}]}} {{fumble=[[ceil(95+([@{sing_total}])/20))]]}} {{crit=[[ceil(([@{sing_total}])/20)+1]]}} {{special=[[ceil(([@{sing_total}])/5)+1]]}}         {{success=[[[@{sing_total}]]]}} {{roll=[[1d100]]}} {{skillname=sing}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{sing_total}]}} {{fumble=[[ceil(95+([@{sing_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{sing_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{sing_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{sing_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Sing}}"  ></button>
 					<input class="sheet-skill_values" type="text" value="5" name="attr_sing_value" />
 					<input class="sheet-skill_values" type="text" disabled value="[@{Communications_mod}+@{sing_value}+@{fatigue_mod}]" name="attr_sing_total" />
 				</div>	
-				<p style="font-weight:bold;margin-bottom:1px">Speak Languages</p>
+				<p style="font-weight:bold;margin-bottom:1px">Hablar Idiomas</p>
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_own_lang_check" />
-					<div class="sheet-skill_button">Own</div>
+					<div class="sheet-skill_button">Propio</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{own_lang_total}]}} {{fumble=[[ceil(95+([@{own_lang_total}])/20))]]}} {{crit=[[ceil(([@{own_lang_total}])/20)+1]]}} {{special=[[ceil(([@{own_lang_total}])/5)+1]]}} {{success=[[[@{own_lang_total}]]]}} {{roll=[[1d100]]}} {{skillname=Own Lang.}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{own_lang_total}]}} {{fumble=[[ceil(95+([@{own_lang_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{own_lang_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{own_lang_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{own_lang_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Own Lang.}}"  ></button>
 		
@@ -2333,13 +2333,13 @@ THP 0/0
 			<div style="margin-right:15px" class='sheet-col'>
 				<div style="background-color:white;padding-bottom:13px;border-radius:6px">
 				<div>
-					<label class="sheet-category_label">Knowledge</label>
+					<label class="sheet-category_label">Conocimiento</label>
 					<input class="sheet-skill_values" type="text" value="0" disabled readonly  name="attr_knowledge_mod" />
 				</div>	
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_battle_check" />
-					<div class="sheet-skill_button">Battle</div>
+					<div class="sheet-skill_button">Batallar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{battle_total}]}} {{fumble=[[ceil(95+([@{battle_total}])/20))]]}} {{crit=[[ceil(([@{battle_total}])/20)+1]]}} {{special=[[ceil(([@{battle_total}])/5)+1]]}}         {{success=[[[@{battle_total}]]]}} {{roll=[[1d100]]}} {{skillname=Battle}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{battle_total}]}} {{fumble=[[ceil(95+([@{battle_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{battle_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{battle_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{battle_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Battle}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="10" name="attr_battle_value" />
@@ -2350,7 +2350,7 @@ THP 0/0
 				<!--
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_sing_check" />
-					<div class="sheet-skill_button">Animal Lore</div>
+					<div class="sheet-skill_button">Con. Animal</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{animal_lore_total}]}} {{fumble=[[ceil(95+([@{animal_lore_total}])/20))]]}} {{crit=[[ceil(([@{animal_lore_total}])/20)+1]]}} {{special=[[ceil(([@{animal_lore_total}])/5)+1]]}}         {{success=[[[@{animal_lore_total}]]]}} {{roll=[[1d100]]}} {{skillname=Animal Lore}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{animal_lore_total}]}} {{fumble=[[ceil(95+([@{animal_lore_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{animal_lore_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{animal_lore_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{animal_lore_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Animal Lore}}"  ></button>	
 					<input class="sheet-skill_values" type="text" value="5" name="attr_animal_lore_value" />
@@ -2361,7 +2361,7 @@ THP 0/0
 	
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_evaluate_check" />
-					<div class="sheet-skill_button">Evaluate</div>
+					<div class="sheet-skill_button">Valoración de objetos</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{evaluate_total}]}} {{fumble=[[ceil(95+([@{evaluate_total}])/20))]]}} {{crit=[[ceil(([@{evaluate_total}])/20)+1]]}} {{special=[[ceil(([@{evaluate_total}])/5)+1]]}}         {{success=[[[@{evaluate_total}]]]}} {{roll=[[1d100]]}} {{skillname=Evaluate}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{evaluate_total}]}} {{fumble=[[ceil(95+([@{evaluate_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{evaluate_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{evaluate_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{evaluate_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Evaluate}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_evaluate_value" />
@@ -2370,7 +2370,7 @@ THP 0/0
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_farm_check" />
-					<div class="sheet-skill_button">Farm</div>
+					<div class="sheet-skill_button">Agricultura</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{farm_total}]}} {{fumble=[[ceil(95+([@{farm_total}])/20))]]}} {{crit=[[ceil(([@{farm_total}])/20)+1]]}} {{special=[[ceil(([@{farm_total}])/5)+1]]}}         {{success=[[[@{farm_total}]]]}} {{roll=[[1d100]]}} {{skillname=Farm}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{farm_total}]}} {{fumble=[[ceil(95+([@{farm_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{farm_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{farm_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{farm_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Farm}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_farm_value" />
@@ -2379,14 +2379,14 @@ THP 0/0
 
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_firstaid_check" />
-					<div class="sheet-skill_button">First Aid</div>
+					<div class="sheet-skill_button">Primeros auxilios</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{firstaid_total}]}} {{fumble=[[ceil(95+([@{firstaid_total}])/20))]]}} {{crit=[[ceil(([@{firstaid_total}])/20)+1]]}} {{special=[[ceil(([@{firstaid_total}])/5)+1]]}}         {{success=[[[@{firstaid_total}]]]}} {{roll=[[1d100]]}} {{skillname=First Aid}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{firstaid_total}]}} {{fumble=[[ceil(95+([@{firstaid_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{firstaid_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{firstaid_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{firstaid_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=First Aid}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="10" name="attr_firstaid_value" />
 					<input class="sheet-skill_values" type="text" disabled value="[@{knowledge_mod}+@{firstaid_value}+@{fatigue_mod}]" name="attr_firstaid_total" />
 				</div>				
 
-				<p style="font-weight:bold;margin-bottom:1px">Herd</p>
+				<p style="font-weight:bold;margin-bottom:1px">Ganadería</p>
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_own_herd1_check" />
 					<input class="sheet-blank_skill" style="display:inline-block;" type="text" name="attr_herd1_name" />
@@ -2407,7 +2407,7 @@ THP 0/0
 				<!--
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_human_lore_check" />
-					<div class="sheet-skill_button">Human Lore</div>
+					<div class="sheet-skill_button">Con. Humano</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{human_lore_total}]}} {{fumble=[[ceil(95+([@{human_lore_total}])/20))]]}} {{crit=[[ceil(([@{human_lore_total}])/20)+1]]}} {{special=[[ceil(([@{human_lore_total}])/5)+1]]}}         {{success=[[[@{human_lore_total}]]]}} {{roll=[[1d100]]}} {{skillname=Human Lore}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{human_lore_total}]}} {{fumble=[[ceil(95+([@{human_lore_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{human_lore_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{human_lore_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{human_lore_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Human Lore}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_human_lore_value" />
@@ -2417,7 +2417,7 @@ THP 0/0
 				<!--
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_martial_arts" />
-					<div class="sheet-skill_button">Martial Arts</div>
+					<div class="sheet-skill_button">Artes Marciales</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{martial_arts_total}]}} {{fumble=[[ceil(95+([@{martial_arts_total}])/20))]]}} {{crit=[[ceil(([@{martial_arts_total}])/20)+1]]}} {{special=[[ceil(([@{martial_arts_total}])/5)+1]]}}         {{success=[[[@{martial_arts_total}]]]}} {{roll=[[1d100]]}} {{skillname=Martial Arts}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{martial_arts_total}]}} {{fumble=[[ceil(95+([@{martial_arts_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{martial_arts_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{martial_arts_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{martial_arts_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Martial Arts}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="0" name="attr_martial_arts_value" />
@@ -2428,7 +2428,7 @@ THP 0/0
 				<p style="font-weight:bold;margin-bottom:1px">Lore</p>
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_lore_check" />
-					<div class="sheet-skill_button">Homeland</div>
+					<div class="sheet-skill_button">Tierra Natal</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{lore_total}]}} {{fumble=[[ceil(95+([@{lore_total}])/20))]]}} {{crit=[[ceil(([@{lore_total}])/20)+1]]}} {{special=[[ceil(([@{lore_total}])/5)+1]]}} {{success=[[[@{lore_total}]]]}} {{roll=[[1d100]]}} {{skillname=Homeland Lore}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{lore_total}]}} {{fumble=[[ceil(95+([@{lore_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{lore_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{lore_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{lore_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Home Land Lore}}"  ></button>
 		
@@ -2471,7 +2471,7 @@ THP 0/0
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_manage_check" />
-					<div class="sheet-skill_button">Manage</div>
+					<div class="sheet-skill_button">Gestionar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{manage_total}]}} {{fumble=[[ceil(95+([@{manage_total}])/20))]]}} {{crit=[[ceil(([@{manage_total}])/20)+1]]}} {{special=[[ceil(([@{manage_total}])/5)+1]]}}         {{success=[[[@{manage_total}]]]}} {{roll=[[1d100]]}} {{skillname=Manage}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{manage_total}]}} {{fumble=[[ceil(95+([@{manage_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{manage_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{manage_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{manage_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Manage}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="10" name="attr_manage_value" />
@@ -2481,7 +2481,7 @@ THP 0/0
 				<!--
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_mineral_lore_check" />
-					<div class="sheet-skill_button">Mineral Lore</div>
+					<div class="sheet-skill_button">Con. Mineral</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{mineral_lore_total}]}} {{fumble=[[ceil(95+([@{mineral_lore_total}])/20))]]}} {{crit=[[ceil(([@{mineral_lore_total}])/20)+1]]}} {{special=[[ceil(([@{mineral_lore_total}])/5)+1]]}}         {{success=[[[@{mineral_lore_total}]]]}} {{roll=[[1d100]]}} {{skillname=Mineral Lore}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{mineral_lore_total}]}} {{fumble=[[ceil(95+([@{mineral_lore_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{mineral_lore_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{mineral_lore_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{mineral_lore_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Mineral Lore}}"  ></button>	
 					<input class="sheet-skill_values" type="text" value="5" name="attr_mineral_lore_value" />
@@ -2491,7 +2491,7 @@ THP 0/0
 				<!--
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_plant_lore_check" />
-					<div class="sheet-skill_button">Plant Lore</div>
+					<div class="sheet-skill_button">Con. Vegetal</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{plant_lore_total}]}} {{fumble=[[ceil(95+([@{plant_lore_total}])/20))]]}} {{crit=[[ceil(([@{plant_lore_total}])/20)+1]]}} {{special=[[ceil(([@{plant_lore_total}])/5)+1]]}}         {{success=[[[@{plant_lore_total}]]]}} {{roll=[[1d100]]}} {{skillname=Plant Lore}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{plant_lore_total}]}} {{fumble=[[ceil(95+([@{plant_lore_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{plant_lore_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{plant_lore_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{plant_lore_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Plant Lore}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_plant_lore_value" />
@@ -2499,7 +2499,7 @@ THP 0/0
 				</div>	
 				-->
 
-				<p style="font-weight:bold;margin-bottom:1px">R/W Languages</p>
+				<p style="font-weight:bold;margin-bottom:1px">Leer/Escribir Idiomas</p>
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_own_rw_lang1_check" />
 					<input  class="sheet-blank_skill" style="display:inline-block;" type="text" name="attr_rw_lang1_name" />
@@ -2521,7 +2521,7 @@ THP 0/0
 				<!--
 				<div style="margin-bottom:2px">			
 					<input  style="display:inline-block" type="checkbox" name="attr_ship_handling_check" />
-					<div class="sheet-skill_button">Ship Handling</div>
+					<div class="sheet-skill_button">Navegación</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{ship_handling_total}]}} {{fumble=[[ceil(95+([@{ship_handling_total}])/20))]]}} {{crit=[[ceil(([@{ship_handling_total}])/20)+1]]}} {{special=[[ceil(([@{ship_handling_total}])/5)+1]]}}         {{success=[[[@{ship_handling_total}]]]}} {{roll=[[1d100]]}} {{skillname=Ship Handling}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{ship_handling_total}]}} {{fumble=[[ceil(95+([@{ship_handling_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{ship_handling_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{ship_handling_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{ship_handling_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Ship Handling}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_ship_handling_value" />
@@ -2531,7 +2531,7 @@ THP 0/0
 				<!--
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_world_lore_check" />
-					<div class="sheet-skill_button">World Lore</div>
+					<div class="sheet-skill_button">Con. Mundo</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{world_lore_total}]}} {{fumble=[[ceil(95+([@{world_lore_total}])/20))]]}} {{crit=[[ceil(([@{world_lore_total}])/20)+1]]}} {{special=[[ceil(([@{world_lore_total}])/5)+1]]}}         {{success=[[[@{world_lore_total}]]]}} {{roll=[[1d100]]}} {{skillname=World Lore}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{world_lore_total}]}} {{fumble=[[ceil(95+([@{world_lore_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{world_lore_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{world_lore_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{world_lore_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=World Lore}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_world_lore_value" />
@@ -2541,7 +2541,7 @@ THP 0/0
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_survival_check" />
-					<div class="sheet-skill_button">Survival</div>
+					<div class="sheet-skill_button">Supervivencia</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{survival_total}]}} {{fumble=[[ceil(95+([@{survival_total}])/20))]]}} {{crit=[[ceil(([@{survival_total}])/20)+1]]}} {{special=[[ceil(([@{survival_total}])/5)+1]]}}         {{success=[[[@{survival_total}]]]}} {{roll=[[1d100]]}} {{skillname=Survival}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{survival_total}]}} {{fumble=[[ceil(95+([@{survival_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{survival_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{survival_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{survival_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Survival}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_survival_value" />
@@ -2572,13 +2572,13 @@ THP 0/0
 
 				<div style="background-color:white;padding-bottom:13px;border-radius:6px">
 					<div>
-						<label class="sheet-category_label">Magic</label>
+						<label class="sheet-category_label">Magia</label>
 						<input class="sheet-skill_values" type="text" value="0" disabled readonly  name="attr_magic_mod" />
 					</div>	
 					
 					<div style="margin-bottom:2px">	
 						<input  style="display:inline-block" type="checkbox" name="attr_meditate_check" />
-						<div class="sheet-skill_button">Meditate</div>
+						<div class="sheet-skill_button">Meditar</div>
 						<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{meditate_total}]}} {{fumble=[[ceil(95+([@{meditate_total}])/20))]]}} {{crit=[[ceil(([@{meditate_total}])/20)+1]]}} {{special=[[ceil(([@{meditate_total}])/5)+1]]}}         {{success=[[[@{meditate_total}]]]}} {{roll=[[1d100]]}} {{skillname=Meditate}}" ></button>								
 						<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{meditate_total}]}} {{fumble=[[ceil(95+([@{meditate_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{meditate_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{meditate_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{meditate_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Meditate}}"  ></button>			
 						<input class="sheet-skill_values" type="text" value="5" name="attr_meditate_value" />
@@ -2587,7 +2587,7 @@ THP 0/0
 
 					<div style="margin-bottom:2px">	
 						<input  style="display:inline-block" type="checkbox" name="attr_prepare_corpse_check" />
-						<div class="sheet-skill_button">Prep. Corpse</div>
+						<div class="sheet-skill_button">Prep. Cadáver</div>
 						<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{prepare_corpse_total}]}} {{fumble=[[ceil(95+([@{prepare_corpse_total}])/20))]]}} {{crit=[[ceil(([@{prepare_corpse_total}])/20)+1]]}} {{special=[[ceil(([@{prepare_corpse_total}])/5)+1]]}}         {{success=[[[@{prepare_corpse_total}]]]}} {{roll=[[1d100]]}} {{skillname=Prepare Corpse}}" ></button>								
 						<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{prepare_corpse_total}]}} {{fumble=[[ceil(95+([@{prepare_corpse_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{prepare_corpse_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{prepare_corpse_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{prepare_corpse_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Prepare Corpse}}"  ></button>			
 						<input class="sheet-skill_values" type="text" value="5" name="attr_prepare_corpse_value" />
@@ -2596,14 +2596,14 @@ THP 0/0
 					
 					<div style="margin-bottom:2px">	
 						<input  style="display:inline-block" type="checkbox" name="attr_spirit_combat_check" />
-						<div class="sheet-skill_button">Spirt Cmbt.</div>
+						<div class="sheet-skill_button">Comb. Esp.</div>
 						<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{spirit_combat_total}]}} {{fumble=[[ceil(95+([@{spirit_combat_total}])/20))]]}} {{crit=[[ceil(([@{spirit_combat_total}])/20)+1]]}} {{special=[[ceil(([@{spirit_combat_total}])/5)+1]]}}         {{success=[[[@{spirit_combat_total}]]]}} {{roll=[[1d100]]}} {{skillname=Spirit Cmbt.}}" ></button>								
 						<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{spirit_combat_total}]}} {{fumble=[[ceil(95+([@{spirit_combat_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{spirit_combat_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{spirit_combat_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{spirit_combat_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Spirit Cmbt.}}"  ></button>			
 						<input class="sheet-skill_values" type="text" value="20" name="attr_spirit_combat_value" />
 						<input class="sheet-skill_values" type="text" disabled value="[@{magic_mod}+@{spirit_combat_value}+@{fatigue_mod}]" name="attr_spirit_combat_total" />
 					</div>	
 
-					<p style="font-weight:bold;margin-bottom:1px">Worship</p>
+					<p style="font-weight:bold;margin-bottom:1px">Adorar</p>
 					<div style="margin-bottom:2px">	
 						<input  style="display:inline-block" type="checkbox" name="attr_own_worship1_check" />
 						<input class="sheet-blank_skill" style="display:inline-block;" type="text" name="attr_worship1_name" />
@@ -2634,11 +2634,11 @@ THP 0/0
 			<div style="margin-right:10px" class='sheet-col'>
 				<div style="background-color:white;padding-bottom:13px;border-radius:6px">
 				<div>
-					<label class="sheet-category_label">Manipulation</label>
+					<label class="sheet-category_label">Manipulación</label>
 					<input class="sheet-skill_values" type="text" value="0" disabled readonly  name="attr_manipulation_mod" />
 				</div>	
 				
-				<p style="font-weight:bold;margin-bottom:1px">Craft</p>
+				<p style="font-weight:bold;margin-bottom:1px">Fabricación</p>
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_own_craft1_check" />
 					<input class="sheet-blank_skill" style="display:inline-block;" type="text" name="attr_craft1_name" />
@@ -2660,7 +2660,7 @@ THP 0/0
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_conceal_check" />
-					<div class="sheet-skill_button">Conceal</div>
+					<div class="sheet-skill_button">Ocultar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{conceal_total}]}} {{fumble=[[ceil(95+([@{conceal_total}])/20))]]}} {{crit=[[ceil(([@{conceal_total}])/20)+1]]}} {{special=[[ceil(([@{conceal_total}])/5)+1]]}}         {{success=[[[@{conceal_total}]]]}} {{roll=[[1d100]]}} {{skillname=Conceal}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{conceal_total}]}} {{fumble=[[ceil(95+([@{conceal_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{conceal_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{conceal_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{conceal_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Conceal}}"  ></button>			
 					<input class="sheet-skill_values" type="text" value="5" name="attr_conceal_value" />
@@ -2670,7 +2670,7 @@ THP 0/0
 				<!--
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_devise_check" />
-					<div class="sheet-skill_button">Devise</div>
+					<div class="sheet-skill_button">Inventar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{devise_total}]}} {{fumble=[[ceil(95+([@{devise_total}])/20))]]}} {{crit=[[ceil(([@{devise_total}])/20)+1]]}} {{special=[[ceil(([@{devise_total}])/5)+1]]}}         {{success=[[[@{devise_total}]]]}} {{roll=[[1d100]]}} {{skillname=Devise}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{devise_total}]}} {{fumble=[[ceil(95+([@{devise_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{devise_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{devise_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{devise_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Devise}}"  ></button>			
 					<input class="sheet-skill_values" type="text" value="5" name="attr_devise_value" />
@@ -2680,7 +2680,7 @@ THP 0/0
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_sleighte_check" />
-					<div class="sheet-skill_button">Sleight</div>
+					<div class="sheet-skill_button">Trucos de Manos</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{sleight_total}]}} {{fumble=[[ceil(95+([@{sleight_total}])/20))]]}} {{crit=[[ceil(([@{sleight_total}])/20)+1]]}} {{special=[[ceil(([@{sleight_total}])/5)+1]]}}         {{success=[[[@{sleight_total}]]]}} {{roll=[[1d100]]}} {{skillname=Sleight}}" ></button>								
 					<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{sleight_total}]}} {{fumble=[[ceil(95+([@{sleight_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{sleight_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{sleight_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{sleight_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Sleight}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="5" name="attr_sleight_value" />
@@ -2688,7 +2688,7 @@ THP 0/0
 				</div>		
 			
 				<!--
-				<p style="font-weight:bold;margin-bottom:1px">Play Instrument</p>
+				<p style="font-weight:bold;margin-bottom:1px">Tocar Instrumento</p>
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_own_play1_check" />
 					<input class="sheet-blank_skill" style="display:inline-block;" type="text" name="attr_play1_name" />
@@ -2728,7 +2728,7 @@ THP 0/0
 				<br />				
 				
 				<br />
-				<label class="sheet-category_label">Passions</label>
+				<label class="sheet-category_label">Pasiones</label>
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_passion1_check"  />
@@ -2793,12 +2793,12 @@ THP 0/0
 				<br />
 				<div style="background-color:white;padding-bottom:13px;border-radius:6px">
 				<div>
-					<label style="display:inline-block;width:203px;">Perception</label>
+					<label style="display:inline-block;width:203px;">Percepción</label>
 					<input class="sheet-skill_values" type="text" value="0" disabled readonly  name="attr_perception_mod" />
 				</div>	
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_insight_check" />
-					<div class="sheet-skill_button">Insight</div>
+					<div class="sheet-skill_button">Percibir Intenciones</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{insight_total}]}} {{fumble=[[ceil(95+([@{insight_total}])/20))]]}} {{crit=[[ceil(([@{insight_total}])/20)+1]]}} {{special=[[ceil(([@{insight_total}])/5)+1]]}}         {{success=[[[@{insight_total}]]]}} {{roll=[[1d100]]}} {{skillname=Insight}}" ></button>								
 					<button  class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{insight_total}]}} {{fumble=[[ceil(95+([@{insight_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{insight_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{insight_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{insight_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Insight}}"  ></button>		
 
@@ -2808,7 +2808,7 @@ THP 0/0
 				
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_listen_check" />
-					<div class="sheet-skill_button">Listen</div>
+					<div class="sheet-skill_button">Escuchar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{listen_total}]}} {{fumble=[[ceil(95+([@{listen_total}])/20))]]}} {{crit=[[ceil(([@{listen_total}])/20)+1]]}} {{special=[[ceil(([@{listen_total}])/5)+1]]}}         {{success=[[[@{listen_total}]]]}} {{roll=[[1d100]]}} {{skillname=Listen}}" ></button>								
 					<button  class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{listen_total}]}} {{fumble=[[ceil(95+([@{listen_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{listen_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{listen_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{listen_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Listen}}"  ></button>		
 
@@ -2817,7 +2817,7 @@ THP 0/0
 				</div>			
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_scan_check" />
-					<div class="sheet-skill_button">Scan</div>
+					<div class="sheet-skill_button">Otear</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{scan_total}]}} {{fumble=[[ceil(95+([@{scan_total}])/20))]]}} {{crit=[[ceil(([@{scan_total}])/20)+1]]}} {{special=[[ceil(([@{scan_total}])/5)+1]]}}         {{success=[[[@{scan_total}]]]}} {{roll=[[1d100]]}} {{skillname=Scan}}" ></button>								
 					<button  class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{scan_total}]}} {{fumble=[[ceil(95+([@{scan_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{scan_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{scan_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{scan_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Scan}}"  ></button>		
 		
@@ -2826,7 +2826,7 @@ THP 0/0
 				</div>
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_search_check" />
-					<div class="sheet-skill_button">Search</div>
+					<div class="sheet-skill_button">Buscar</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{search_total}]}} {{fumble=[[ceil(95+([@{search_total}])/20))]]}} {{crit=[[ceil(([@{search_total}])/20)+1]]}} {{special=[[ceil(([@{search_total}])/5)+1]]}}         {{success=[[[@{search_total}]]]}} {{roll=[[1d100]]}} {{skillname=Search}}" ></button>								
 					<button class="sheet-new_roll"  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{search_total}]}} {{fumble=[[ceil(95+([@{search_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{search_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{search_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{search_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Search}}"  ></button>		
 	
@@ -2836,7 +2836,7 @@ THP 0/0
 				</div>
 				<div style="margin-bottom:2px">	
 					<input  style="display:inline-block" type="checkbox" name="attr_track_check" />
-					<div class="sheet-skill_button">Track</div>
+					<div class="sheet-skill_button">Rastrear</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{track_total}]}} {{fumble=[[ceil(95+([@{track_total}])/20))]]}} {{crit=[[ceil(([@{track_total}])/20)+1]]}} {{special=[[ceil(([@{track_total}])/5)+1]]}}         {{success=[[[@{track_total}]]]}} {{roll=[[1d100]]}} {{skillname=Track}}" ></button>								
 					<button  class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{track_total}]}} {{fumble=[[ceil(95+([@{track_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{track_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{search_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{track_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Track}}"  ></button>		
 	
@@ -2864,12 +2864,12 @@ THP 0/0
 				<div style="background-color:white;padding-bottom:13px;border-radius:6px">
 				
 				<div>
-					<label class="sheet-category_label">Stealth</label>
+					<label class="sheet-category_label">Sigilo</label>
 					<input class="sheet-skill_values" type="text" value="0" disabled readonly   name="attr_stealth_mod" />			
 				</div>		
 				<div>	
 					<input  style="display:inline-block" type="checkbox" name="attr_hide_check" />
-					<div class="sheet-skill_button">Hide</div>
+					<div class="sheet-skill_button">Esconderse</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{hide_total}]}} {{fumble=[[ceil(95+([@{hide_total}])/20))]]}} {{crit=[[ceil(([@{hide_total}])/20)+1]]}} {{special=[[ceil(([@{hide_total}])/5)+1]]}}         {{success=[[[@{hide_total}]]]}} {{roll=[[1d100]]}} {{skillname=Hide}}" ></button>								
 					<button  class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{hide_total}]}} {{fumble=[[ceil(95+([@{hide_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{hide_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{hide_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{hide_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Hide}}"  ></button>		
 					<input class="sheet-skill_values" type="text" value="10" name="attr_hide_value" />
@@ -2877,7 +2877,7 @@ THP 0/0
 				</div>		
 				<div>	
 					<input  style="display:inline-block" type="checkbox" name="attr_sneak_check" />
-					<div class="sheet-skill_button">Sneak</div>
+					<div class="sheet-skill_button">Deslizarse en Silencio</div>
 					<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{sneak_total}]}} {{fumble=[[ceil(95+([@{sneak_total}])/20))]]}} {{crit=[[ceil(([@{sneak_total}])/20)+1]]}} {{special=[[ceil(([@{sneak_total}])/5)+1]]}}         {{success=[[[@{sneak_total}]]]}} {{roll=[[1d100]]}} {{skillname=Sneak}}" ></button>								
 					<button  class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{sneak_total}]}} {{fumble=[[ceil(95+([@{sneak_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{sneak_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{sneak_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{sneak_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Sneak}}"  ></button>		
 	
@@ -2908,10 +2908,10 @@ THP 0/0
    <br />
    <div style="background-color:white;padding-top:5px;padding-bottom:13px;border-radius:6px">
 
-	<label style="display:inline-Block;width:136px">Weapon Skills</label>
+	<label style="display:inline-Block;width:136px">Habilidades de Armas</label>
 	(Defense&#37; <span name="attr_defense"></span>)&nbsp; &nbsp; 
 	(A&#37; <span name="attr_manipulation_mod"></span>)&nbsp; &nbsp; (P&#37; <span name="attr_parry_mod"></span>) 
-	Enc. (<span name="attr_enc_mod"></span>%) Other Modifiers <input type="number" name="attr_gen_mod" value="0" />
+	Enc. (<span name="attr_enc_mod"></span>%) Otros Modificadores <input type="number" name="attr_gen_mod" value="0" />
 	Strike Rank Mod. <input type="text" disabled style="border:none;width:25px;" value="[abs(@{enc_mod}/5)]" name="attr_sr_mod" /> 
 	</div>
    <br />
@@ -2919,20 +2919,20 @@ THP 0/0
     <span style="display:none" name="attr_enc_mod"></span>
    
    <div style="background-color:white;padding-bottom:13px;border-radius:6px">
-	<label>Melee Weapons</label>				   
+	<label>Armas Cuerpo a Cuerpo</label>				   
 		<div class="sheet-melee_wpns_labels">
 		   <label style="margin-left:35px;width:95px">Weapon</label>
-		   <label style="width:88px">STR/DEX</label>   
-		   <label style="width:42px">WSR</label>
-		   <label style="width:30px">SR</label>
-		   <label style="width:98px">Attack Skill</label>
+		   <label style="width:88px">FUE/DES</label>   
+		   <label style="width:42px">MR-Arma</label>
+		   <label style="width:30px">MR</label>
+		   <label style="width:98px">Hab. Ataque</label>
 		   <label style="width:11px"></label>
 		   <label style="width:0px"></label>   
-		   <label style="width:66px">Damage</label>		
-		   <label style="width:105px">Parry Skill</label>		
+		   <label style="width:66px">Daño</label>		
+		   <label style="width:105px">Hab. Detención</label>		
 		   <label style="width:0px"></label>
 		   <label style="width:0px"></label>   
-		   <label style="width:2.0em" >HP</label>		
+		   <label style="width:2.0em" >PG</label>		
 		</div>
 		<fieldset class="repeating_melee">
 		   <div class="sheet-melee_wpns">
@@ -2961,17 +2961,17 @@ THP 0/0
 </div>
 <br />
 <div style="background-color:white;padding-bottom:13px;border-radius:6px">
-<label>Ranged Weapons</label>		
+<label>Armas a Distancia</label>		
 <div class="sheet-melee_wpns_labels">
    <br />
-   <label style="margin-left:18px;width:95px">Weapon</label>
-   <label style="width:80px">STR/DEX</label>   
-   <label style="width:30px">DSR</label>
-   <label style="width:136px">Attack Skill</label>
-   <label style="width:54px">Damage</label>
-   <label style="width:13px">DB</label>
-   <label style="width:75px">Range</label>		
-   <label style="width:47px" >Rof</label>
+   <label style="margin-left:18px;width:95px">Arma</label>
+   <label style="width:80px">FUE/DES</label>   
+   <label style="width:30px">MR-Arma</label>
+   <label style="width:136px">Hab. Ataque</label>
+   <label style="width:54px">Daño</label>
+   <label style="width:13px">Mod. Daño</label>
+   <label style="width:75px">Alcance</label>		
+   <label style="width:47px" >TdF</label>
    <label style="width:50px" >&#35;</label>		   
 </div>
 <fieldset class="repeating_missle">
@@ -3006,30 +3006,30 @@ THP 0/0
 
 <div style="margin-top:5px;" class='sheet-2colrow'>
    <div class='sheet-col' style="width:65%">
-      <h3 style="text-align: center; color: #FFF; background-color: #000;">Hit Location & Armor</h3>
+      <h3 style="text-align: center; color: #FFF; background-color: #000;">Localización de golpe y armadura</h3>
       <table>
          <thead class="sheet-header-text">
             <tr>
                <!-- <th>
                   <button name="roll_melee-location"  type="roll" value="/me rolls melee hit location [[1d20]]"   class="btn ui-draggable">
-                  	  <div class="sheet-button_header">Melee</div>
+                  	  <div class="sheet-button_header">Cuerpo a cuerpo</div>
                   </button>
                    </th>
-                   <th>Missle</th>-->
-               <th>Location</th>
-               <th>Armor</th>
-               <th>AP</th>
-               <th>Max <br />HP</th>
+                   <th>Proyectiles</th>-->
+               <th>Localización</th>
+               <th>Armadura</th>
+               <th>PA</th>
+               <th>Máx. <br />HP</th>
 			  <!-- <th>*</th> -->
-               <th>Cur. <br /> HP</th>
-               <th>Damage</th>
+               <th>Act. <br /> PV</th>
+               <th>Daño</th>
             </tr>
          </thead>
          <tbody>
             <tr>
                <!--<td class="sheet-loc-text">01-04</td>
                   <td class="sheet-loc-text">01-03</td>-->
-               <td><div class="sheet-loc-text">Right Leg</div></td>
+               <td><div class="sheet-loc-text">Pierna derecha</div></td>
                <td><input type="text" name="attr_r_leg_armor_name" class="sheet-armor-name"/></td>
                <td><input type="number" name="attr_r_Leg_ap" /></td>
                <td><input type="number" readonly name="attr_r_leg_max_hp" /></td>
@@ -3040,7 +3040,7 @@ THP 0/0
             <tr>
                <!--<td class="sheet-loc-text">05-08</td>
                   <td class="sheet-loc-text">04-06</td>-->
-               <td > <div class="sheet-loc-text">Left Leg</div></td>
+               <td > <div class="sheet-loc-text">Pierna izquierda</div></td>
                <td><input type="text" name="attr_l_leg_armor_name" class="sheet-armor-name"/></td>
                <td><input type="number" name="attr_l_Leg_ap" /></td>
                <td><input type="number" readonly name="attr_l_leg_max_hp" /></td>
@@ -3062,7 +3062,7 @@ THP 0/0
             <tr>
                <!--<td class="sheet-loc-text">12</td>
                   <td class="sheet-loc-text">11-15</td>-->
-               <td><div class="sheet-loc-text">Chest</div></td>
+               <td><div class="sheet-loc-text">Pecho</div></td>
                <td><input type="text" name="attr_chst_armor_name" class="sheet-armor-name"/></td>
                <td><input type="number" name="attr_chst_ap" /></td>
                <td><input type="number" readonly name="attr_chst_max_hp" /></td>
@@ -3073,7 +3073,7 @@ THP 0/0
             <tr>
                <!--<td class="sheet-loc-text">13-15</td>
                   <td class="sheet-loc-text">16-17</td>-->
-               <td><div class="sheet-loc-text">Right Arm</div></td>
+               <td><div class="sheet-loc-text">Brazo derecho</div></td>
                <td ><input type="text" name="attr_r_arm_armor_name" class="sheet-armor-name"/></td>
                <td><input type="number" name="attr_r_arm_ap" /></td>
                <td><input type="number" readonly name="attr_r_arm_max_hp" /></td>
@@ -3084,7 +3084,7 @@ THP 0/0
             <tr>
                <!--<td class="sheet-loc-text">16-18</td>
                   <td class="sheet-loc-text">18-19</td>-->
-               <td ><div class="sheet-loc-text">Left Arm</div></td>
+               <td ><div class="sheet-loc-text">Brazo izquierdo</div></td>
                <td><input type="text" name="attr_l_arm_armor_name" class="sheet-armor-name"/></td>
                <td><input type="number" name="attr_l_arm_ap" /></td>
                <td><input type="number" readonly name="attr_l_arm_max_hp" /></td>
@@ -3095,7 +3095,7 @@ THP 0/0
             <tr>
                <!--<td class="sheet-loc-text">19-20</td>
                   <td class="sheet-loc-text">20</td>-->
-               <td><div class="sheet-loc-text">Head</div></td>
+               <td><div class="sheet-loc-text">Cabeza</div></td>
                <td><input type="text" name="attr_hd_armor_name" class="sheet-armor-name"/></td>
                <td><input type="number" name="attr_hd_ap" /></td>
                <td><input type="number" readonly name="attr_hd_max_hp" /></td>
@@ -3126,19 +3126,19 @@ THP 0/0
       <div>
          <div style="display:inline-block">
             <!-- value="[round((@{cursiz}+@{curcon})/2)]" -->
-            <label style="font-size:0.5em;text-align:center">Max</label>
+            <label style="font-size:0.5em;text-align:center">Máx.</label>
             <input style="text-align:center;width:3.5em" type="text" readonly value="0" name="attr_hp_max" />-
          </div>
          <div style="display:inline-block">
-            <label style="font-size:0.5em;text-align:center">LHP<br />Loss</label>					
+            <label style="font-size:0.5em;text-align:center">PVL<br />Loss</label>					
             <input style="text-align:center;width:3em;" value="0" type="text" name="attr_lhp_loss"  />-
          </div>
          <div style="display:inline-block">
-            <label style="font-size:0.5em;text-align:centee">THP<br />Loss</label>
+            <label style="font-size:0.5em;text-align:centee">PVT<br />Loss</label>
             <input style="text-align:center;width:3.5em;" value="0" type="number" name="attr_thp_loss"  />=
          </div>
          <div style="display:inline-block">
-            <label style="font-size:0.5em;text-align:center">Cur.<br />HP</label>					
+            <label style="font-size:0.5em;text-align:center">Act.<br />PV</label>					
             <input style="text-align:center;width:3em;" value="0" type="text" readonly name="attr_hp_cur"  />
          </div>
       </div>
@@ -3146,7 +3146,7 @@ THP 0/0
 	  <div>
 			<div style="margin-left:16px;">+</div>
             <input style="text-align:center;width:3.5em" type="text" value="0" name="attr_hpstre" />
-			<p style="display:inline;font-size:0.75em">*Strenghing Enchanment</p>
+			<p style="display:inline;font-size:0.75em">*Encantamiento de Fortalecimiento</p>
 	  </div>
 	  -->
       <br />	
@@ -3155,19 +3155,19 @@ THP 0/0
       <div style="display:none">
          <div style="display:inline-block">
            
-            <label style="font-size:0.5em;text-align:center">Max</label>
+            <label style="font-size:0.5em;text-align:center">Máx.</label>
             <input style="text-align:center;width:3.5em" type="text" readonly value="0" name="attr_fp_max" />-
          </div>
          <div style="display:inline-block">
-            <label style="font-size:0.5em;text-align:center">ENC</label>					
+            <label style="font-size:0.5em;text-align:center">Carga</label>					
             <input style="text-align:center;width:3em;" value="0" readonly type="text" name="attr_enc_total"  />-
          </div>
          <div style="display:inline-block">
-            <label style="font-size:0.5em;text-align:centee">Loss</label>
+            <label style="font-size:0.5em;text-align:centee">Pérdida</label>
             <input style="text-align:center;width:3.5em;" type="number" value="0" name="attr_fp_loss"  />=
          </div>
          <div style="display:inline-block">
-            <label style="font-size:0.5em;text-align:center">Cur.<br />FP</label>					
+            <label style="font-size:0.5em;text-align:center">Act.<br />PF</label>					
             <input style="text-align:center;width:3em;" type="text" readonly value="0"name="attr_fp_cur"  />
 			<input name="attr_enc_mod" style="display:none" type="number" value="0" />
          </div>
@@ -3191,26 +3191,26 @@ THP 0/0
       <div style="display: inline">
          Fumble 
          <select name="attr_selected_fumble_table" style="margin-top: 7px; height: 24px ; width: 128px">
-            <option selected="selected" value="0">Melee Attack</option>
-            <option value="1">Melee Parry</option>
-            <option value="2">Missle Attack</option>
-            <option value="3">Natural Weapon</option>
+            <option selected="selected" value="0">Ataque CaC</option>
+            <option value="1">Detención CaC</option>
+            <option value="2">Ataque con Proy.</option>
+            <option value="3">Arma natural</option>
          </select>
          <button  type="roll" value="&{template:Melee-Attack-Fumble} {{table=[[@{selected_fumble_table}]]}} {{roll=[[1d100]]}}"></button>
          <div style="display:inline">
             Roll
             <select name="attr_creature_hit_location" style="margin-top: 7px; height: 24px ; width: 106px">
-               <option value="HL-">Human</option>
-               <option value="FLL-">Four-Legged</option>
-			   <option value="NewtL-">Newtling</option>
-			   <option value="ScorpL-">Scorpion Man</option>				   
-			   <option value="WalkL-">Walktapus</option>			   
+               <option value="HL-">Humano</option>
+               <option value="FLL-">Cuadrúpedo</option>
+			   <option value="NewtL-">Tritónido</option>
+			   <option value="ScorpL-">Hombre escorpión</option>				   
+			   <option value="WalkL-">Pulpandante</option>			   
             </select>
 			
 			<!--
             <select name="attr_selected_wpn_type" style="margin-top: 7px; height: 24px ; width: 106px">
-               <option value="Melee">Melee</option>
-               <option value="Missle">Missle</option>			   
+               <option value="Melee">CaC</option>
+               <option value="Missle">Proy.</option>			   
             </select>-->
 			<input  name="attr_selected_wpn_type" value="Melee" style="display:none;" />
             Die
@@ -3246,9 +3246,9 @@ THP 0/0
 					<div style="background-color:white;border-radius:6px;padding:1px;" class='sheet-col'>
 							<div >
 								
-								<p style="font-weight:bold; width:54%; display:inline-block">Carried Equipment:</p>
-								<p style="font-weight:bold;text-align:center;width:25%;display:inline-block">Worn/Carried</p>
-								<p style="font-weight:bold;text-align:center;width: 10% ;display:inline-block">Enc:</p>
+								<p style="font-weight:bold; width:54%; display:inline-block">Equipo cargado:</p>
+								<p style="font-weight:bold;text-align:center;width:25%;display:inline-block">Puesto/Llevado</p>
+								<p style="font-weight:bold;text-align:center;width: 10% ;display:inline-block">Carga:</p>
 								
 								<fieldset class="repeating_equipment" style="margin-top:-20px;">
 									<input style="display:inline-block; width: 55% ;" type="text" name="attr_equipment_type"/>
@@ -3258,12 +3258,12 @@ THP 0/0
 							</div>
 							<br />
 							<div>
-								<label style="display:inline" class="sheet-attr_label">ENC:</label>
+								<label style="display:inline" class="sheet-attr_label">Carga:</label>
 								<input style='width:3em;display:inline;' value="0" type="text" name="attr_enc_totalf"/>
 								<input style='display:none'  type="number" value="0" name="attr_enc_total"/>
-								<label style="display:inline" class="sheet-attr_label">ENC Max:</label>
+								<label style="display:inline" class="sheet-attr_label">Carga máx:</label>
 								<input type="text" style="width:25px;" readonly value="0" name="attr_enc_max"/>
-								<label style="display:inline" class="sheet-attr_label">ENC Limit:</label>
+								<label style="display:inline" class="sheet-attr_label">Límite carga:</label>
 								<input type="text" style="width:25px;" readonly value="0" name="attr_enc_limit"/>
 								
 							</div>			
@@ -3272,8 +3272,8 @@ THP 0/0
 					</div>		
 					<div  style="background-color:white;border-radius:6px;padding:1px;" class='sheet-col' >
 							
-							<p style="width:60%; display:inline-block">Other Equipment:</p>
-							<p style="text-align:center;width: 10% ;display:inline-block">Enc</p>
+							<p style="width:60%; display:inline-block">Otro equipo:</p>
+							<p style="text-align:center;width: 10% ;display:inline-block">Carga</p>
 							
 							<fieldset class="repeating_other-equipment" style="margin-top:-20px;">
 								<input style="display:inline-block; width: 60% ;" type="text" name="attr_other-equipment_type"/>
@@ -3283,21 +3283,21 @@ THP 0/0
 				</div>
 				<br />	
 				<div style="background-color: white; 5px;border-radius: 6px;" >
-					<label style="margin-left:8px">Animals</label>
+					<label style="margin-left:8px">Animales</label>
 					<div class='sheet-2colrow'>
 						<div style="margin-left:4px" class="sheet-col">
 							<div style="margin-bottom:5px;">
 								<input class="sheet-value_display" type="text" value="name and type " style="width:244px;" name="attr_animal1_name" />
 							</div>
 							<div>
-								<p class="sheet-spirit_stat">STR</p> <input class="sheet-value_display" value="0" name="attr_animal1_str" type="number"/> 
+								<p class="sheet-spirit_stat">FUE</p> <input class="sheet-value_display" value="0" name="attr_animal1_str" type="number"/> 
 								<p class="sheet-spirit_stat">CON</p><input class="sheet-value_display" value="0" name="attr_animal1_con" type="number" />
-								<p class="sheet-spirit_stat">SIZ</p><input class="sheet-value_display" value="0" name="attr_animal1_siz" type="number"/>
+								<p class="sheet-spirit_stat">TAM</p><input class="sheet-value_display" value="0" name="attr_animal1_siz" type="number"/>
 							</div>
 							<div>
 								<p class="sheet-spirit_stat">INT</p> <input class="sheet-value_display" value="0" name="attr_animal1_int" type="number"/> 
-								<p class="sheet-spirit_stat">POW</p><input class="sheet-value_display" value="0" name="attr_animal1_pow" type="number" />
-								<p class="sheet-spirit_stat">DEX</p><input class="sheet-value_display" value="0" name="attr_animal1_dex" type="number"/>
+								<p class="sheet-spirit_stat">POD</p><input class="sheet-value_display" value="0" name="attr_animal1_pow" type="number" />
+								<p class="sheet-spirit_stat">DES</p><input class="sheet-value_display" value="0" name="attr_animal1_dex" type="number"/>
 			
 							</div>
 							<br />
@@ -3305,13 +3305,13 @@ THP 0/0
 								
 									
 									<tr>
-										<td>HP</td>
+										<td>PV</td>
 										<td>
 											<input type="number" class="sheet-value_display" readonly name="attr_animal1_hp_max" value="0" />
 											/
 											<input type="number"  class="sheet-value_display" value="" name="attr_animal1_hp_cur" />
 										</td>	
-											<td>Move</td>
+											<td>Mov.</td>
 											<td>
 												<input type="number"  class="sheet-value_display"  name="attr_animal1_move" value="0" />
 											</td>
@@ -3326,15 +3326,15 @@ THP 0/0
 										/
 										<input type="number"  class="sheet-value_display"  value="" name="attr_animal1_fp_cur" />-->	
 										</td>
-										<td>DSR</td>
+										<td>MR-DES</td>
 										<td>
 										<input type="number"  class="sheet-value_display"  readonly name="attr_animal1_dsr" value="0" />
 										</td>
 									</tr>
 									<tr>
-										<td>DB</td>
+										<td>MD</td>
 										<td><input type="text"  class="sheet-value_display"  name="attr_animal1_db" style="width:105px;" value="0" /></td>
-										<td>MSR</td>
+										<td>MRCC</td>
 										<td><input type="number"  class="sheet-value_display"  readonly name="attr_animal1_msr" value="0" />
 										</td>
 
@@ -3344,11 +3344,11 @@ THP 0/0
 							
 							<div style="margin-top:5px;" class="sheet-melee_wpns_labels">
 								<br />
-							   <label style="width:98px">Weapon</label>
-							   <label style="width:34px">SR</label>   
+							   <label style="width:98px">Arma</label>
+							   <label style="width:34px">MR</label>   
 							   <!--<label style="width:30px">SR</label>-->
-							   <label style="width:74px">Attk</label>   
-							   <label style="width:71px">Damage</label>   
+							   <label style="width:74px">At.</label>   
+							   <label style="width:71px">Daño</label>   
 							</div>	
 							
 							<fieldset class="repeating_animal1wpns" >
@@ -3363,7 +3363,7 @@ THP 0/0
 							
 							<div style="margin-top:5px;" class="sheet-melee_wpns_labels">
 								<br />
-							   <label style="width:237px">Skill</label>
+							   <label style="width:237px">Habilidad</label>
 							   <label style="width:74px">&#37;</label>   
 							</div>	
 							
@@ -3377,7 +3377,7 @@ THP 0/0
 								
 							</fieldset>
 							
-							<p>Hit Locations</p>
+							<p>Localizaciones de golpe</p>
 							<textarea style="font-family:courier;margin:0px;" name="attr_animal1_hitloc" >
 D20	    Result	       AP/HP
 1-2	    Right hind-leg	0/0
@@ -3402,14 +3402,14 @@ D20	    Result	       AP/HP
 								<input class="sheet-value_display" type="text" value="name and type " style="width:244px;" name="attr_animal2_name" />
 							</div>
 							<div>
-								<p class="sheet-spirit_stat">STR</p> <input class="sheet-value_display" value="0" name="attr_animal2_str" type="number"/> 
+								<p class="sheet-spirit_stat">FUE</p> <input class="sheet-value_display" value="0" name="attr_animal2_str" type="number"/> 
 								<p class="sheet-spirit_stat">CON</p><input class="sheet-value_display" value="0" name="attr_animal2_con" type="number" />
-								<p class="sheet-spirit_stat">SIZ</p><input class="sheet-value_display" value="0" name="attr_animal2_siz" type="number"/>
+								<p class="sheet-spirit_stat">TAM</p><input class="sheet-value_display" value="0" name="attr_animal2_siz" type="number"/>
 							</div>
 							<div>
 								<p class="sheet-spirit_stat">INT</p> <input class="sheet-value_display" value="0" name="attr_animal2_int" type="number"/> 
-								<p class="sheet-spirit_stat">POW</p><input class="sheet-value_display" value="0" name="attr_animal2_pow" type="number" />
-								<p class="sheet-spirit_stat">DEX</p><input class="sheet-value_display" value="0" name="attr_animal2_dex" type="number"/>
+								<p class="sheet-spirit_stat">POD</p><input class="sheet-value_display" value="0" name="attr_animal2_pow" type="number" />
+								<p class="sheet-spirit_stat">DES</p><input class="sheet-value_display" value="0" name="attr_animal2_dex" type="number"/>
 			
 							</div>
 							<br />
@@ -3417,13 +3417,13 @@ D20	    Result	       AP/HP
 								
 									
 									<tr>
-										<td>HP</td>
+										<td>PV</td>
 										<td>
 											<input type="number" class="sheet-value_display" readonly name="attr_animal2_hp_max" value="0" />
 											/
 											<input type="number"  class="sheet-value_display" value="" name="attr_animal2_hp_cur" />
 										</td>	
-											<td>Move</td>
+											<td>Mov.</td>
 											<td>
 												<input type="number"  class="sheet-value_display"  name="attr_animal2_move" value="0" />
 											</td>
@@ -3439,15 +3439,15 @@ D20	    Result	       AP/HP
 										/
 										<input type="number"  class="sheet-value_display"  value="" name="attr_animal2_fp_cur" />-->	
 										</td>
-										<td>DSR</td>
+										<td>MR-DES</td>
 										<td>
 										<input type="number"  class="sheet-value_display"  readonly name="attr_animal2_dsr" value="0" />
 										</td>
 									</tr>
 									<tr>
-										<td>DB</td>
+										<td>MD</td>
 										<td><input type="text"  class="sheet-value_display"  name="attr_animal2_db" style="width:105px;" value="0" /></td>
-										<td>MSR</td>
+										<td>MRCC</td>
 										<td><input type="number"  class="sheet-value_display"  readonly name="attr_animal2_msr" value="0" />
 										</td>
 
@@ -3457,11 +3457,11 @@ D20	    Result	       AP/HP
 							
 							<div style="margin-top:5px;" class="sheet-melee_wpns_labels">
 								<br />
-							   <label style="width:98px">Weapon</label>
-							   <label style="width:34px">SR</label>   
+							   <label style="width:98px">Arma</label>
+							   <label style="width:34px">MR</label>   
 							   <!--<label style="width:30px">SR</label>-->
-							   <label style="width:74px">Attk</label>   
-							   <label style="width:71px">Damage</label>   
+							   <label style="width:74px">At.</label>   
+							   <label style="width:71px">Daño</label>   
 							</div>	
 							
 							<fieldset class="repeating_animal2wpns" >
@@ -3478,7 +3478,7 @@ D20	    Result	       AP/HP
 							
 							<div style="margin-top:5px;" class="sheet-melee_wpns_labels">
 								<br />
-							   <label style="width:237px">Skill</label>
+							   <label style="width:237px">Habilidad</label>
 							   <label style="width:74px">&#37;</label>   
 							</div>	
 							
@@ -3490,7 +3490,7 @@ D20	    Result	       AP/HP
 								
 							</fieldset>
 							
-							<p>Hit Locations</p>
+							<p>Localizaciones de golpe</p>
 							<textarea style="font-family:courier;margin:0px;" name="attr_animal1_hit2oc" >D20	    Result	       AP/HP
 1-2	    Right hind-leg	0/0
 3-4 	Left hind-leg	0/0
@@ -3510,7 +3510,7 @@ D20	    Result	       AP/HP
 				
 				<br />
 				<div style="background-color: white; 5px;border-radius: 6px;" >
-					<label>Money / Finances</label>
+					<label>Dinero / Finanzas</label>
 					<textarea name="attr_money" style="min-height:15em;width:80%"></textarea>
 				</div>
 							
@@ -3522,7 +3522,7 @@ D20	    Result	       AP/HP
 	<div  style="background-color:#ac6e73" class="sheet-tab-content sheet-tab5">
 	<br />
 	<div style="margin-top:15px;">
-		<label style="display:inline">Magic </label> <div style="display:none"><input type="number" readonly name="attr_magic_mod" value="0" />   Fatigue (	<span name="attr_enc_mod"></span>%)&nbsp;&nbsp; Enc ( -<span name="attr_enc_total"></span>%)&nbsp;&nbsp;</div>
+		<label style="display:inline">Magia </label> <div style="display:none"><input type="number" readonly name="attr_magic_mod" value="0" />   Fatiga (	<span name="attr_enc_mod"></span>%)&nbsp;&nbsp; Enc ( -<span name="attr_enc_total"></span>%)&nbsp;&nbsp;</div>
 	Magic Points <span name="attr_curpow"></span>/<input type="number"  name="attr_mp_cur" value=""/>&nbsp;&nbsp;
 		<div style="display:none">
 		Free INT<span style="margin-left:5px " name="attr_curint"></span>+<input type="number"  name="attr_freeint_mod" value="0"/>=<input type="number" disabled name="attr_freeint_total" value="[@{curint}+@{freeint_mod}]"/>/
@@ -3534,7 +3534,7 @@ D20	    Result	       AP/HP
 			<div style="display:none;margin-top:15px;">
 				<div style="display:inline">	
 					<input  style="display:inline-block" type="checkbox" name="attr_ceremony_check" />
-					<div class="sheet-skill_button" style="display:inline">Ceremony</div>
+					<div class="sheet-skill_button" style="display:inline">Ceremonia</div>
 					
 					<input class="sheet-skill_values" type="text" value="5" name="attr_ceremony_value" />
 					<input class="sheet-skill_values" type="text" disabled value="[@{magic_mod}+@{ceremony_value}+@{enc_mod}]" name="attr_ceremony_total" />
@@ -3545,7 +3545,7 @@ D20	    Result	       AP/HP
 				</div>	
 				<div style="display:inline">	
 					<input  style="display:inline-block;margin-left:10px;" type="checkbox" name="attr_summon_check" />
-					<div class="sheet-skill_button" style="display:inline;">Summon</div>
+					<div class="sheet-skill_button" style="display:inline;">Invocación</div>
 					
 					<input class="sheet-skill_values" type="text" value="0" name="attr_summon_value" />
 					<input class="sheet-skill_values" type="text" disabled value="[@{magic_mod}+@{summon_value}+@{enc_mod}]" name="attr_summon_total" />
@@ -3555,7 +3555,7 @@ D20	    Result	       AP/HP
 				</div>
 				<div style="display:inline">	
 					<input  style="display:inline-block;margin-left:10px;" type="checkbox" name="attr_enchant_check" />
-					<div class="sheet-skill_button" style="display:inline;">Enchant</div>
+					<div class="sheet-skill_button" style="display:inline;">Encantamiento</div>
 					
 					<input class="sheet-skill_values" type="text" value="0" name="attr_enchant_value" />
 					<input class="sheet-skill_values" type="text" disabled value="[@{magic_mod}+@{enchant_value}+@{enc_mod}]" name="attr_enchant_total" /><button    type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{enchant_total}]}} {{fumble=[[ceil(95+([@{enchant_total}])/20))]]}} {{crit=[[ceil(([@{enchant_total}])/20)+1]]}} {{special=[[ceil(([@{enchant_total}])/5)+1]]}}         {{success=[[[@{enchant_total}]]]}} {{roll=[[1d100]]}} {{skillname=Enchant}}" ></button><button  class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{enchant_total}]}} {{fumble=[[ceil(95+([@{enchant_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{enchant_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{enchant_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{enchant_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Enchant}}"   ></button>	
@@ -3569,14 +3569,14 @@ D20	    Result	       AP/HP
 			<div class="sheet-spell_div">
 			
 					<div>
-						<label style="display:inline;">Spirit Combat</label>
-						<div class="sheet-skill_button" style="display:inline;">Skill</div>
+						<label style="display:inline;">Combate Espiritual</label>
+						<div class="sheet-skill_button" style="display:inline;">Habilidad</div>
 						<input class="sheet-value_display" style="text-align:center;display:inline" type="number" disabled name="attr_cast_spiritm" value="[@{spirit_combat_total}]"/>% 
 						<button  type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{spirit_combat_total}]}} {{fumble=[[ceil(95+([@{spirit_combat_total}])/20))]]}} {{crit=[[ceil(([@{spirit_combat_total}])/20)+1]]}} {{special=[[ceil(([@{spirit_combat_total}])/5)+1]]}}         {{success=[[[@{spirit_combat_total}]]]}} {{roll=[[1d100]]}} {{skillname=Spirit Cmbt.}}" ></button>								
 						<button   class="sheet-new_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[@{spirit_combat_total}]}} {{fumble=[[ceil(95+([@{spirit_combat_total}]+?{Mods|0})/20))]]}} {{crit=[[ceil(([@{spirit_combat_total}]+?{Mods|0})/20)+1]]}} {{special=[[ceil(([@{spirit_combat_total}]+?{Mods|0})/5)+1]]}}         {{success=[[[@{spirit_combat_total}]+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Spirit Cmbt.}}"  ></button>		
-						<div class="sheet-skill_button" style="display:inline;">Damage</div>
+						<div class="sheet-skill_button" style="display:inline;">Daño</div>
 						<input class="sheet-value_display" style="width:100px;text-align:center;display:inline" type="text" value="1d6" name="attr_spirit_damage1" />
-						<button type="roll" value="@{character_name} Rolls [[@{spirit_damage1}]] spirit combat damage" />		
+						<button type="roll" value="@{character_name} Causa [[@{spirit_damage1}]] de daño espiritual" />		
 					</div>
 					
 
@@ -3585,27 +3585,27 @@ D20	    Result	       AP/HP
 			<br />
 			<div class="sheet-spell_div">
 				<div>
-					<label style="display:inline;">Battle Magic</label>
+					<label style="display:inline;">Magia de batalla</label>
 					<div >
-					Casting <input class="sheet-value_display" style="text-align:center;display:inline" type="number" disabled name="attr_cast_spiritm" value="[[(@{curpow}*5)]]"/>%	
+					Lanzamiento <input class="sheet-value_display" style="text-align:center;display:inline" type="number" disabled name="attr_cast_spiritm" value="[[(@{curpow}*5)]]"/>%	
 					</div>
 					
 				</div>
 				<br />
 
 				
-				<label style="font-size:1.0em">Learned Spells</label>
+				<label style="font-size:1.0em">Conjuros aprendidos</label>
 				
 				<div class="sheet-melee_wpns_labels">
 				   <br />
-				   <label style="width:150px">Spell</label>
-				   <label style="width:26px">Pts</label>   
-				   <!--<label style="width:30px">SR</label>-->
-				   <label style="width:74px">Range</label>   
-				   <label style="width:71px">Duration</label>   
-				   <label style="width:57px">Active</label>
-				   <label style="width:205px">Notes</label>
-				   <label style="width:100px">Memory</label>				   
+				   <label style="width:150px">Conjuro</label>
+				   <label style="width:26px">Ptos.</label>   
+				   <!--<label style="width:30px">MR</label>-->
+				   <label style="width:74px">Alcance</label>   
+				   <label style="width:71px">Duración</label>   
+				   <label style="width:57px">Activo</label>
+				   <label style="width:205px">Notas</label>
+				   <label style="width:100px">Memorizado</label>				   
 				</div>					
 				
 				<fieldset class="repeating_spiritspells">
@@ -3613,17 +3613,17 @@ D20	    Result	       AP/HP
 					<input class="sheet-value_display"  type="number" style="text-align:center;display:inline-block;" value="0" name="attr_mpcost" />
 					<!--<input type="number" style="display:inline-block;" name="attr_spellsr" />-->
 					<select style="width:80px;margin-top:0px;" name="attr_range">
-							<option>Ranged</option>
-							<option>Touch</option>
+							<option>A distancia</option>
+							<option>Toque</option>
 					</select>
 					<select style="width:80px;margin-top:0px;" name="attr_duration">
-							<option>Instant</option>
+							<option>Instantáneo</option>
 							<option>Perm.</option>							
 							<option>Temporal</option>
 					</select>
 					<select style="width:80px;margin-top:0px;" name="attr_duration">
-							<option>Active</option>
-							<option>Passive</option>
+							<option>Activ</option>
+							<option>Pasivo</option>
 					</select>							
 					<input  class="sheet-value_display"  type="text" style="text-align:left;width:220px;display:inline-block;" name="attr_spellnotes" />
 					<input class="sheet-value_display" type="checkbox" name="attr_memorized" checked="checked">
@@ -3632,19 +3632,19 @@ D20	    Result	       AP/HP
 				</fieldset>
 				
 				<br />
-				<label style="font-size:1.0em;display:inline">Matrices Spells</label>
+				<label style="font-size:1.0em;display:inline">Conjuros en matrices</label>
 				<input class="sheet-HideSpiritm" type="checkbox" checked="checked" name="attr_is_HideSpirit"><span class="sheet-is-HideSpirit"><span style="font-family: &quot;pictos&quot;">y</span></span>
 				<div class="sheet-Spiritmconfig">
 				
 				<div class="sheet-melee_wpns_labels">
 				   <br />
-				   <label style="width:150px">Spell</label>
-				   <label style="width:26px">Pts</label>   
-				   <!--<label style="width:30px">SR</label>-->
-				   <label style="width:74px">Range</label>   
-				   <label style="width:71px">Duration</label>   
-				   <label style="width:57px">Active</label>
-				   <label style="width:100px">Notes</label>
+				   <label style="width:150px">Conjuro</label>
+				   <label style="width:26px">Ptos.</label>   
+				   <!--<label style="width:30px">MR</label>-->
+				   <label style="width:74px">Alcance</label>   
+				   <label style="width:71px">Duración</label>   
+				   <label style="width:57px">Activo</label>
+				   <label style="width:100px">Notas</label>
 				</div>					
 				
 				<fieldset class="repeating_mspiritspells">
@@ -3652,17 +3652,17 @@ D20	    Result	       AP/HP
 					<input class="sheet-value_display"  type="number" style="text-align:center;display:inline-block;" value="0" name="attr_mpcost" />
 					<!--<input type="number" style="display:inline-block;" name="attr_spellsr" />-->
 					<select style="width:80px;margin-top:0px;" name="attr_range">
-							<option>Ranged</option>
-							<option>Touch</option>
+							<option>A distancia</option>
+							<option>Toque</option>
 					</select>
 					<select style="width:80px;margin-top:0px;" name="attr_duration">
-							<option>Instant</option>
+							<option>Instantáneo</option>
 							<option>Perm.</option>							
 							<option>Temporal</option>
 					</select>
 					<select style="width:80px;margin-top:0px;" name="attr_duration">
-							<option>Active</option>
-							<option>Passive</option>
+							<option>Activo</option>
+							<option>Pasivo</option>
 					</select>							
 
 					
@@ -3680,10 +3680,10 @@ D20	    Result	       AP/HP
 			<br />
 			<div class="sheet-spell_div" >
 				<div>
-					<label style="display:inline;">Rune Magic</label>
+					<label style="display:inline;">Magia rúnica</label>
 					
 					<div style="display:none">
-					Casting <input style="text-align:center;display:inline" type="number" disabled name="attr_cast_divine" class="sheet-value_display" value="[[100-@{enc_total}]]"/>%	
+					Lanzamiento <input style="text-align:center;display:inline" type="number" disabled name="attr_cast_divine" class="sheet-value_display" value="[[100-@{enc_total}]]"/>%	
 					</div>			
 				
 				
@@ -3693,21 +3693,21 @@ D20	    Result	       AP/HP
 				
 				
 				<div>
-					<label>Runes</label>
+					<label>Runas</label>
 					
 						<div class="sheet-melee_wpns_labels">
 						   <br />
-						   <label style="width:100px">Rune</label>
-						   <label style="width:65px">Type</label>   
+						   <label style="width:100px">Runa</label>
+						   <label style="width:65px">Tipo</label>   
 						   <label style="width:65px">%</label>   
 						</div>						
 						<fieldset class="repeating_runes">
 								<input class="sheet-value_display" type="text" style="text-align:left;display:inline-block;width:100px" name="attr_runename" />						
 								<select style="width:100px;margin-top:0px;" name="attr_rune_type">
-										<option selected value="element">Element</option>
-										<option value="power">Power</option>
-										<option value="form">Form</option>										
-										<option value="condition">Condition</option>																				
+										<option selected value="element">Elemental</option>
+										<option value="power">de Poder</option>
+										<option value="form">de Forma</option>										
+										<option value="condition">de Condición</option>																				
 								</select>								
 								<input class="sheet-value_display"  type="number" style="text-align:center;display:inline-block;" value="0" name="attr_rune_skill" />
 								<button type="roll"  value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[@{rune_skill}]]}} {{fumble=[[ceil(95+([[@{rune_skill}]])/20))]]}} {{crit=[[ceil(([[@{rune_skill}]])/20)+1]]}} {{special=[[ceil(([[@{rune_skill}]])/5)+1]]}}         {{success=[[@{rune_skill}]]}} {{roll=[[1d100]]}} {{skillname=@{runename} Rune}}" ></button>		
@@ -3721,7 +3721,7 @@ D20	    Result	       AP/HP
 				
 				
 				<br />
-					<label>Runes Points and Spells</label>				
+					<label>Puntos y conjuros rúnicos</label>				
 					<fieldset class="repeating_runespells">
 						<div>
 							<div class="sheet-skill_button" style="display:inline;">Diety</div>
@@ -3741,7 +3741,7 @@ D20	    Result	       AP/HP
 				
 					<!--
 					<div>
-						<label>Spells</label>
+						<label>Conjuros</label>
 						
 						<div class="sheet-melee_wpns_labels">
 						   <br />
@@ -3759,7 +3759,7 @@ D20	    Result	       AP/HP
 			<br />
 			<div style="display:none" class="sheet-spell_div">
 				<div>
-					<label style="display:inline;">Sorcery</label>
+					<label style="display:inline;">Hechicería</label>
 					<!--Casting <input class="sheet-value_display" style="text-align:center;display:inline" type="number" disabled name="attr_cast_spiritm" value="[[@{curpow}*5]-@{enc_mod}-@{enc_total}]"/>%	-->
 				</div>
 				<br />
@@ -3819,18 +3819,18 @@ D20	    Result	       AP/HP
 			<br />
 
 
-				<label style="margin-top:5px">Learned Spells</label>
+				<label style="margin-top:5px">Conjuros aprendidos</label>
 				
 				<div class="sheet-melee_wpns_labels">
 				   <br />
-				   <label style="width:159px">Spell</label>
-				   <!--<label style="width:26px">Pts</label>--> 
-				   <!--<label style="width:30px">SR</label>-->
-				   <label style="width:59px">Range</label>   
-				   <label style="width:80px">Duration</label>   
-				   <label style="width:81px">Active</label> 
-				   <label style="width:57px">Skill</label>   				   
-				   <label style="width:100px">Notes</label>
+				   <label style="width:159px">Conjuro</label>
+				   <!--<label style="width:26px">Ptos.</label>--> 
+				   <!--<label style="width:30px">MR</label>-->
+				   <label style="width:59px">Alcance</label>   
+				   <label style="width:80px">Duración</label>   
+				   <label style="width:81px">Activo</label> 
+				   <label style="width:57px">Habilidad</label>   				   
+				   <label style="width:100px">Notas</label>
 				</div>					
 				
 				<fieldset class="repeating_sorceryspells">
@@ -3839,16 +3839,16 @@ D20	    Result	       AP/HP
 					<!--<input type="number" style="display:inline-block;" name="attr_spellsr" />-->
 					
 					<select style="width:80px;margin-top:0px;" name="attr_range">
-							<option>Ranged</option>
-							<option>Touch</option>
+							<option>A distancia</option>
+							<option>Toque</option>
 					</select>
 					<select style="width:80px;margin-top:0px;" name="attr_duration">
-							<option>Instant</option>
+							<option>Instantáneo</option>
 							<option>Temporal</option>
 					</select>
 					<select style="width:80px;margin-top:0px;" name="attr_active">
-							<option>Active</option>
-							<option>Passive</option>
+							<option>Activo</option>
+							<option>Pasivo</option>
 					</select>							
 					<input class="sheet-skill_values" type="number" value="0" name="attr_spell_value" />
 					<input class="sheet-skill_values" type="number" disabled="true" value="[@{magic_mod}+@{spell_value}-@{enc_total}+@{enc_mod}]" name="attr_spell_total" />
@@ -3858,19 +3858,19 @@ D20	    Result	       AP/HP
 				</fieldset>
 				
 				<br />
-			<label style="display:inline">Matrices Spells</label>            
+			<label style="display:inline">Conjuros en matrices</label>            
 			<input class="sheet-HideSorcerym" type="checkbox" checked="checked" name="attr_is_HideSorcery"><span class="sheet-is-HideSorcery"><span style="font-family: &quot;pictos&quot;">y</span></span>
 			<div class="sheet-Sorcerymconfig">
 				<div class="sheet-melee_wpns_labels">
 				   <br />
-				   <label style="width:159px">Spell</label>
-				   <!--<label style="width:26px">Pts</label>--> 
-				   <!--<label style="width:30px">SR</label>-->
-				   <label style="width:59px">Range</label>   
-				   <label style="width:80px">Duration</label>   
-				   <label style="width:81px">Active</label> 
-				   <label style="width:57px">Skill</label>   				   
-				   <label style="width:100px">Notes</label>
+				   <label style="width:159px">Conjuro</label>
+				   <!--<label style="width:26px">Ptos.</label>--> 
+				   <!--<label style="width:30px">MR</label>-->
+				   <label style="width:59px">Alcance</label>   
+				   <label style="width:80px">Duración</label>   
+				   <label style="width:81px">Activo</label> 
+				   <label style="width:57px">Habilidad</label>   				   
+				   <label style="width:100px">Notas</label>
 				</div>					
 				
 				<fieldset class="repeating_msorceryspells">
@@ -3879,16 +3879,16 @@ D20	    Result	       AP/HP
 					<!--<input type="number" style="display:inline-block;" name="attr_spellsr" />-->
 					
 					<select style="width:80px;margin-top:0px;" name="attr_range">
-							<option>Ranged</option>
-							<option>Touch</option>
+							<option>A distancia</option>
+							<option>Toque</option>
 					</select>
 					<select style="width:80px;margin-top:0px;" name="attr_duration">
-							<option>Instant</option>
+							<option>Instantáneo</option>
 							<option>Temporal</option>
 					</select>
 					<select style="width:80px;margin-top:0px;" name="attr_active">
-							<option>Active</option>
-							<option>Passive</option>
+							<option>Activo</option>
+							<option>Pasivo</option>
 					</select>							
 					<input class="sheet-skill_values" type="number" value="0" name="attr_spell_value" />
 					<input class="sheet-skill_values" type="number" disabled="true" value="[@{magic_mod}+@{spell_value}-@{enc_total}+@{enc_mod}]" name="attr_spell_total" />
@@ -3903,7 +3903,7 @@ D20	    Result	       AP/HP
 			<br />
 			
 			<div style="background-color:white;padding:5px;,border-radius:6px;">
-				<label>Otherworld Creatures</label>
+				<label>Otherworld Criaturas</label>
 				<div class='sheet-2colrow'> <!-- Start of spirit row -->
 					<div class="sheet-col">
 					
@@ -3948,20 +3948,20 @@ D20	    Result	       AP/HP
 							<p class="sheet-spirit_stat">INT</p> <input class="sheet-value_display" name="attr_spirit2_int" type="number"/> <p class="sheet-spirit_stat">POW</p><input class="sheet-value_display" name="attr_spirit2_pow" type="number" /><p class="sheet-spirit_stat">/</p><input class="sheet-value_display" name="attr_spirit2_mp" type="number"/>
 						</div>
 						<div>
-							<p class="sheet-spirit_stat">STR</p> <input class="sheet-value_display" name="attr_spirit2_str" type="number"/> <p class="sheet-spirit_stat">SIZ</p><input class="sheet-value_display" name="attr_spirit2_siz" type="number" /><p class="sheet-spirit_stat">HP</p><input class="sheet-value_display" name="attr_spirit2_hp" type="number"/>
+							<p class="sheet-spirit_stat">FUE</p> <input class="sheet-value_display" name="attr_spirit2_str" type="number"/> <p class="sheet-spirit_stat">SIZ</p><input class="sheet-value_display" name="attr_spirit2_siz" type="number" /><p class="sheet-spirit_stat">HP</p><input class="sheet-value_display" name="attr_spirit2_hp" type="number"/>
 		
 						</div>
 						<br />
 						Attacks/notes
 						<textarea style="width:80%" name="attr_spirit2_notes" ></textarea>
 						
-						<p>Spells</p>
+						<p>Conjuros</p>
 						<fieldset class="repeating_spirit2spells">
 							<input style="width:215px;text-align:left" class="sheet-value_display"  value="spell name and mp cost" type="text" name="attr_spiritspell" />
 							<input  value="0" type="number" class="sheet-value_display" name="attr_spiritskill" />
 							<select style="margin-bottom:0px;width:79px" name="attr_magictype2">
-								<option value="100">Rune</option>
-								<option value="(@{spirit2_pow}*5)+(@{spirit2_pow}-10)+(@{spirit2_int}-10)">Spirit</option>								
+								<option value="100">Rúnicos</option>
+								<option value="(@{spirit2_pow}*5)+(@{spirit2_pow}-10)+(@{spirit2_int}-10)">Espirituales</option>								
 							</select>
 							<button type="roll"   value="&{template:skillRoll} {{name=@{spirit2_name}}} {{skillvalue=[[@{magictype2}]]}} {{fumble=[[ceil(95+([[@{magictype2}]])/20))]]}} {{crit=[[ceil(([[@{magictype2}]])/20)+1]]}} {{special=[[ceil(([[@{magictype2}]])/5)+1]]}}         {{success=[[@{magictype2}]]}} {{roll=[[1d100]]}} {{skillname=@{spiritspell}}}" ></button>	
 
@@ -3990,7 +3990,7 @@ D20	    Result	       AP/HP
 		
 						</div>
 						<br />
-						Attacks/notes
+						Ataques/notas
 						<textarea style="width:80%" name="attr_spirit3_notes" ></textarea>
 						
 						<p>Spells</p>
