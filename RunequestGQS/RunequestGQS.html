@@ -6,10 +6,10 @@
 <div class="sheet-FullSheet">
 
 
-		<input type="radio" name="attr_tab1a" class="sheet-tab sheet-tab1a" value="1" title="Main" checked="checked" /><span title="Main"></span>
-		<input type="radio" name="attr_tab1a" class="sheet-tab sheet-tab2a" value="2" title="Skills" /><span title="Skills"></span>
-		<input type="radio" name="attr_tab1a" class="sheet-tab sheet-tab3a" value="3" title="Allies" /><span title="Allies"></span>
-		<input type="radio" name="attr_tab1a" class="sheet-tab sheet-tab4a" value="4" title="Family" /><span title="Family"></span>			
+		<input type="radio" name="attr_tab1a" class="sheet-tab sheet-tab1a" value="1" title="Básica" checked="checked" /><span title="Básica"></span>
+		<input type="radio" name="attr_tab1a" class="sheet-tab sheet-tab2a" value="2" title="Habilidades" /><span title="Habilidades"></span>
+		<input type="radio" name="attr_tab1a" class="sheet-tab sheet-tab3a" value="3" title="Aliados" /><span title="Aliados"></span>
+		<input type="radio" name="attr_tab1a" class="sheet-tab sheet-tab4a" value="4" title="Familia" /><span title="Familia"></span>			
 		<div class="sheet-tab-contenta sheet-tab1a"><!--- Tab 1 start -->
 		<div class="sheet-cdiv">
 					<input class="sheet-HideConfig" type="checkbox" checked="checked" name="attr_is_config"><span class="sheet-is-config"><span style="font-family: &quot;pictos&quot;">y</span></span>
@@ -31,34 +31,34 @@
 			<div class='sheet-2colrow' style="margin-bottom:19px;">
 				<div class='sheet-col' style="margin-right:1px">
 					<div class="sheet-info">
-						<div class="sheet-input_label">Name</div><input type="text" style="width:131px;" class="sheet-text_input" name="attr_character_name" />
-						<div class="sheet-input_label">Birth Year</div><input type="text" style="width:56px;" class="sheet-text_input" name="attr_birth_year" />
-						<div class="sheet-input_label">Age</div><input type="text" style="width:35px;" class="sheet-text_input" name="attr_age" />
+						<div class="sheet-input_label">Nombre</div><input type="text" style="width:131px;" class="sheet-text_input" name="attr_character_name" />
+						<div class="sheet-input_label">Año de nacimiento</div><input type="text" style="width:56px;" class="sheet-text_input" name="attr_birth_year" />
+						<div class="sheet-input_label">Edad</div><input type="text" style="width:35px;" class="sheet-text_input" name="attr_age" />
 					</div>
 					<div class="sheet-info">
-						<div class="sheet-input_label">Gender</div><input type="text" style="width:99px;" class="sheet-text_input" name="attr_gender" />
-						<div class="sheet-input_label">Homeland</div><input type="text" style="width:145px;" class="sheet-text_input" name="attr_homeland" />
+						<div class="sheet-input_label">Género</div><input type="text" style="width:99px;" class="sheet-text_input" name="attr_gender" />
+						<div class="sheet-input_label">Tierra natal</div><input type="text" style="width:145px;" class="sheet-text_input" name="attr_homeland" />
 					</div>				
 					<div class="sheet-info">
-						<div class="sheet-input_label">Tribe</div><input type="text" style="width:159px;" class="sheet-text_input" name="attr_tribe" />
+						<div class="sheet-input_label">Tribu</div><input type="text" style="width:159px;" class="sheet-text_input" name="attr_tribe" />
 						<div class="sheet-input_label">Clan</div><input type="text" style="width:143px;" class="sheet-text_input" name="attr_clan" />
 					</div>					
 					
 				</div>
 				<div class='sheet-col' style="margin-right:1px">
 					<div class="sheet-info">
-						<div class="sheet-input_label">Occupation</div><input type="text" style="width:159px;" class="sheet-text_input" name="attr_occupation" />
-						<div class="sheet-input_label">Ransom</div><input type="text" style="width:56px;" class="sheet-text_input" name="attr_ransom" />(L)
+						<div class="sheet-input_label">Ocupación</div><input type="text" style="width:159px;" class="sheet-text_input" name="attr_occupation" />
+						<div class="sheet-input_label">Rescate</div><input type="text" style="width:56px;" class="sheet-text_input" name="attr_ransom" />(L)
 						
 					</div>
 					<div class="sheet-info">
-						<div class="sheet-input_label">Reputation</div><input type="text" value="0" class="sheet-text_input sheet-percentiles" name="attr_reputation" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[@{reputation}]]}} {{fumble=[[{(101-(round((100-(@{reputation}))/20))),100}kl1]]}} {{crit=[[round(([[(@{reputation})]])/20)+1]]}}  {{special=[[round(([[(@{reputation})]])/5)+1]]}}    {{success=[[(@{reputation})]]}} {{roll=[[1d100]]}} {{skillname=Reputation}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[@{reputation}]]}} {{fumble=[[{(101-(round((100-(@{reputation}+?{Mods|0}))/20))),100}kl1]]}} {{crit=[[round((@{reputation}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{reputation}+?{Mods|0})/5)+1]]}}    {{success=[[@{reputation}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Reputation}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
-						<div class="sheet-input_label">Standard of Living</div><input type="text" style="width:75px;" class="sheet-text_input" name="attr_living_standard" />
+						<div class="sheet-input_label">Reputación</div><input type="text" value="0" class="sheet-text_input sheet-percentiles" name="attr_reputation" /><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[@{reputation}]]}} {{fumble=[[{(101-(round((100-(@{reputation}))/20))),100}kl1]]}} {{crit=[[round(([[(@{reputation})]])/20)+1]]}}  {{special=[[round(([[(@{reputation})]])/5)+1]]}}    {{success=[[(@{reputation})]]}} {{roll=[[1d100]]}} {{skillname=Reputation}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[@{reputation}]]}} {{fumble=[[{(101-(round((100-(@{reputation}+?{Mods|0}))/20))),100}kl1]]}} {{crit=[[round((@{reputation}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{reputation}+?{Mods|0})/5)+1]]}}    {{success=[[@{reputation}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Reputation}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
+						<div class="sheet-input_label">Nivel de vida</div><input type="text" style="width:75px;" class="sheet-text_input" name="attr_living_standard" />
 					
 					</div>				
 					<div class="sheet-info">
-						<div class="sheet-input_label">Base Income</div><input type="text" style="width:95px;" class="sheet-text_input" name="attr_base_income" />(L)					
-						<div class="sheet-input_label">Campaign</div><input type="text" style="width:96px;" class="sheet-text_input" name="attr_campaign" />
+						<div class="sheet-input_label">Ingresos básicos</div><input type="text" style="width:95px;" class="sheet-text_input" name="attr_base_income" />(L)					
+						<div class="sheet-input_label">Campaña</div><input type="text" style="width:96px;" class="sheet-text_input" name="attr_campaign" />
 					</div>			
 				
 				</div>			
@@ -69,15 +69,15 @@
 				<div class='sheet-col' style="position: relative;margin-right:1px"><!--Hit Location-->
 
 					<div class="sheet-hit-box sheet-hit-head" style="font-size:x-small" >
-						<label>Head 19-20</label>
+						<label>Cabeza 19-20</label>
 						<div>
-							<span>AP</span>
+							<span>PA</span>
 							<input type="text" style="display:inline-block;" value="0" name="attr_EqpArmorHd" />
 							<input type="text" style="display:inline-block;;" value="0" name="attr_EqpBonusHd" />
 							<input type="text" style="display:inline-block;;" value="[[@{EqpArmorHd}+@{EqpBonusHd}]]" disabled name="attr_EqpTotalHd" />
 						</div>
 						<div>
-							<span>HP</span>
+							<span>PV</span>
 							<input type="text" style="display:inline-block;;"  readonly value="0" name="attr_hd_max_hp" />
 							<input type="text" style="display:inline-block;;" readonly value="0" name="attr_hd_cur_hp" />
 						</div>
@@ -90,15 +90,15 @@
 
 					
 					<div class="sheet-hit-box sheet-hit-larm" style="font-size:x-small" >
-						<label>L Arm 16-18</label>
+						<label>Brazo I 16-18</label>
 						<div>
-							<span>AP</span>
+							<span>PA</span>
 							<input type="text" style="display:inline-block;" value="0" name="attr_EqpArmorLA" />
 							<input type="text" style="display:inline-block;;" value="0" name="attr_EqpBonusLA" />
 							<input type="text" style="display:inline-block;;" value="[[@{EqpArmorLA}+@{EqpBonusLA}]]" disabled  name="attr_EqpTotalLA" />
 						</div>
 						<div>
-							<span>HP</span>
+							<span>PV</span>
 							<input type="text" style="display:inline-block;;" value="0" readonly name="attr_l_arm_max_hp" />
 							<input type="text" style="display:inline-block;;" value="0"  readonly name="attr_l_arm_cur_hp" />
 						</div>
@@ -111,15 +111,15 @@
 					
 					
 					<div class="sheet-hit-box sheet-hit-rarm" style="font-size:x-small" >
-						<label>R Arm 13-15</label>
+						<label>Brazo D 13-15</label>
 						<div>
-							<span>AP</span>
+							<span>PA</span>
 							<input type="text" style="display:inline-block;" value="0" name="attr_EqpArmorRA" />
 							<input type="text" style="display:inline-block;;" value="0" name="attr_EqpBonusRA" />
 							<input type="text" style="display:inline-block;;" value="[[@{EqpArmorRA}+@{EqpBonusRA}]]" disabled  name="attr_EqpTotalRA" />
 						</div>
 						<div>
-							<span>HP</span>
+							<span>PV</span>
 							<input type="text" style="display:inline-block;;"  readonly  value="0" name="attr_r_arm_max_hp" />
 							<input type="text" style="display:inline-block;;"  readonly  value="0" name="attr_r_arm_cur_hp" />
 						</div>
@@ -131,15 +131,15 @@
 					</div>	
 				
 					<div class="sheet-hit-box sheet-hit-chest" style="font-size:x-small" >
-						<label>Chest 12</label>
+						<label>Pecho 12</label>
 						<div>
-							<span>AP</span>
+							<span>PA</span>
 							<input type="text" style="display:inline-block;" value="0" name="attr_EqpArmorCh" />
 							<input type="text" style="display:inline-block;;" value="0" name="attr_EqpBonusCh" />
 							<input type="text" style="display:inline-block;;" value="[[@{EqpArmorCh}+@{EqpBonusCh}]]" disabled  name="attr_EqpTotalCh" />
 						</div>
 						<div>
-							<span>HP</span>
+							<span>PV</span>
 							<input type="text" style="display:inline-block;;" value="0"  readonly  name="attr_chst_max_hp" />
 							<input type="text" style="display:inline-block;;" value="0"  readonly  name="attr_chst_cur_hp" />
 						</div>
@@ -153,13 +153,13 @@
 					<div class="sheet-hit-box sheet-hit-abd" style="font-size:x-small" >
 						<label>Abd 9-11</label>
 						<div>
-							<span>AP</span>
+							<span>PA</span>
 							<input type="text" style="display:inline-block;" value="0" name="attr_EqpArmorAb" />
 							<input type="text" style="display:inline-block;;" value="0" name="attr_EqpBonusAb" />
 							<input type="text" style="display:inline-block;;" value="[[@{EqpArmorAb}+@{EqpBonusAb}]]" disabled  name="attr_EqpTotalAb" />
 						</div>
 						<div>
-							<span>HP</span>
+							<span>PV</span>
 							<input type="text" style="display:inline-block;;" value="0"  readonly name="attr_abd_max_hp" />
 							<input type="text" style="display:inline-block;;" value="0"  readonly name="attr_abd_cur_hp" />
 						</div>
@@ -173,15 +173,15 @@
 					
 					
 					<div class="sheet-hit-box sheet-hit-lleg" style="font-size:x-small" >
-						<label>L Leg 5-8</label>
+						<label>Pierna I 5-8</label>
 						<div>
-							<span>AP</span>
+							<span>PA</span>
 							<input type="text" style="display:inline-block;" value="0" name="attr_EqpArmorLL" />
 							<input type="text" style="display:inline-block;;" value="0" name="attr_EqpBonusLL" />
 							<input type="text" style="display:inline-block;;" value="[[@{EqpArmorLL}+@{EqpBonusLL}]]" disabled  name="attr_EqpTotalLL" />
 						</div>
 						<div>
-							<span>HP</span>
+							<span>PV</span>
 							<input type="text" style="display:inline-block;;" value="0"  readonly  name="attr_l_leg_max_hp" />
 							<input type="text" style="display:inline-block;;" value="0"  readonly  name="attr_l_leg_cur_hp" />
 						</div>
@@ -194,15 +194,15 @@
 					
 					
 					<div class="sheet-hit-box sheet-hit-rleg" style="font-size:x-small" >
-						<label>R leg 1-4</label>
+						<label>Pierna D 1-4</label>
 						<div>
-							<span>AP</span>
+							<span>PA</span>
 							<input type="text" style="display:inline-block;" value="0" name="attr_EqpArmorRL" />
 							<input type="text" style="display:inline-block;;" value="0" name="attr_EqpBonusRL" />
 							<input type="text" style="display:inline-block;;" value="[[@{EqpArmorRL}+@{EqpBonusRL}]]" disabled  name="attr_EqpTotalRL" />
 						</div>
 						<div>
-							<span>HP</span>
+							<span>PV</span>
 							<input type="text" style="display:inline-block;;" value="0"  readonly  name="attr_r_leg_max_hp" />
 							<input type="text" style="display:inline-block;;" value="0"  readonly  name="attr_r_leg_cur_hp" />
 						</div>
@@ -365,7 +365,7 @@
 
 				<div class='sheet-2colrow'>
 					<div class='sheet-col' style="margin-right:30px;width:50%">
-						<div class="sheet-header">Characteristics</div>
+						<div class="sheet-header">Características</div>
 						<div class='sheet-2colrow'>
 							<div>
 								<label style="margin-left:56px;display:inline;font-size:0.6em">Orig.</label>
@@ -374,7 +374,7 @@
 							</div>						
 						<div class='sheet-col' style="width:64%;margin-right:1px">
 							<div>
-								<div class="sheet-char-label">STR</div>
+								<div class="sheet-char-label">FUE</div>
 								<input type="text" class="sheet-char_values" name="attr_basestr" value="0"/>
 								<input type="text" class="sheet-char_values" name="attr_modstr" value="0"/>
 								<input type="text" class="sheet-char_values" readonly name="attr_curstr" value="0"/>
@@ -399,7 +399,7 @@
 							</div>	
 
 							<div>
-								<div class="sheet-char-label">SIZ</div>
+								<div class="sheet-char-label">TAM</div>
 								<input type="text" class="sheet-char_values" name="attr_basesiz" value="0" />
 								<input type="text" class="sheet-char_values" name="attr_modsiz" value="0"/>									
 								<input type="text" class="sheet-char_values" readonly name="attr_cursiz" value="0"/>
@@ -416,7 +416,7 @@
 							</div>
 							
 							<div>
-								<div class="sheet-char-label">POW</div>						
+								<div class="sheet-char-label">POD</div>						
 
 								<input type="text" class="sheet-char_values" name="attr_basepow" value="0"/>
 								<input type="text" class="sheet-char_values" name="attr_modpow" value="0"/>									
@@ -426,7 +426,7 @@
 							</div>
 
 							<div>
-								<div class="sheet-char-label">DEX</div>						
+								<div class="sheet-char-label">DES</div>						
 
 								<input type="text" class="sheet-char_values" name="attr_basedex" value="0"/>	
 								<input type="text" class="sheet-char_values" name="attr_moddex" value="0"/>									
@@ -439,7 +439,7 @@
 							</div>
 
 							<div>	
-								<div class="sheet-char-label">CHR</div>
+								<div class="sheet-char-label">CAR</div>
 								<input type="text" class="sheet-char_values" name="attr_basechr" value="0"/>	
 								<input type="text" class="sheet-char_values" name="attr_modchr" value="0"/>									
 								<input type="text" class="sheet-char_values" readonly name="attr_curchr" value="0"/>
@@ -452,7 +452,7 @@
 						
 						<div class='sheet-col' style="margin-right:1px;width:30%">
 							<div>
-								<div class="sheet-attribute_label">Dam. Bonus</div>
+								<div class="sheet-attribute_label">Mod. Daño</div>
 								<input style="width:50px;" type="text" readonly name="attr_damagebonus" />
 								<input style="display:none" type="text" readonly name="attr_mdamagebonus" />
 								<input style="display:none" type="text" readonly name="attr_maxDb" />
@@ -460,23 +460,23 @@
 
 							</div>
 							<div>
-								<div class="sheet-attribute_label">Move Rate</div>
+								<div class="sheet-attribute_label">Mov.</div>
 								<input style="width:50px;" type="text"  value="8" name="attr_move_rate" />	
 							</div>	
 							<div>
-								<div class="sheet-attribute_label">Dex SRM</div>
+								<div class="sheet-attribute_label">MR-DES</div>
 								<input style="width:50px;" value="0" type="text" readonly name="attr_dex_srm" />	
 							</div>	
 							<div>
-								<div class="sheet-attribute_label">Size SRM</div>
+								<div class="sheet-attribute_label">MR-TAM</div>
 								<input style="width:50px;" value="0" type="text" readonly name="attr_siz_srm" />	
 							</div>		
 							<div>
-								<div class="sheet-attribute_label">Melee SRM</div>
+								<div class="sheet-attribute_label">MR CaC</div>
 								<input style="width:50px;" value="0" type="text" readonly name="attr_melee_srm" />	
 							</div>				
 							<div>
-								<div class="sheet-attribute_label">Heal Rate</div>
+								<div class="sheet-attribute_label">Tasa curación</div>
 								<input style="width:50px;" value="0" type="text" readonly name="attr_heal_rate" />	
 							</div>		
 						
@@ -484,7 +484,7 @@
 						</div>	
 						<span class="buffMsg" name="attr_buffMsg" ></span><input style="display:none" type="text" readonly name="attr_buffMsg" />
 						<br />
-						<div class="sheet-header">Passions</div>
+						<div class="sheet-header">Pasiones</div>
 						<div>
 							<div class="sheet-input_label">Honor</div><input type="text" value="0" style="margin-right:5px;" class="sheet-text_input sheet-percentiles" name="attr_honor" /><input type="checkbox"  style="margin-right:5px;" name="attr_honor_check"/><button type="roll" class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{type=P}} {{skillvalue=[[(@{honor})]]}} {{fumble=[[ceil(95+([[(@{honor})]])/20))]]}} {{crit=[[round(([[(@{honor})]])/20)+1]]}}  {{special=[[round(([[(@{honor})]])/5)+1]]}}    {{success=[[(@{honor})]]}} {{roll=[[1d100]]}} {{skillname=Honor}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{type=P}} {{name=@{character_name}}} {{skillvalue=[[@{honor}]]}} {{fumble=[[ceil(95+(@{honor}+?{Mods|0})/20)]]}} {{crit=[[round((@{honor}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{honor}+?{Mods|0})/5)+1]]}}    {{success=[[@{honor}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Honor}}"><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>						
 						</div>
@@ -502,27 +502,27 @@
 							
 							<div style="border:1px solid black;border-radius:5px;padding:5px">
 							
-								<div style="text-align:center" class="sheet-input_label">Hit Points</div>							
+								<div style="text-align:center" class="sheet-input_label">Puntos de vida</div>							
 								<div>
 									 <div style="display:inline-block">
 										<!-- value="[round((@{cursiz}+@{curcon})/2)]" -->
-										<label style="font-size:0.5em;text-align:center">Max</label>
+										<label style="font-size:0.5em;text-align:center">Máx</label>
 										<input style="text-align:center;width:3.5em" type="text" readonly value="0" name="attr_hp_max" />-
 									 </div>
 									 <div style="display:inline-block">
-										<label style="font-size:0.5em;text-align:center">LHP<br />Loss</label>					
+										<label style="font-size:0.5em;text-align:center">PVL<br />Loss</label>					
 										<input style="text-align:center;width:3em;" readonly value="0" type="text" name="attr_lhp_loss"  />-
 									 </div>
 									 <div style="display:inline-block">
-										<label style="font-size:0.5em;text-align:centee">THP<br />Loss</label>
+										<label style="font-size:0.5em;text-align:centee">PVT<br />Loss</label>
 										<input style="text-align:center;width:3.5em;" readonly value="0" type="text" name="attr_thp_loss"  />=
 									 </div>
 									 <div style="display:inline-block">
-										<label style="font-size:0.5em;text-align:center">Cur.<br />HP</label>					
+										<label style="font-size:0.5em;text-align:center">Act.<br />HP</label>					
 										<input style="text-align:left;width:3em;" value="0" type="text" readonly name="attr_hp_cur"  />
 									 </div>
 									 <div style="display:inline-block">
-										<label style="font-size:0.5em;text-align:center">THP Wounds</label>					
+										<label style="font-size:0.5em;text-align:center">Heridas PVT</label>					
 										<input style="text-align:center;width:11em;" value="0+0" type="text" name="attr_thp_wnds"  />
 									 </div>	
 								</div>	 
@@ -532,46 +532,46 @@
 							<div style="border:1px solid black;padding:5px;border-radius:5px">
 								<div style=" margin-left:50px;">
 								  <div style="margin-left: 5px;display:inline">
-									<div class="sheet-input_label">Dodge</div>
+									<div class="sheet-input_label">Esquivar</div>
 									 <input  class="sheet-section-header sheet-percentiles" readonly type="text" name="attr_dodge"/>
 									 <button  class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{dodge})]]}} {{fumble=[[ceil(95+([[(@{dodge})]])/20))]]}} {{crit=[[round(([[(@{dodge})]])/20)+1]]}}  {{special=[[round(([[(@{dodge})]])/5)+1]]}}    {{success=[[(@{dodge})]]}} {{roll=[[1d100]]}} {{skillname=Dodge}}" ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button  class="sheet-d100_roll"  type="roll"  value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[@{dodge}]]}} {{fumble=[[ceil(95+(@{dodge}+?{Mods|0})/20)]]}} {{crit=[[round((@{dodge}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{dodge}+?{Mods|0})/5)+1]]}}    {{success=[[@{dodge}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Dodge}}"><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								  </div>
 								  <div style="margin-left: 5px;display:inline">
-									 <div class="sheet-input_label">Fumble</div>
+									 <div class="sheet-input_label">Pifia</div>
 									 <button  class="sheet-d100_roll"  type="roll" value="&{template:RQG-Fumble} {{roll=[[1d100]]}}"><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								  </div>
 								</div>
 								<div>
 									<div style="display:inline;margin-left:0px;">
-										<div class="sheet-input_label">Hit Location</div>
+										<div class="sheet-input_label">Localización de golpe</div>
 										<select class="hitlocDrop" name="attr_creature_hit_location" style="font-size:x-small;margin-top: 7px; height: 24px ; width: 130px">
-										   <option value="AnkylosaursL-">Ankylosaurs</option>
-										   <option value="BeetleL-">Beetle</option>
-										   <option value="BirdsFlyingL-">Birds, Flying</option>
-										   <option value="BirdsRunningL-">Birds, Running</option>
-										   <option value="CentaurL-">Centaur</option>
-										   <option value="DragonL-">Dragons/Manticore</option>
-											<option value="Dragonsnail1HL-">Dragonsnail 1 Head</option>
-											<option value="Dragonsnail2HL-">Dragonsnail 2 Heads</option>											
-											<option value="FLL-">Four-Legged</option>
-											<option value="4leggedwingsL-">Four-legged,Winged</option>
-											<option value="harpiesL-" >Harpy</option>										   
-										   <option value="HL-" selected>Human</option>
-										   <option value="mammothL-" >Mammoths/Mastodons</option>										   
-										   <option value="NewtL-">Newtling</option>
-										   <option value="RockL-">Rock Lizard</option>
-										   <option value="serpentL-">Serpent</option>
-										   <option value="serpentWingsL-">Serpent, Winged</option>
-										   <option value="ScorpL-">Scorpion Man</option>
-										   <option value="spiderL-">Spider, Giant</option>
+										   <option value="AnkylosaursL-">Anquilosaurio</option>
+										   <option value="BeetleL-">Escarabajo</option>
+										   <option value="BirdsFlyingL-">Pájaro volador</option>
+										   <option value="BirdsRunningL-">Pájaro andador</option>
+										   <option value="CentaurL-">Centauro</option>
+										   <option value="DragonL-">Dragón/Mantícora</option>
+											<option value="Dragonsnail1HL-">Caracol dragón 1 cabeza</option>
+											<option value="Dragonsnail2HL-">Caracol dragón 2 cabezas</option>											
+											<option value="FLL-">Cuadrúpedo</option>
+											<option value="4leggedwingsL-">Cuadrúpedo alado</option>
+											<option value="harpiesL-" >Arpía</option>										   
+										   <option value="HL-" selected>Humano</option>
+										   <option value="mammothL-" >Mamut/Mastodonte</option>										   
+										   <option value="NewtL-">Tritónido</option>
+										   <option value="RockL-">Lagarto de las rocas</option>
+										   <option value="serpentL-">Serpiente</option>
+										   <option value="serpentWingsL-">Serpiente alada</option>
+										   <option value="ScorpL-">Hombre escorpión</option>
+										   <option value="spiderL-">Araña gigante</option>
 										   <option value="SprulPaL-">Sprul-Pa</option>										   
-										   <option value="WalkL-">Walktapus</option>
-											<option value="wyvernL-">Wyvern</option>
+										   <option value="WalkL-">Pulpandante</option>
+											<option value="wyvernL-">Wyverna</option>
 										</select>
 										<input  name="attr_selected_wpn_type" value="Melee" style="display:none;" />
 									</div>
 									<div style="margin-left:10px;display:inline">
-										<div class="sheet-input_label">Die</div>
+										<div class="sheet-input_label">Dado</div>
 										<select name="attr_selected_die_roll" style="margin-top: 7px; height: 24px ; width: 84px">
 										   <option value="1d20">1d20</option>
 										   <option value="1d10+10">1d10+10</option>
@@ -586,7 +586,7 @@
 							<!-- Start of hit locations and fumbles -->						
 							
 							<br />
-							<div class="sheet-header">Combat Notes</div>
+							<div class="sheet-header">Notas de combate</div>
 							<textarea style="width:95%;min-height:200px" name="attr_combat-notes"></textarea>
 							
 					</div><!-- endofcolumn-->
@@ -599,58 +599,58 @@
 							<input class="sheet-HideConfig2" type="checkbox" checked="checked" name="attr_is_config2"><span class="sheet-is-config2"><span style="font-family: &quot;pictos&quot;">y</span></span>
 							<div class="sheet-config2" style="border-style: dotted ; border-color: gray ; padding: 5px ; background-color: white ; background-image: none">
 							
-								<input type="checkbox" name="attr_showsorcery" checked="checked"><span>Show Sorcery</span><br>
-								<input type="checkbox" name="attr_showbroken1" checked="checked"><span>Show old MP storage section</span>
+								<input type="checkbox" name="attr_showsorcery" checked="checked"><span>Mostrar hechicería</span><br>
+								<input type="checkbox" name="attr_showbroken1" checked="checked"><span>Mostrar antigua sección de baterías de PM</span>
 
 							</div>
 						</div>	
 								
 						<fieldset class="repeating_cults3">
 							<div class="sheet-info">
-								<div class="sheet-input_label">Cult</div><input type="text" style="width:102px;" class="sheet-text_input" name="attr_cult" />
-								<div class="sheet-input_label">Rank</div><input type="text" style="width:69px;" class="sheet-text_input" name="attr_rank" />
-								<div class="sheet-input_label">Rune Pts</div><input type="text" value="0" style="width:24px" class="sheet-text_input" name="attr_rune_pts" >/<input  style="width:24px" type="text" value="0" class="sheet-text_input sheet-percentiles" name="attr_cur_rune_pts"  />
+								<div class="sheet-input_label">Culto</div><input type="text" style="width:102px;" class="sheet-text_input" name="attr_cult" />
+								<div class="sheet-input_label">Rango</div><input type="text" style="width:69px;" class="sheet-text_input" name="attr_rank" />
+								<div class="sheet-input_label">Ptos. rúnicos</div><input type="text" value="0" style="width:24px" class="sheet-text_input" name="attr_rune_pts" >/<input  style="width:24px" type="text" value="0" class="sheet-text_input sheet-percentiles" name="attr_cur_rune_pts"  />
 							</div>
 							<div>
-								<div class="sheet-input_label">Sub- or Assoc. Cults</div><input type="text"  class="sheet-text_input" name="attr_assoc_cults" >
+								<div class="sheet-input_label">Subcultos o cultos asociados</div><input type="text"  class="sheet-text_input" name="attr_assoc_cults" >
 							
 							</div>
 
 						</fieldset>
 						<br />
-						<div class="sheet-header">Spirit Combat</div>
+						<div class="sheet-header">Combate espiritual</div>
 						<div>
-							<div class="sheet-input_label">Spirit Combat</div>
+							<div class="sheet-input_label">Combate espiritual</div>
 							<input type="text" value="0" style="width:24px;margin-right:5px;" class="sheet-text_input" readonly name="attr_spirit_combat" /><button type="roll" class="sheet-d100_roll"  value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{spirit_combat})]]}} {{fumble=[[ceil(95+([[(@{spirit_combat})]])/20))]]}} {{crit=[[round(([[(@{spirit_combat})]])/20)+1]]}}  {{special=[[round(([[(@{spirit_combat})]])/5)+1]]}}    {{success=[[(@{spirit_combat})]]}} {{roll=[[1d100]]}} {{skillname=Spirit Combat}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" />
 							</button><button class="sheet-d100_roll" type="roll" style="margin-right:5px;" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[@{spirit_combat}]]}} {{fumble=[[ceil(95+(@{spirit_combat}+?{Mods|0})/20)]]}} {{crit=[[round((@{spirit_combat}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{spirit_combat}+?{Mods|0})/5)+1]]}}    {{success=[[@{spirit_combat}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Spirit Combat}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><div class="sheet-input_label">Damage</div><input type="text" value="" style="width:70px" class="sheet-text_input" readonly name="attr_sprt_cmbt_damage" /><button type="roll" class="sheet-d100_roll" value="[[@{sprt_cmbt_damage}]]"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 						</div>
 						<br />
-						<div class="sheet-header" >Spirit Magic</div>
+						<div class="sheet-header" >Magia espiritual</div>
 						<div style="margin-left:210px;display:inline-block">
-							<div class="sheet-input_label">CHA Limit</div>
+							<div class="sheet-input_label">Límite de CAR</div>
 							<input  style="width:24px" type="text" value="0" class="sheet-text_input sheet-percentiles" readonly name="attr_curchr"/>
 							 <button type="roll"  class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{curpow}*5)]]}} {{fumble=[[ceil(95+([[(@{curpow}*5)]])/20))]]}} {{crit=[[round(([[(@{curpow}*5)]])/20)+1]]}} {{special=[[round(([[(@{curpow}*5)]])/5)+1]]}}         {{success=[[(@{curpow}*5)]]}} {{roll=[[1d100]]}} {{skillname=Spirit Magic}}" ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{curpow}*5)]]}} {{fumble=[[ceil(95+([[(@{curpow}*5)+?{Mods|0}]])/20))]]}} {{crit=[[round(([[(@{curpow}*5)+?{Mods|0}]])/20)+1]]}} {{special=[[round(([[(@{curpow}*5)+?{Mods|0}]])/5)+1]]}}         {{success=[[(@{curpow}*5)+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Spirit Magic}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button> 
 						</div>	
 						<textarea  name="attr_spirit_magic" class="sheet-magic_notes"></textarea> 
 						<div>
-							<div class="sheet-header" >Spells Cast:</div>
+							<div class="sheet-header" >Conjuros lanzados:</div>
 							<div>
-								<span>Coordination <input type="checkbox"  name="attr_coordCast"  /></span><span>&nbsp;Glamour <input type="checkbox"  name="attr_glamourCast"  /></span><span>&nbsp;Mobility <input type="checkbox"  name="attr_mobilCast"  /></span>	
+								<span>Coordinación <input type="checkbox"  name="attr_coordCast"  /></span><span>&nbsp;Glamour <input type="checkbox"  name="attr_glamourCast"  /></span><span>&nbsp;Mobility <input type="checkbox"  name="attr_mobilCast"  /></span>	
 							</div>
 							<div>
-								<span>Strength <input type="checkbox"  name="attr_strengthCast"  /></span>
+								<span>Fuerza <input type="checkbox"  name="attr_strengthCast"  /></span>
 								<span>Vigor <input type="checkbox"  name="attr_vigorCast"  /></span>
 							</div>
 						</div>			
 						<br />
-						<div class="sheet-header" style="display:inline-block">Rune Magic</div>
+						<div class="sheet-header" style="display:inline-block">Magia rúnica</div>
 						<textarea  name="attr_rune_magic" class="sheet-magic_notes"></textarea> 
 						<br />
 						<input type="checkbox" class="sheet-showsorcery" name="attr_showsorcery" checked="checked" style="display: none">
 						<div class="sheet-sorcery">
-							<div class="sheet-header" >Sorcerous Runes and Techniques</div>
+							<div class="sheet-header" >Runas y técnicas de hechicería</div>
 							<div style="margin-left:266px;display:inline-block">
-								<div class="sheet-input_label">Free INT</div>
+								<div class="sheet-input_label">INT libre</div>
 								<input  style="width:24px" type="text" value="0" class="sheet-text_input sheet-percentiles" name="attr_freeint"/>
 								<!--
 								 <button type="roll"  class="sheet-d100_roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{curpow}*5)]]}} {{fumble=[[ceil(95+([[(@{curpow}*5)]])/20))]]}} {{crit=[[round(([[(@{curpow}*5)]])/20)+1]]}} {{special=[[round(([[(@{curpow}*5)]])/5)+1]]}}         {{success=[[(@{curpow}*5)]]}} {{roll=[[1d100]]}} {{skillname=POW Roll}}" ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><button class="sheet-d100_roll" type="roll" value="&{template:skillRoll} {{name=@{character_name}}} {{skillvalue=[[(@{curpow}*?{multiplier|5})]]}} {{fumble=[[ceil(95+([[(@{curpow}*?{multiplier|5})]])/20))]]}} {{crit=[[round(([[(@{curpow}*?{multiplier|5})]])/20)+1]]}} {{special=[[round(([[(@{curpow}*?{multiplier|5})]])/5)+1]]}}         {{success=[[(@{curpow}*?{multiplier|5})]]}} {{roll=[[1d100]]}} {{skillname=POW Roll}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>--> 
@@ -658,7 +658,7 @@
 							<textarea  name="attr_sorcery_magic" class="sheet-magic_notes"></textarea> 
 							<br />
 						</div>
-						<div class="sheet-header" >Magic Points & Storage</div>	
+						<div class="sheet-header" >Puntos mágicos y matrices</div>	
 						<div class="sheet-melee_wpns_labels">
 							   <div style="margin-left:3px;">Location</div>
 							   <div style="margin-left:250px;">Max.</div>
@@ -676,7 +676,7 @@
 								<input  style="width:24px" type="text" value="0" class="sheet-text_input sheet-percentiles"  name="attr_maxmp"/>
 								<input  style="width:24px" type="text" value="0" class="sheet-text_input sheet-percentiles"  name="attr_curmp"/>
 							</fieldset>				
-							<span class="deprecWarn">The above section only allows one item. Recreate your item in the section below.  To remove the section above remove the check mark in the configuration section (the cog) at the top of this column </span>
+							<span class="deprecWarn">La sección superior solo permite un objeto. Recrea el objeto en la sección inferior.  Para eliminar la sección superior, elimina la casilla marcada en la sección de configuración (engranaje) en la parte superior de esta columna </span>
 							<br >
 							<br>
 						</div>
@@ -688,17 +688,17 @@
 						</fieldset>
 						</fieldset>
 						<br />
-						<div class="sheet-header" >Magic Notes</div>	
+						<div class="sheet-header" >Notas sobre magia</div>	
 						<textarea  name="attr_magic_notes" style="min-height:200px;"></textarea> 
 
 					</div>				
 				</div>			
 			<hr class="sheet-hr" />
-						<div class="sheet-header">Weapons</div>
+						<div class="sheet-header">Armas</div>
 						<br />
 						<div style="margin-left:2px;margin-bottom:20px;">
 							<div>
-								<div CLASS="sheet-input_label">Modifiers</div>
+								<div CLASS="sheet-input_label">Modificadores</div>
 								
 								<!--<select name="attr_skillReduct" style="width:100px;display:inline-block" >
 									<option value="1">Full Skill</option>
@@ -711,19 +711,19 @@
 						<input type="text" style="display:none" name="attr_srMod"  value="0">						
 						
 						<div class="sheet-melee_wpns_labels">
-							   <div style="margin-left:3px;">Melee Weapon</div>
-							   <div style="margin-left:30px;">Skill Used</div>
-							   <div style="margin-left:54px;">Default</div>
-							   <div style="margin-left:3px;">WSR</div>
-							   <div style="margin-left:15px;">SR</div>
-							   <!--<div style="margin-left:14px;">STR/DEX</div>-->	   
+							   <div style="margin-left:3px;">Arma cuerpo a cuerpo</div>
+							   <div style="margin-left:30px;">Habilidad</div>
+							   <div style="margin-left:54px;">Por defecto</div>
+							   <div style="margin-left:3px;">MR del arma</div>
+							   <div style="margin-left:15px;">MR</div>
+							   <!--<div style="margin-left:14px;">FUE/DES</div>-->	   
 							   <div style="margin-left:43px;">%</div>
 							   <div style="margin-left:16px;">Mod.</div>
-							   <div style="margin-left:38px;">Damage</div>
+							   <div style="margin-left:38px;">Daño</div>
 							   <div style="margin-left:8px;">*</div>							   							   
-							   <div style="margin-left:7px;">Type</div>
-							   <div style="margin-left:8px;">Special</div>						   
-							   <div style="margin-left:25px;" >HP</div>		
+							   <div style="margin-left:7px;">Tipo</div>
+							   <div style="margin-left:8px;">Especial</div>						   
+							   <div style="margin-left:25px;" >PG</div>		
 						</div>
 						
 						<fieldset class="repeating_melee2">
@@ -795,15 +795,15 @@
 						   
 						</fieldset>		
 						<div>
-							<span class="sheet-input_label">* Use mount's damage bonus</span>
-							<input class="sheet-text_input" value="0"	type="text" style="width:50px" title="Mount Damage Bonus" name="attr_mountDB"/>
+							<span class="sheet-input_label">* Usa el mod. daño de la montura</span>
+							<input class="sheet-text_input" value="0"	type="text" style="width:50px" title="Mod. daño de montura" name="attr_mountDB"/>
 						</div>
 						<!--- end of melee wpns -->
 		
 						<br >
 						<!-- missile wpns -->
 						DSR <input style="width:30px;text-align:center" value="0" type="text" readonly name="attr_dex_srm" /> <button type="roll" style="padding-top: 0px;" class="sheet-turn_order" title="Add to turn order" value="@{add_dsr}" ></button>&nbsp;&nbsp;
-						Readied Weapon<input style="width:130px;text-align:center" value="" type="text" readonly name="attr_ready_wpn" />&nbsp;&nbsp; Unready Weapon<input style="width:130px;text-align:center" value="" type="text" readonly name="attr_unready_wpn">
+						Arma preparada<input style="width:130px;text-align:center" value="" type="text" readonly name="attr_ready_wpn" />&nbsp;&nbsp; Unready Weapon<input style="width:130px;text-align:center" value="" type="text" readonly name="attr_unready_wpn">
 						
 						
 						
@@ -894,19 +894,19 @@
 		<div >
 			
 			<div>
-				<span style="margin-left:139px">Enc Mod</span>
+				<span style="margin-left:139px">Mod. carga</span>
 				<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  value="0" type="text" readonly name="attr_enc_mod2"/>	
 				
-				<span style="margin-left:8px">Dodge Mod</span>
+				<span style="margin-left:8px">Mod. esquivar</span>
 				<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  value="0"  type="text"  readonly  name="attr_dodge_mod2"/>
 
-				<span style="margin-left:8px">Swim Mod</span>
+				<span style="margin-left:8px">Mod. nadar</span>
 				<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  value="0"  type="text"  readonly  name="attr_swim_mod2"/>
 				
-				<span style="margin-left:8px">MQ Mod.</span>
+				<span style="margin-left:8px">Mod. MQ</span>
 				<input class="sheet-text_input sheet-char_inputs" style="width:45px"  readonly value="0" type="text" name="attr_mq_total"/>
 				
-				<span style="margin-left:8px">Skill Mod</span>
+				<span style="margin-left:8px">Mod. habilidad</span>
 				<input class="sheet-text_input sheet-char_inputs sheet-percentiles"  value="0"  type="text"   name="attr_skill_mod"/>			
 			</div>
 			<br />
@@ -914,9 +914,9 @@
 				<div style="margin-left:3px;margin-right:3px;width:31%" class='sheet-col'>
 
 					<div> 
-						<div class="sheet-skill_category">Agility</div>
+						<div class="sheet-skill_category">Agilidad</div>
 						<div style="display:inline-block;margin-left:69px;">
-							<span><b>Modifier</b></span>
+							<span><b>Modificador</b></span>
 							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_agility_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Agility Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{agility_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 						</div>
 						
@@ -933,9 +933,9 @@
 							
 						</fieldset>
 						<br />
-						<div class="sheet-skill_category">Communication</div>
+						<div class="sheet-skill_category">Comunicación</div>
 						<div style="display:inline-block;margin-left:9px;">
-							<span><b>Modifier</b></span>
+							<span><b>Modificador</b></span>
 							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_communication_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Communication Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{communication_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 						</div>
 						
@@ -950,9 +950,9 @@
 							</div>	
 						</fieldset>
 						<br />					
-						<div class="sheet-skill_category">Knowledge</div>
+						<div class="sheet-skill_category">Conocimiento</div>
 						<div style="display:inline-block;margin-left:40px;">
-							<span><b>Modifier</b></span>
+							<span><b>Modificador</b></span>
 							<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_knowledge_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Knowledge Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{knowledge_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 						</div>
 						
@@ -977,9 +977,9 @@
 					<div class='sheet-2colrow'>
 					
 						<div style="margin-right:10px" class='sheet-col'>
-								<div class="sheet-skill_category">Magic</div>
+								<div class="sheet-skill_category">Magia</div>
 								<div style="display:inline-block;margin-left:75px;">
-									<span><b>Modifier</b></span>
+									<span><b>Modificador</b></span>
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_magic_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Magic Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{magic_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								</div>
 								
@@ -994,9 +994,9 @@
 									</div>	
 								</fieldset>
 								<br />
-								<div class="sheet-skill_category">Manipulation</div>
+								<div class="sheet-skill_category">Manipulación</div>
 								<div style="display:inline-block;margin-left:29px;">
-									<span><b>Modifier</b></span>
+									<span><b>Modificador</b></span>
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_manipulation_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Manipulation Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{manipulation_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								</div>
 								
@@ -1012,9 +1012,9 @@
 									
 								</fieldset>
 								<br />	
-								<div class="sheet-skill_category">Perception</div>
+								<div class="sheet-skill_category">Percepción</div>
 								<div style="display:inline-block;margin-left:43px;">
-									<span><b>Modifier</b></span>
+									<span><b>Modificador</b></span>
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_perception_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Perception Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{perception_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								</div>
 								
@@ -1029,9 +1029,9 @@
 									</div>	
 								</fieldset>
 								<br />
-								<div class="sheet-skill_category">Stealth</div>
+								<div class="sheet-skill_category">Sigilo</div>
 								<div style="display:inline-block;margin-left:66px;">
-									<span><b>Modifier</b></span>
+									<span><b>Modificador</b></span>
 									<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_stealth_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Stealth Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{stealth_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								</div>
 								
@@ -1049,9 +1049,9 @@
 								
 						</div><!--- end 2nd col -->	
 							<div style="margin-right:10px" class='sheet-col'>
-									<div class="sheet-skill_category">Melee Weapons</div>
+									<div class="sheet-skill_category">Armas cuerpo a cuerpo</div>
 									<div style="display:inline-block;margin-left:9px;">
-										<span><b>Modifier</b></span>
+										<span><b>Modificador</b></span>
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_manipulation_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Melee Weapon Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{manipulation_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 									</div>
 									
@@ -1063,9 +1063,9 @@
 										<input type="checkbox" name="attr_expCheck" />							
 									</fieldset>
 									<br />
-									<div class="sheet-skill_category">Missile Weapons</div>
+									<div class="sheet-skill_category">Armas de proyectiles</div>
 									<div style="display:inline-block;margin-left:4px;">
-										<span><b>Modifier</b></span>
+										<span><b>Modificador</b></span>
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_manipulation_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Missle Weapon Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{manipulation_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 									</div>
 									
@@ -1077,9 +1077,9 @@
 										<input type="checkbox" name="attr_expCheck" />
 									</fieldset>
 									<br />
-									<div class="sheet-skill_category">Shields</div>
+									<div class="sheet-skill_category">Escudos</div>
 									<div style="display:inline-block;margin-left:63px;">
-										<span><b>Modifier</b></span>
+										<span><b>Modificador</b></span>
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_manipulation_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Shield Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{manipulation_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 									</div>
 									
@@ -1092,7 +1092,7 @@
 
 									</fieldset>
 									<br />
-									<div class="sheet-skill_category">Natural Weapons</div>
+									<div class="sheet-skill_category">Armas naturales</div>
 									<div style="display:inline-block;margin-left:-1px;">
 										<span><b>Modifier</b></span>
 										<input type="text" value="0" class="sheet-text_input sheet-skill_values2" readonly name="attr_manipulation_mod"/><button type="roll" class="sheet-d100_roll" value="&{template:expRoll} {{skill=Natural Weapon Skill }} {{value=[[(?{Skill Value|0})+1]]}} {{name=@{character_name}}}  {{roll=[[1d100+@{manipulation_mod}]]}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
@@ -1113,14 +1113,14 @@
 				
 					<br />
 					<hr class="sheet-hr">
-					<div class="sheet-skill_category">Addtional Magic</div>
+					<div class="sheet-skill_category">Magia adicional</div>
 					<textarea style="width:95%;min-height:100px;" name="attr_add_magic"></textarea>
 					<br />
 
-					<div class="sheet-skill_category">Equipment</div>				
+					<div class="sheet-skill_category">Equipo</div>				
 					<div style="margin-left:13px;">
 		
-						<p style="font-weight:bold; display:inline-block">Carried</p>
+						<p style="font-weight:bold; display:inline-block">Cargado</p>
 						<p style="font-weight:bold; width:68%; display:inline-block;margin-left:13px">Item</p>
 						<p style="font-weight:bold;text-align:center;width: 2% ;display:inline-block">Wt.</p>
 						<p title="Move Quietly Modifier" style="font-weight:bold;text-align:center;width: 13% ;display:inline-block">-MQ</p>
@@ -1139,7 +1139,7 @@
 						<span class="coins"><b>Goods (L)</b></span><input class="text_input char_inputs goods" value="0" type="text" name="attr_goods"/>							
 						<br />
 						<br />						
-						<span>Max Enc</span>
+						<span>Carga máx</span>
 						<input class="sheet-text_input sheet-char_inputs sheet-percentiles" value="0" type="text" name="attr_carry_max2"/>
 						<span style="margin-left:8px">Total Enc</span>								
 						<input class="sheet-text_input sheet-char_inputs" style="width:45px"   value="0" type="text" name="attr_carry_total2"/>
@@ -1155,9 +1155,9 @@
 		</div><!---- End of Tab -->
 		<div class="sheet-tab-contenta sheet-tab3a"><!--- Tab 3 start -->
 			<div style="text-align:center">
-				<div class="sheet-header2">MOUNT|ELEMENTAL|ALLY</div>				
+				<div class="sheet-header2">MONTURA|ELEMENTAL|ALIADO</div>				
 			</div>
-			<div class="sheet-header">Mounts/Allies</div>	
+			<div class="sheet-header">Monturas/Alliados</div>	
 			<fieldset class="repeating_mounts">
 					<div class='sheet-2colrow'>
 						<div style="margin-left:4px" class="sheet-col">
@@ -1178,14 +1178,14 @@
 							<br />
 							<table>
 									<tr>
-										<td>HP</td>
+										<td>PV</td>
 										<td>
 											<input type="text" class="sheet-value_display2" name="attr_animal1a_hp_max" value="0" />
 											/
 											<input type="text"  class="sheet-value_display2" value="0" name="attr_animal1a_hp_cur" />
 										</td>	
 
-										<td>Move</td>
+										<td>Mov.</td>
 										<td>
 												<input type="text"  class="sheet-value_display2"  name="attr_animal1a_move" value="0" />
 										</td>
@@ -1194,7 +1194,7 @@
 									<tr>
 									</tr>
 									<tr>
-										<td>MP</td>
+										<td>PM</td>
 										<td>
 											<input type="text" class="sheet-value_display2"  name="attr_animal1a_mp_max" value="0" />
 											/
@@ -1205,7 +1205,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td>DB</td>
+										<td>Mod. daño</td>
 										<td><input type="text"  class="sheet-value_display2"  name="attr_animal1a_db" style="width:105px;" value="0" /></td>
 										<td>MSR</td>
 										<td><input type="text"  class="sheet-value_display2"  name="attr_animal1a_msr" value="0" />
@@ -1217,10 +1217,10 @@
 							
 							<div style="margin-top:5px;" class="sheet-melee_wpns_labels">
 								<br />
-							   <label style="width:98px">Weapon</label>
-							   <label style="width:34px">SR</label>   
-							    <label style="width:74px">Attk</label>   
-							   <label style="width:71px">Damage</label>   
+							   <label style="width:98px">Arma</label>
+							   <label style="width:34px">MR</label>   
+							    <label style="width:74px">Atq.</label>   
+							   <label style="width:71px">Daño</label>   
 							</div>	
 							
 							<div>
@@ -1242,7 +1242,7 @@
 							</div>	
 							
 							<div>
-								<input   class="sheet-value_display2"  type="text" name="attr_wpn_name1a3" style="text-align:left;width:100px;" value="weapon" />
+								<input   class="sheet-value_display2"  type="text" name="attr_wpn_name1a3" style="text-align:left;width:100px;" value="arma" />
 								<input   class="sheet-value_display2" type="text" name="attr_wpn_sr1a3" value="0" />
 								<input  class="sheet-value_display2" type="text" name="attr_wpn_attk1a3" value="0" />
 								<input  class="sheet-value_display2"  type="text" style="width:80px" name="attr_wpn_damage1a3" value="0" />
@@ -1255,7 +1255,7 @@
 							<div >	
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1267,7 +1267,7 @@
 								</span>
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1279,7 +1279,7 @@
 								</span>
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1293,7 +1293,7 @@
 							<div>	
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1305,7 +1305,7 @@
 								</span>
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1317,7 +1317,7 @@
 								</span>
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1332,7 +1332,7 @@
 							
 							
 							<br />
-							<p>Hit Locations</p>
+							<p>Localizaciones de golpe</p>
 							<textarea style="font-family:courier;margin:0px;" name="attr_animal1_hitloc" >
 D20	Result         AP/HP
 1-2	Right hind-leg	0/0
@@ -1346,7 +1346,7 @@ THP 0/0
 							</textarea>
 							
 							<br />							
-							<p>Notes</p>
+							<p>Notas</p>
 							<textarea style="font-family:courier;margin:0px;" name="attr_animal1a_notes" ></textarea>
 						</div> <!--  Animal 1 -->
 						<!--- Animal 2 -->	
@@ -1370,13 +1370,13 @@ THP 0/0
 								
 									
 									<tr>
-										<td>HP</td>
+										<td>PV</td>
 										<td>
 											<input type="text" class="sheet-value_display2" name="attr_animal2a_hp_max" value="0" />
 											/
 											<input type="text"  class="sheet-value_display2" value="0" name="attr_animal2a_hp_cur" />
 										</td>	
-											<td>Move</td>
+											<td>Mov.</td>
 											<td>
 												<input type="text"  class="sheet-value_display2"  name="attr_animal2a_move" value="0" />
 											</td>
@@ -1385,7 +1385,7 @@ THP 0/0
 									<tr>
 									</tr>
 									<tr>
-										<td>MP</td>
+										<td>PM</td>
 										<td>
 											<input type="text" class="sheet-value_display2"  name="attr_animal2a_mp_max" value="0" />
 											/
@@ -1397,7 +1397,7 @@ THP 0/0
 										</td>
 									</tr>
 									<tr>
-										<td>DB</td>
+										<td>Mod. daño</td>
 										<td><input type="text"  class="sheet-value_display"  name="attr_animal2a_db" style="width:105px;" value="0" /></td>
 										<td>MSR</td>
 										<td><input type="text"  class="sheet-value_display2"  name="attr_animal2a_msr" value="0" />
@@ -1409,10 +1409,10 @@ THP 0/0
 							
 							<div style="margin-top:5px;" class="sheet-melee_wpns_labels">
 								<br />
-							   <label style="width:98px">Weapon</label>
-							   <label style="width:34px">SR</label>   
-							   <label style="width:74px">Attk</label>   
-							   <label style="width:71px">Damage</label>   
+							   <label style="width:98px">Arma</label>
+							   <label style="width:34px">MR</label>   
+							   <label style="width:74px">Atq.</label>   
+							   <label style="width:71px">Daño</label>   
 							</div>	
 							
 							<div>
@@ -1449,7 +1449,7 @@ THP 0/0
 							<div>	
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1461,7 +1461,7 @@ THP 0/0
 								</span>
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1473,7 +1473,7 @@ THP 0/0
 								</span>
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1487,7 +1487,7 @@ THP 0/0
 							<div>	
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1499,7 +1499,7 @@ THP 0/0
 								</span>
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1511,7 +1511,7 @@ THP 0/0
 								</span>
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Skill</div>
+									   <div style="">Habilidad</div>
 									   <div style="margin-left:38px;">&#37;</div>   
 									</div>	
 									
@@ -1523,7 +1523,7 @@ THP 0/0
 								</span>									
 							</div>	
 							
-							<p>Hit Locations</p>
+							<p>Localizaciones de golpe</p>
 							<textarea style="font-family:courier;margin:0px;" name="attr_animal1_hit2oc" >
 D20	Result         AP/HP
 1-2	Right hind-leg	0/0
@@ -1537,14 +1537,14 @@ THP 0/0
 					
 							</textarea>
 							<br />
-							<p>Notes</p>
+							<p>Notas</p>
 							<textarea style="font-family:courier;margin:0px;" name="attr_animal2_notes" ></textarea>	
 						</div><!-- Animal 2 -->
 					</div>			
 			</fieldset>
 			
 			<br />
-			<div class="sheet-header">Otherworld Creatures</div>
+			<div class="sheet-header">Seres de otros mundos</div>
 
 
 			<fieldset class="repeating_otherworld">
@@ -1568,14 +1568,14 @@ THP 0/0
 							<br />
 							<table>
 									<tr>
-										<td>HP</td>
+										<td>PV</td>
 										<td>
 											<input type="text" class="sheet-value_display2" name="attr_otherworld1a_hp_max" value="0" />
 											/
 											<input type="text"  class="sheet-value_display2" value="0" name="attr_otherworld1a_hp_cur" />
 										</td>	
 
-										<td>Move</td>
+										<td>Mov.</td>
 										<td>
 												<input type="text"  class="sheet-value_display2"  name="attr_otherworld1a_move" value="0" />
 										</td>
@@ -1584,7 +1584,7 @@ THP 0/0
 									<tr>
 									</tr>
 									<tr>
-										<td>MP</td>
+										<td>PM</td>
 										<td>
 											<input type="text" class="sheet-value_display2"  name="attr_otherworld1a_mp_max" value="0" />
 											/
@@ -1599,7 +1599,7 @@ THP 0/0
 							</br />
 							<div>
 								<div style="margin-top:10px">
-									<div class="sheet-input_label">Spirit Combat</div>
+									<div class="sheet-input_label">Combate espiritual</div>
 									<input type="text" value="0" style="width:24px;margin-right:5px;" class="sheet-text_input" name="attr_spirit_combat1" /><button type="roll" class="sheet-d100_roll"  value="&{template:skillRoll} {{name=@{otherworld1_name}}} {{skillvalue=[[(@{spirit_combat1})]]}} {{fumble=[[ceil(95+([[(@{spirit_combat1})]])/20))]]}} {{crit=[[round(([[(@{spirit_combat1})]])/20)+1]]}}  {{special=[[round(([[(@{spirit_combat1})]])/5)+1]]}}    {{success=[[(@{spirit_combat1})]]}} {{roll=[[1d100]]}} {{skillname=Spirit Combat}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" />
 									</button><button class="sheet-d100_roll" type="roll" style="margin-right:5px;" value="&{template:skillRoll} {{name=@{otherworld1_name}}} {{skillvalue=[[@{spirit_combat1}]]}} {{fumble=[[ceil(95+(@{spirit_combat1}+?{Mods|0})/20)]]}} {{crit=[[round((@{spirit_combat1}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{spirit_combat1}+?{Mods|0})/5)+1]]}}    {{success=[[@{spirit_combat1}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Spirit Combat}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><div class="sheet-input_label">Damage</div><input type="text" value="" style="width:50px" class="sheet-text_input"  name="attr_sprt_cmbt_damage" /><button type="roll" class="sheet-d100_roll" value="[[@{sprt_cmbt_damage1}]]"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								</div>							
@@ -1609,7 +1609,7 @@ THP 0/0
 								
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Damage</div>								
+									   <div style="">Daño</div>								
 									</div>	
 									
 									<div>
@@ -1629,7 +1629,7 @@ THP 0/0
 							
 							
 							<br />
-							<p>Hit Locations</p>
+							<p>Localizaciones de golpe</p>
 							<textarea style="font-family:courier;margin:0px;" name="attr_otherworld1_hitloc" >
 D20	Result         AP/HP
 1-20	Body	0/0
@@ -1637,7 +1637,7 @@ THP 0/0
 							</textarea>
 							
 							<br />							
-							<p>Notes/Runes/Passions/Spells</p>
+							<p>Notas/Runas/Pasiones/Conjuros</p>
 							<textarea style="font-family:courier;margin:0px;" name="attr_otherworld1a_notes" ></textarea>
 						</div> <!--  otherworld 1 -->
 						<!--- otherworld 2 -->	
@@ -1660,14 +1660,14 @@ THP 0/0
 							<br />
 							<table>
 									<tr>
-										<td>HP</td>
+										<td>PV</td>
 										<td>
 											<input type="text" class="sheet-value_display2" name="attr_otherworld2a_hp_max" value="0" />
 											/
 											<input type="text"  class="sheet-value_display2" value="0" name="attr_otherworld2a_hp_cur" />
 										</td>	
 
-										<td>Move</td>
+										<td>Mov.</td>
 										<td>
 												<input type="text"  class="sheet-value_display2"  name="attr_otherworld2a_move" value="0" />
 										</td>
@@ -1676,7 +1676,7 @@ THP 0/0
 									<tr>
 									</tr>
 									<tr>
-										<td>MP</td>
+										<td>PM</td>
 										<td>
 											<input type="text" class="sheet-value_display2"  name="attr_otherworld2a_mp_max" value="0" />
 											/
@@ -1691,7 +1691,7 @@ THP 0/0
 							</br />
 							<div>
 								<div style="margin-top:10px">
-									<div class="sheet-input_label">Spirit Combat</div>
+									<div class="sheet-input_label">Combate espiritual</div>
 									<input type="text" value="0" style="width:24px;margin-right:5px;" class="sheet-text_input" name="attr_spirit_combat2" /><button type="roll" class="sheet-d100_roll"  value="&{template:skillRoll} {{name=@{otherworld2_name}}} {{skillvalue=[[(@{spirit_combat2})]]}} {{fumble=[[ceil(95+([[(@{spirit_combat2})]])/20))]]}} {{crit=[[round(([[(@{spirit_combat2})]])/20)+1]]}}  {{special=[[round(([[(@{spirit_combat2})]])/5)+1]]}}    {{success=[[(@{spirit_combat2})]]}} {{roll=[[1d100]]}} {{skillname=Spirit Combat}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" />
 									</button><button class="sheet-d100_roll" type="roll" style="margin-right:5px;" value="&{template:skillRoll} {{name=@{otherworld2_name}}} {{skillvalue=[[@{spirit_combat2}]]}} {{fumble=[[ceil(95+(@{spirit_combat2}+?{Mods|0})/20)]]}} {{crit=[[round((@{spirit_combat2}+?{Mods|0})/20)+1]]}}  {{special=[[round((@{spirit_combat2}+?{Mods|0})/5)+1]]}}    {{success=[[@{spirit_combat2}+?{Mods|0}]]}} {{roll=[[1d100]]}} {{skillname=Spirit Combat}}"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button><div class="sheet-input_label">Damage</div><input type="text" value="" style="width:50px" class="sheet-text_input"  name="attr_sprt_cmbt_damage2" /><button type="roll" class="sheet-d100_roll" value="[[@{sprt_cmbt_damage2}]]"  ><img class="sheet-d100_image" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/RunequestGQS/luck.png" /></button>
 								</div>							
@@ -1701,7 +1701,7 @@ THP 0/0
 								
 								<span style="display:inline-block">
 									<div style="margin-top:5px;display:inline-block" class="sheet-melee_wpns_labels">
-									   <div style="">Damage</div>								
+									   <div style="">Daño</div>								
 									</div>	
 									
 									<div>
