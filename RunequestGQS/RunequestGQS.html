@@ -9788,76 +9788,76 @@ console.log("111111111 swim_mod2 "+swim_mod);
 	<table style="background-color: #ffffff;" class="sheet-rolltemplate-skillRoll">
 	
 	{{#rollTotal() table 0}}
-		<th>Melee Attack Fumble </th>
+		<th>Pifia en ataque cuerpo a cuerpo</th>
 	{{/rollTotal() table 0}}
 	{{#rollTotal() table 1}}
-		<th>Melee Parry Fumble </th>
+		<th>Pifia en parada cuerpo a cuerpo</th>
 	{{/rollTotal() table 1}}	
 	{{#rollTotal() table 2}}
-		<th>Missle Attack Fumble </th>
+		<th>Pifia en ataque con proyectiles</th>
 	{{/rollTotal() table 2}}	
 	{{#rollTotal() table 3}}
-		<th>Natural Weapon Fumble </th>
+		<th>Pifia con armas naturales</th>
 	{{/rollTotal() table 3}}
 	<!--<tr><td><b>Roll:</b>{{roll}}</td></tr>
 	<tr><td><b>Table:</b>{{table}}</td></tr>-->
 	<tr>
 	{{#rollTotal() table 0}}
-		{{#rollBetween() roll 1 15}}<td class="template_value">Lose the next combat round and are effectively helpless.</td>{{/rollBetween() roll 1 15}}
-		{{#rollBetween() roll 16 25}}<td class="template_value">Lose the next 1D3 combat rounds and are effectively helpless.</td>{{/rollBetween() roll 16 25}}		
-		{{#rollBetween() roll 26 40}}<td class="template_value">Fall down.</td>{{/rollBetween() roll 26 40}}		
-		{{#rollBetween() roll 41 50}}<td class="template_value">Drop the weapon being used.</td>{{/rollBetween() roll 41 50}}
-		{{#rollBetween() roll 51 60}}<td class="template_value">Throw weapon 1D10 meters away.</td>{{/rollBetween() roll 51 60}}
-		{{#rollBetween() roll 61 65}}<td class="template_value">Lose 1D10 points of weapon?s hit points.</td>{{/rollBetween() roll 61 65}}
-		{{#rollBetween() roll 66 75}}<td class="template_value">Vision obscured, lose 30% on all appropriate skills for 1D3 combat rounds.</td>{{/rollBetween() roll 66 75}}
-		{{#rollBetween() roll 76 85}}<td class="template_value">Hit nearest ally for normal damage, or Drop the weapon being used if no ally nearby.</td>{{/rollBetween() roll 76 85}}
-		{{#rollBetween() roll 86 90}}<td class="template_value">Hit nearest ally for special damage, or Throw weapon 1D10 meters away, if no ally nearby.</td>{{/rollBetween() roll 86 90}}
-		{{#rollBetween() roll 91 98}}<td class="template_value">Hit nearest ally for critical damage, or Lose 1D10 points of weapon?s hit points, if no ally nearby.</td>{{/rollBetween() roll 91 98}}
-		{{#rollTotal() roll 99}}<td class="template_value">Blow it; roll twice more on this table (cumulative if this result is rolled again)</td>{{/rollTotal() roll 99}}
-		{{#rollTotal() roll 00}}<td class="template_value">Blow it; roll twice more on this table (cumulative if this result is rolled again)</td>{{/rollTotal() roll 00}}
+		{{#rollBetween() roll 1 15}}<td class="template_value">Pierdes el siguiente turno de combate mientras te quedas indefenso.</td>{{/rollBetween() roll 1 15}}
+		{{#rollBetween() roll 16 25}}<td class="template_value">Pierdes los siguientes 1D3 turnos de combate mientras te quedas indefenso.</td>{{/rollBetween() roll 16 25}}		
+		{{#rollBetween() roll 26 40}}<td class="template_value">Caes al suelo.</td>{{/rollBetween() roll 26 40}}		
+		{{#rollBetween() roll 41 50}}<td class="template_value">Se te cae el arma que has usado.</td>{{/rollBetween() roll 41 50}}
+		{{#rollBetween() roll 51 60}}<td class="template_value">Arrojas el arma sin querer a 1D10 metros de distancia.</td>{{/rollBetween() roll 51 60}}
+		{{#rollBetween() roll 61 65}}<td class="template_value">Tu arma pierde 1D10 puntos de golpe.</td>{{/rollBetween() roll 61 65}}
+		{{#rollBetween() roll 66 75}}<td class="template_value">Vision obstaculizada, resta 30% a todas las habilidades pertinentes durante 1D3 turnos de combate.</td>{{/rollBetween() roll 66 75}}
+		{{#rollBetween() roll 76 85}}<td class="template_value">Golpeas a tu aliado más cercano, haciéndole daño normal, o si no hay aliado cercano, dejas caer el arma.</td>{{/rollBetween() roll 76 85}}
+		{{#rollBetween() roll 86 90}}<td class="template_value">Golpeas a tu aliado más cercano, haciéndole daño especial, o si no hay aliado cercano, arrojas el arma a 1D10 metros de distancia.</td>{{/rollBetween() roll 86 90}}
+		{{#rollBetween() roll 91 98}}<td class="template_value">Golpeas a tu aliado más cercano, haciéndole daño crítico, o si no hay aliado cercano, tu arma pierde 1D10 puntos de golpe.</td>{{/rollBetween() roll 91 98}}
+		{{#rollTotal() roll 99}}<td class="template_value">La has hecho buena, tira una vez más en esta tabla (se acumula si vuelve a salir este resultado)</td>{{/rollTotal() roll 99}}
+		{{#rollTotal() roll 00}}<td class="template_value">La has hecho buena, tira dos veces más en esta tabla (se acumula si vuelve a salir este resultado)</td>{{/rollTotal() roll 00}}
 	{{/rollTotal() table 0}}
 	
 	{{#rollTotal() table 1}}
-		{{#rollBetween() roll 1 20}}<td>Lose the next combat round and are effectively helpless.</td>{{/rollBetween() roll 1 20}}
-		{{#rollBetween() roll 21 40}}<td>Fall down.</td>{{/rollBetween() roll 21 40}}		
-		{{#rollBetween() roll 41 50}}<td>Drop the weapon being used.</td>{{/rollBetween() roll 41 50}}
-		{{#rollBetween() roll 51 60}}<td>Throw weapon 1D10 meters away.</td>{{/rollBetween() roll 51 60}}
-		{{#rollBetween() roll 61 75}}<td>Lose 1D10 points of weapon?s hit points.</td>{{/rollBetween() roll 61 75}}
-		{{#rollBetween() roll 76 85}}<td>Wide open; foe automatically hits with normal hit.</td>{{/rollBetween() roll 76 85}}
-		{{#rollBetween() roll 86 90}}<td>Wide open; foe automatically hits with special hit.</td>{{/rollBetween() roll 86 90}}
-		{{#rollBetween() roll 91 93}}<td>Wide open; foe automatically hits with critical hit</td>{{/rollBetween() roll 91 93}}
-		{{#rollBetween() roll 94 98}}<td>Blow it; roll twice more on this table (cumulative if this result is rolled again)</td>{{/rollBetween() roll 94 98}}
-		{{#rollBetween() roll 99 100}}<td>Blow it; roll twice more on this table (cumulative if this result is rolled again)</td>{{/rollBetween() roll 99 100}}
+		{{#rollBetween() roll 1 20}}<td>Pierdes el siguiente turno de combate mientras te quedas indefenso.</td>{{/rollBetween() roll 1 20}}
+		{{#rollBetween() roll 21 40}}<td>Caes al suelo.</td>{{/rollBetween() roll 21 40}}		
+		{{#rollBetween() roll 41 50}}<td>Se te cae el arma que has usado.</td>{{/rollBetween() roll 41 50}}
+		{{#rollBetween() roll 51 60}}<td>Arrojas el arma sin querer a 1D10 metros de distancia.</td>{{/rollBetween() roll 51 60}}
+		{{#rollBetween() roll 61 75}}<td>Tu arma pierde 1D10 puntos de golpe.</td>{{/rollBetween() roll 61 75}}
+		{{#rollBetween() roll 76 85}}<td>Dejas la guardia abierta y tu adversario te golpea automáticamente con un éxito normal.</td>{{/rollBetween() roll 76 85}}
+		{{#rollBetween() roll 86 90}}<td>Dejas la guardia abierta y tu adversario te golpea automáticamente con un éxito especial.</td>{{/rollBetween() roll 86 90}}
+		{{#rollBetween() roll 91 93}}<td>Dejas la guardia abierta y tu adversario te golpea automáticamente con un éxito crítico.</td>{{/rollBetween() roll 91 93}}
+		{{#rollBetween() roll 94 98}}<td>La has hecho buena, tira una vez más en esta tabla (se acumula si vuelve a salir este resultado)</td>{{/rollBetween() roll 94 98}}
+		{{#rollBetween() roll 99 100}}<td>La has hecho buena, tira dos veces más en esta tabla (se acumula si vuelve a salir este resultado)</td>{{/rollBetween() roll 99 100}}
 	{{/rollTotal() table 1}}	
 	
 	{{#rollTotal() table 2}}
-		{{#rollBetween() roll 1 15}}<td class="template_value">Lose the next attack or other activity.</td>{{/rollBetween() roll 1 15}}
-		{{#rollBetween() roll 16 25}}<td class="template_value">Lose the next 1D3 combat rounds or other activity.</td>{{/rollBetween() roll 16 25}}		
-		{{#rollBetween() roll 26 40}}<td class="template_value">Fall down.</td>{{/rollBetween() roll 26 40}}		
-		{{#rollBetween() roll 41 55}}<td class="template_value">Vision obscured; lose 30% on all appropriate skills for 1D3 combat rounds</td>{{/rollBetween() roll 41 55}}
-		{{#rollBetween() roll 56 65}}<td class="template_value">Drop weapon; which slides or bounces 1D6?1 meters away.</td>{{/rollBetween() roll 56 65}}
-		{{#rollBetween() roll 66 80}}<td class="template_value">Do 1D6 damage to weapon?s hit points or break if the weapon has no hit points.</td>{{/rollBetween() roll 66 80}}
-		{{#rollBetween() roll 81 85}}<td class="template_value">Break weapon.</td>{{/rollBetween() roll 81 85}}
-		{{#rollBetween() roll 86 90}}<td class="template_value">Hit nearest ally for normal damage, or Drop weapon; which slides or bounces 1D6?1 meters away. if no ally nearby.</td>{{/rollBetween() roll 86 90}}
-		{{#rollBetween() roll 91 95}}<td class="template_value">Hit nearest ally for special damage, orDo 1D6 damage to weapon?s hit points or break if the weapon has no hit points, if no ally nearby.</td>{{/rollBetween() roll 91 95}}
-		{{#rollBetween() roll 96 98}}<td class="template_value">Hit nearest ally for critical damage, or Break weapon, if no ally nearby</td>{{/rollBetween() roll 96 98}}
-		{{#rollTotal() roll 99}}<td class="template_value">Blow it; roll twice more on this table (cumulative if this result is rolled again)</td>{{/rollTotal() roll 99}}
-		{{#rollTotal() roll 100}}<td class="template_value">Blow it; roll twice more on this table (cumulative if this result is rolled again)</td>{{/rollTotal() roll 100}}
+		{{#rollBetween() roll 1 15}}<td class="template_value">Pierdes el siguiente ataque u otra acción.</td>{{/rollBetween() roll 1 15}}
+		{{#rollBetween() roll 16 25}}<td class="template_value">Pierdes los siguientes 1D3 turnos de combate u otras acciones.</td>{{/rollBetween() roll 16 25}}		
+		{{#rollBetween() roll 26 40}}<td class="template_value">Te caes al suelo.</td>{{/rollBetween() roll 26 40}}		
+		{{#rollBetween() roll 41 55}}<td class="template_value">Vision obstaculizada, resta 30% a todas las habilidades pertinentes durante 1D3 turnos de combate.</td>{{/rollBetween() roll 41 55}}
+		{{#rollBetween() roll 56 65}}<td class="template_value">Se te cae el arma y se desliza o rebota hasta alejarse 1D6 metros.</td>{{/rollBetween() roll 56 65}}
+		{{#rollBetween() roll 66 80}}<td class="template_value">El arma pierde 1D6 puntos de golpe o se rompe si no tiene puntos de golpe.</td>{{/rollBetween() roll 66 80}}
+		{{#rollBetween() roll 81 85}}<td class="template_value">El arma se rompe.</td>{{/rollBetween() roll 81 85}}
+		{{#rollBetween() roll 86 90}}<td class="template_value">Golpeas al aliado más cercano, haciéndole daño normal, o, en caso de no haber aliado cercano, se te cae el arma y se aleja 1D6 metros.</td>{{/rollBetween() roll 86 90}}
+		{{#rollBetween() roll 91 95}}<td class="template_value">Golpeas al aliado más cercano, haciéndole daño especial, o, en caso de no haber aliado cercano, el arma pierde 1D6 puntos de golpe o se rompe si no tiene puntos de golpe.</td>{{/rollBetween() roll 91 95}}
+		{{#rollBetween() roll 96 98}}<td class="template_value">Golpeas al aliado más cercano, haciéndole daño crítico, o, en caso de no haber aliado cercano, el arma se rompe.</td>{{/rollBetween() roll 96 98}}
+		{{#rollTotal() roll 99}}<td class="template_value">La has hecho buena, tira una vez más en esta tabla (se acumula si vuelve a salir este resultado).</td>{{/rollTotal() roll 99}}
+		{{#rollTotal() roll 100}}<td class="template_value">La has hecho buena, tira dos veces más en esta tabla (se acumula si vuelve a salir este resultado).</td>{{/rollTotal() roll 100}}
 	{{/rollTotal() table 2}}
 	
 	{{#rollTotal() table 3}}
-		{{#rollBetween() roll 1 25}}<td class="template_value">Lose the next combat round (or this one if no action has yet been taken).</td>{{/rollBetween() roll 1 25}}
-		{{#rollBetween() roll 26 30}}<td class="template_value">Lose the next 1D3 combat rounds (this includes this one if no action has yet been taken).</td>{{/rollBetween() roll 26 30}}		
-		{{#rollBetween() roll 31 50}}<td class="template_value">Fall down.</td>{{/rollBetween() roll 31 50}}		
-		{{#rollBetween() roll 51 60}}<td class="template_value">Fall down and twist ankle; lose 1 meter/DEX rank of movement for 1D10 full turns (and all combat turns within them).</td>{{/rollBetween() roll 51 60}}
-		{{#rollBetween() roll 61 75}}<td class="template_value">Vision obscured; lose 30% on all appropriate skills for 1D3 combat rounds.</td>{{/rollBetween() roll 61 75}}
-		{{#rollBetween() roll 76 85}}<td class="template_value">Miss and strain something; lose 1 hit point (in the attacking limb if hit locations are being used)</td>{{/rollBetween() roll 76 85}}
-		{{#rollBetween() roll 86 90}}<td class="template_value">Hit nearest ally for normal damage, or Miss and strain something; lose 1 hit point (in the attacking limb if hit locations are being used), if no ally nearby</td>{{/rollBetween() roll 86 90}}
-		{{#rollBetween() roll 91 94}}<td class="template_value">Hit nearest ally for special damage, or Miss and strain something; lose 1 hit point (in the attacking limb if hit locations are being used), if no ally nearby.</td>{{/rollBetween() roll 91 94}}
-		{{#rollBetween() roll 95 98}}<td class="template_value">Hit hard surface; do normal damage to self (in the attacking limb if hit locations are being used)..</td>{{/rollBetween() roll 95 98}}
-		{{#rollBetween() roll 96 98}}<td class="template_value">Hit nearest ally for critical damage, or Break weapon, if no ally nearby</td>{{/rollBetween() roll 96 98}}
-		{{#rollTotal() roll 99}}<td class="template_value">Blow it; roll twice more on this table (cumulative if this result is rolled again)</td>{{/rollTotal() roll 99}}
-		{{#rollTotal() roll 100}}<td class="template_value">Blow it; roll twice more on this table (cumulative if this result is rolled again)</td>{{/rollTotal() roll 100}}
+		{{#rollBetween() roll 1 25}}<td class="template_value">Pierdes el siguiente turno de combate (o el actual si aún no has hecho ninguna acción).</td>{{/rollBetween() roll 1 25}}
+		{{#rollBetween() roll 26 30}}<td class="template_value">Pierdes los siguientes 1D3 turnos de combate (se incluye el actual si aún no has hecho ninguna acción).</td>{{/rollBetween() roll 26 30}}		
+		{{#rollBetween() roll 31 50}}<td class="template_value">Te caes al suelo.</td>{{/rollBetween() roll 31 50}}		
+		{{#rollBetween() roll 51 60}}<td class="template_value">Te caes al suelo y te tuerces el tobillo; pierdes 1 metro/DES de movimiento durante 1D10 turnos enteros (y todos los turnos de combate que incluyan).</td>{{/rollBetween() roll 51 60}}
+		{{#rollBetween() roll 61 75}}<td class="template_value">Vision obstaculizada, resta 30% a todas las habilidades pertinentes durante 1D3 turnos de combate.</td>{{/rollBetween() roll 61 75}}
+		{{#rollBetween() roll 76 85}}<td class="template_value">Fallas y te haces un esguince; pierdes 1 punto de vida (en la extremidad atacante si se usan las localizaciones de golpe).</td>{{/rollBetween() roll 76 85}}
+		{{#rollBetween() roll 86 90}}<td class="template_value">Golpeas al aliado más cercano, haciéndole daño normal, o, en caso de no haber aliado cercano, fallas y te haces un esguince; pierdes 1 punto de vida (en la extremidad atacante si se usan las localizaciones de golpe).</td>{{/rollBetween() roll 86 90}}
+		{{#rollBetween() roll 91 94}}<td class="template_value">Golpeas al aliado más cercano, haciéndole daño especial, o, en caso de no haber aliado cercano, fallas y te haces un esguince; pierdes 1 punto de vida (en la extremidad atacante si se usan las localizaciones de golpe).</td>{{/rollBetween() roll 91 94}}
+		{{#rollBetween() roll 95 98}}<td class="template_value">Golpeas una superficie dura y te causas daño normal a ti mismo (en la extremidad atacante si se usan las localizaciones de golpe).</td>{{/rollBetween() roll 95 98}}
+		{{#rollBetween() roll 96 98}}<td class="template_value">Golpeas al aliado más cercano, haciéndole daño crítico, o, en caso de no haber aliado cercano, el arma se rompe</td>{{/rollBetween() roll 96 98}}
+		{{#rollTotal() roll 99}}<td class="template_value">La has hecho buena, tira una vez más en esta tabla (se acumula si vuelve a salir este resultado).</td>{{/rollTotal() roll 99}}
+		{{#rollTotal() roll 100}}<td class="template_value">La has hecho buena, tira dos veces más en esta tabla (se acumula si vuelve a salir este resultado).</td>{{/rollTotal() roll 100}}
 	{{/rollTotal() table 3}}
 	
 
